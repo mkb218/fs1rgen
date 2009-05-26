@@ -1,0 +1,39 @@
+The FS1r user manual has a handy guide that describes all the fields in the programs. The machine's patches consist of 1-4 individual voices, along with effects, controller, volume, envelope, etc. settings. Individual voices are basically FM instruments, although the FS1r is designed primarily around formant synthesis which allows some really weird voice-type effects. There is a somewhat hidden feature which allows you to make sequences called FSEQs that mutate the formants over time, almost like an arpeggiator. Yamaha never released an editor and the only third-party ones are long since defunct, especially for Mac as this synth was released in the OS 8 days, maybe even System 7.
+
+In any case, now that I know the ranges of all valid parameters, I can create random patches, save them to a MIDI file, then send them straight to the synth.
+
+The plan right now is to implement this as a perl application, just to get the patch generation right. Then, I will rewrite it as a Cocoa app so I can talk directly to the device.
+
+Now, I've never done genetic programming or annealing, but since the success criteria are so subjective, what's it matter?
+
+Anyway, here is what will happen:
+
+   1. The user selects a number (P) of pre-existing patches (saved as MIDI files) and instructs the script to generate a number (R) of totally random patches. The program will also need the number (G) of patches to generate for each generation of offspring, the number (K) of patches to keep unaltered based on rank, the maximum shift (M) in the index of enumerated parameters, and ranges of performance, voice, and FSEQ banks that are safe to overwrite. These ranges could be as little as 1 performance, 4 voices, and 1 FSEQ.
+   2. The program instructs the user to audition all voices in generation 0 and score them from 1 to 100. These scores are recorded and normalized so that all the scores in a generation will add up to 1.
+   3. For every parameter in every voice, the program will do the following for every new patch it generates for the current generation (G-K):
+          * For numeric parameters, create a weighted average of the values of that parameter across the members of the previous generation. Split the new offspring between values within 1 standard deviation of the norm and values outside that range.
+          * For enumerated parameters, the new offspring should have the value set by choosing one value at random from the values amongst the members of the previous generation. Probabilities will be weighted so that higher scoring patches are more likely to have their value chosen. Half of the new offspring will have this parameter shifted in either direction by no more than M.
+          * If a parameter does not have source data in a parent, the source data should be synthesized with a random value.
+   4. All members of the new generation are scored, and we repeat the process.
+   5. History should be tracked non-destructively, so that the user can at any time invalidate a generation, or decide to carry or drop particular members regardless of score.
+   6. Similarly, the user should be able to lock particular parameters. This could be the way to evolve new FSEQs on a particular patch.
+   7. At any time the user can say "Oh! this is what ! want!" and save off the patch to a safe place.
+   8. The app should probably have a config file that lays out all the parameters, their limits, and dependencies. It will probably be easier to do this than to hardcode everything! 
+
+
+
+TODO:
+- finish layout.xml
+- write XSD for layout.xml
+- perl script to generate random/mutated patches
+  - xml::schematron for schema validation
+  - xml::twig for parsing
+  - MIDI::Opus for encoding sysex data
+- reinstall xcode and coreaudio api if not working
+- investigate Mac::CoreMIDI to send patches to FS1r 
+
+- figure out how to send and receive sysex data in coremidi
+- xerces xml parser in dom mode or http://developer.apple.com/documentation/Cocoa/Conceptual/NSXML_Concepts/NSXML.html
+- http://developer.apple.com/documentation/MusicAudio/Reference/CACoreMIDIRef/MIDIServices/index.html
+- http://developer.apple.com/documentation/MusicAudio/Reference/CACoreMIDIRef/MIDIServices/CompositePage.html#//apple_ref/c/tag/MIDISysexSendRequest
+- http://developer.apple.com/documentation/MusicAudio/Reference/CACoreMIDIRef/MIDIServices/CompositePage.html#//apple_ref/c/func/MIDISendSysex
