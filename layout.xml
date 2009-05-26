@@ -359,7 +359,34 @@
 			<intParam name="voiced feedback level" maxValue="0x07" />
 			<intParam name="pitch eg level 3" maxValue="0x64" />
 			<constParam name="reserved" value="0" />
-			
+			<multiParam name="Formant Control Destination 1" multi="formantCtrlDst" />
+			<multiParam name="Formant Control Destination 2" multi="formantCtrlDst" />
+			<multiParam name="Formant Control Destination 3" multi="formantCtrlDst" />
+			<multiParam name="Formant Control Destination 4" multi="formantCtrlDst" />
+			<multiParam name="Formant Control Destination 5" multi="formantCtrlDst" />
+			<intParam name="Formant Control Depth 1" shift="-64" />
+			<intParam name="Formant Control Depth 2" shift="-64" />
+			<intParam name="Formant Control Depth 3" shift="-64" />
+			<intParam name="Formant Control Depth 4" shift="-64" />
+			<intParam name="Formant Control Depth 5" shift="-64" />
+			<multiParam name="FM Control Destination 1" multi="formantCtrlDst" />
+			<multiParam name="FM Control Destination 2" multi="formantCtrlDst" />
+			<multiParam name="FM Control Destination 3" multi="formantCtrlDst" />
+			<multiParam name="FM Control Destination 4" multi="formantCtrlDst" />
+			<multiParam name="FM Control Destination 5" multi="formantCtrlDst" />
+			<intParam name="FM Control Depth 1" shift="-64" />
+			<intParam name="FM Control Depth 2" shift="-64" />
+			<intParam name="FM Control Depth 3" shift="-64" />
+			<intParam name="FM Control Depth 4" shift="-64" />
+			<intParam name="FM Control Depth 5" shift="-64" />
+			<enumParam name="Filter Type" >
+				<enumValue name="LPF24" value="0" />
+				<enumValue name="LPF18" value="1" />
+				<enumValue name="LPF12" value="2" />
+				<enumValue name="HPF" value="3" />
+				<enumValue name="BPF" value="4" />
+				<enumValue name="BEF" value="5" />
+			</enumParam>
 			
 			
 			
@@ -371,4 +398,26 @@
 	</enums>
 	<bitmaps>
 	</bitmaps>
+	<multis>
+		<multiParam name="formantCtrlDst">
+			<or>
+				<bitmask mask="0x30">
+					<bitShift shift="4">
+						<enumParam name="dest">
+							<enumValue name="off" value="0" />
+							<enumValue name="out" value="1" />
+							<enumValue name="freq" value="2" />
+							<enumValue name="width" value="3" />
+						</enumParam>
+					</bitshift>
+				</bitmask>
+				<bitShift shift="3">
+					<boolParam name="voicedNotUnvoiced" />
+				</bitShift>
+				<bitMask mask="0x07">
+					<enumParam name="operator" maxValue="7" shift="1" />
+				</bitMask>
+			</or>
+		</multiParam>
+	</multis>
 </midiTable>
