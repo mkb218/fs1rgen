@@ -384,10 +384,150 @@
 	<enumValue name="BPF" value="4" />
 	<enumValue name="BEF" value="5" />
       </enumParam>
-      
-      
-      
+      <intParam maxValue="0x74" name="filter resonance" shift="-16"/>
+      <intParam maxValue="0x0e" name="filter resonance velo sense" shift="-7"/>
+      <intParam name="filter cutoff freq" />
+      <intParam name="filter eg depth velo sense" shift="-7" />
+      <intParam name="cutoff freq lfo1 depth" maxValue="0x63" />
+      <intParam name="cutoff freq lfo2 depth" maxValue="0x63" />
+      <intParam name="cutoff freq key scale depth" shift="-64" />
+      <intParam name="cutoff freq key scale point" />
+      <intParam name="filter input gain" maxValue="0x18" shift="-12" />
+      <constParam name="reserved" byteWidth="0" />
+      <intParam name="filter eg depth" shift="-64" />
+      <intParam name="filter eg level 4"  maxValue="0x64" />
+      <intParam name="filter eg level 1"  maxValue="0x64" />
+      <intParam name="filter eg level 2"  maxValue="0x64" />
+      <intParam name="filter eg level 3"  maxValue="0x64" />
+      <intParam name="filter eg time 1"  maxValue="0x63" />
+      <intParam name="filter eg time 2"  maxValue="0x63" />
+      <intParam name="filter eg time 3"  maxValue="0x63" />
+      <intParam name="filter eg time 4"  maxValue="0x63" />
+      <staticHex>00</staticHex>
+      <orParam>
+	<bitShift shift="3">
+	  <intParam name="filter eg attack time vel" maxValue="7" />
+	</bitShift>
+	<intParam maxValue="7" name="time scale" />
+      </orParam>
     </voiceCommon>
+    <voicedOperator>
+      <orParam>
+	<bitShift shift="6">
+	  <boolParam name="oscillator key sync" />
+	</bitShift>
+	<intParam name="transpose" maxValue="0x30" />
+      </orParam>
+      <intParam maxValue="0x1f" name="oscillator freq coarse" />
+      <intParam maxValue="0x7f" name="oscillator freq fine" />
+      <intParam maxValue="0x63" name="oscillator freq note scaling" />
+      <orParam>
+	<bitShift shift="3" >
+	  <intParam name="bw bias sense" shift="-7" maxValue="0x0e" />
+	</bitShift>
+	<enumParam name="spectral form" maxValue="0x07" />
+      </orParam>
+      <orParam>
+	<bitShift shift="6" >
+	  <boolParam name="oscillator mode" />
+	</bitShift>
+	<bitShift shift="3" >
+	  <intParam name="spectral skirt" />
+	</bitShift>
+	<enumParam name="fseq track number" maxValue="7" />
+      </orParam>
+      <intParam name="freq ratio of band spectrum" maxValue="0x63" />
+      <intParam name="detune" maxValue="0x1e" />
+      <intParam name="freq eg initial value" maxValue="0x64" />
+      <intParam name="freq eg attack value" maxValue="0x64" />
+      <intParam name="freq eg attack time" maxValue="0x63" />
+      <intParam name="freq eg decay time" maxValue="0x63" />
+      <intParam name="eg level 1" maxValue="0x63" />
+      <intParam name="eg level 2" maxValue="0x63" />
+      <intParam name="eg level 3" maxValue="0x63" />
+      <intParam name="eg level 4" maxValue="0x63" />
+      <intParam name="eg time 1" maxValue="0x63" />
+      <intParam name="eg time 2" maxValue="0x63" />
+      <intParam name="eg time 3" maxValue="0x63" />
+      <intParam name="eg time 4" maxValue="0x63" />
+      <intParam name="eg hold time" maxValue="0x63" />
+      <intParam name="eg time scaling" maxValue="0x07" />
+      <intParam name="level scaling total level" maxValue="0x63" />
+      <intParam name="level scaling break point" maxValue="0x63" />
+      <intParam name="level scaling left depth" maxValue="0x63" />
+      <intParam name="level scaling right depth" maxValue="0x63" />
+      <typeParam name="level scaling left curve" type="levelScalingCurve" />
+      <typeParam name="level scaling right curve" type="levelScalingCurve" />
+      <staticHex name="reserved">000000</staticHex>
+      <orParam>
+	<bitShift shift="3">
+	  <intParam maxValue="freq bias sense" maxValue="0x0e" shift="-7" />
+	</bitShift>
+	<intParam name="pitch mod sense" maxValue="7" />
+      </orParam>
+      <orParam>
+	<bitShift shift="4">
+	  <intParam maxValue="freq mod sense" maxValue="0x07" />
+	</bitShift>
+	<intParam name="freq velo sense" maxValue="0x0e" shift="-7" />
+      </orParam>
+      <orParam>
+	<bitShift shift="4">
+	  <intParam maxValue="amp mod sense" maxValue="0x07"  />
+	</bitShift>
+	<intParam name="pitch mod sense" maxValue="0x0e" shift="-7" />
+      </orParam>
+      <intParam name="eg bias sense" maxValue="0x0e" />
+    </voicedOperator>
+    <unvoicedOperator>
+      <intParam name="formant pitch transpose" maxValue="0x30" />
+      <orParam>
+	<bitShift shift="6">
+	  <boolParam name="formant pitch mode"/>
+	</bitShift>
+	<intParam name="formant pitch coarse" maxValue="0x1e"/>
+      </orParam>
+      <intParam name="formant pitch fine" />
+      <intParam name="formant pitch note scaling" maxValue="0x63" />
+      <intParam name="formant shape band width" maxValue="0x63" />
+      <intParam name="formant shape bw bias sense" maxValue="0x0e" shift="-7" />
+      <orParam>
+	<bitShift shift="3">
+	  <intParam name="formant resonance" maxValue="7" />
+	</bitShift>
+	<intParam name="formant skirt" maxValue="7" />
+      </orParam>
+      <intParam name="freq eg initial value" maxValue="0x64" />
+      <intParam name="freq eg attack value" maxValue="0x64" />
+      <intParam name="freq eg attack time" maxValue="0x63" />
+      <intParam name="freq eg decay time" maxValue="0x63" />
+      <intParam name="level" maxValue="0x63" />
+      <intParam name="level key scaling" maxValue="0x63" />
+      <intParam name="eg level 1" maxValue="0x63" />
+      <intParam name="eg level 2" maxValue="0x63" />
+      <intParam name="eg level 3" maxValue="0x63" />
+      <intParam name="eg level 4" maxValue="0x63" />
+      <intParam name="eg time 1" maxValue="0x63" />
+      <intParam name="eg time 2" maxValue="0x63" />
+      <intParam name="eg time 3" maxValue="0x63" />
+      <intParam name="eg time 4" maxValue="0x63" />
+      <intParam name="eg hold time" maxValue="0x63" />
+      <intParam name="eg time scaling" maxValue="7" />
+      <intParam name="freq bias sense" maxValue="0x0e" shift="-7" />
+      <orParam>
+	<bitShift shift="4" >
+	  <intParam name="freq mod sense" maxValue="7" />
+	</bitShift>
+	<intParam name="freq velo sense" maxvalue="0x0e" shift="-7" />
+      </orParam>
+      <orParam>
+	<bitShift shift="4" >
+	  <intParam name="amp mod sense" maxValue="7" />
+	</bitShift>
+	<intParam name="amp velo sense" maxvalue="0x0e" shift="-7" />
+      </orParam>
+      <intParam name="eg bias sense" maxValue="0x0e" shift="-7" />
+    </unvoicedOperator>
   </voiceComponents>
   <fseq>
   </fseq>
@@ -407,6 +547,14 @@
 	</bitShift>
 	<enumParam name="operator" maxValue="7" shift="1" />
       </orParam>
+    </type>
+    <type name="levelScalingCurve">
+      <enumParam>
+	<enumValue name="-lin" value="0" />
+	<enumValue name="-exp" value="1" />
+	<enumValue name="+exp" value="2" />
+	<enumValue name="+lin" value="3" />
+      </enumParam>
     </type>
   </types>
 </midiTable>
