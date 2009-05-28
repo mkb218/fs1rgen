@@ -25,15 +25,14 @@ Anyway, here is what will happen:
 TODO:
 - finish layout.xml
 - write XSD for layout.xml
-- perl script to generate random/mutated patches
-  - xml::schematron for schema validation
-  - xml::twig for parsing
-  - MIDI::Opus for encoding sysex data
-- reinstall xcode and coreaudio api if not working
-- investigate Mac::CoreMIDI to send patches to FS1r 
+- don't bother with perl version!
 
 - figure out how to send and receive sysex data in coremidi
+- need midi file version also
+- may need some sort of larger int lib if there is anything larger than 8 bytes wide that isn't a string
 - xerces xml parser in dom mode or http://developer.apple.com/documentation/Cocoa/Conceptual/NSXML_Concepts/NSXML.html
 - http://developer.apple.com/documentation/MusicAudio/Reference/CACoreMIDIRef/MIDIServices/index.html
-- http://developer.apple.com/documentation/MusicAudio/Reference/CACoreMIDIRef/MIDIServices/CompositePage.html#//apple_ref/c/tag/MIDISysexSendRequest
+- http://developer.apple.com/documentation/MusicAudio/Reference/CACoreMIDIRef/MIDIServices/CompositePage.html#//apple_ref/c/tag/MIDISyse xSendRequest
 - http://developer.apple.com/documentation/MusicAudio/Reference/CACoreMIDIRef/MIDIServices/CompositePage.html#//apple_ref/c/func/MIDISendSysex
+- boost is ok
+- gui in obj-c obviously
