@@ -2,10 +2,10 @@
 <midiTable deviceName="Yamaha FS1r"> <!-- max value of each byte is 0x7f, 0x007f = 127, 0x0100 = 128 -->
   <performanceComponents totalByteWidth="400">
     <performanceCommon totalByteWidth="80">
-      <staticHex>F043</staticHex>
+<!--      <staticHex>F043</staticHex>
       <intParam name="unknownHeaderField" minValue="00" maxValue="00"/>
       <staticHex>5E100011</staticHex>
-      <intParam name="unknownHeaderField2" minValue="0" maxValue="0" byteWidth="2"/>
+      <intParam name="unknownHeaderField2" minValue="0" maxValue="0" byteWidth="2"/>-->
       <stringParam name="performanceName" byteWidth="12"/><!-- implicit range on each byte is 0x20 to 0x7f -->
       <constParam name="reserved" byteWidth="2" value="0"/>
       <enumParam name="category" minValue="0" maxValue="0x16">
@@ -21,12 +21,9 @@
 	<enumValue name="pre-insert" value="1" />
 	<enumValue name="post-insert" value="2" />
       </enumParam>
-      <enumParam name="FSEQ part" minValue="0" maxValue="4" />
-      <enumParam name="FSEQ bank" minValue="0" maxValue="1" />
-      <multiParam name="FSEQ number" minValue="0" maxValue="0x7f" >
-	<intParam minValue="0" maxValue="5" name="int" />
-	<intParam minValue="6" maxValue="0x59" shift="-6" name="pre" />
-      </multiParam>
+      <link table="fseq" name="FSEQ part" param="part" />
+      <link table="fseq" name="FSEQ bank" param="bank" />
+      <link table="fseq" name="FSEQ number" param="number" />
       <multiParam name="FSEQ Speed Ratio" byteWidth="2">
 	<enumParam name="midi" minValue="0" maxValue="4">
 	  <enumValue value="0" name="midi/4" />
@@ -213,8 +210,8 @@
     </performanceEffect>
     <performancePart>
       <intParam name="note reserve" minValue="0" maxValue="0x20" />
-      <link name="bank number" minValue="0" maxValue="0x0c" table="voices" param="bank"/> <!-- dependent on where things are ocated in fs1r mem -->
-      <link name="program number" minValue="0" maxValue="0x7f" table="voices" param="program"/>
+      <linkParam name="bank number" minValue="0" maxValue="0x0c" table="voices" param="bank"/> <!-- dependent on where things are ocated in fs1r mem -->
+      <linkParam name="program number" minValue="0" maxValue="0x7f" table="voices" param="program"/>
       <multiParam name="Rcv Channel Max">
 	<intParam minValue="0" maxValue="0x0f" shift="1" name="channel"/>
 	<constParam value="0x7f" name="off" />
@@ -529,8 +526,56 @@
       <intParam name="eg bias sense" maxValue="0x0e" shift="-7" />
     </unvoicedOperator>
   </voiceComponents>
-  <fseq>
-  </fseq>
+  <fseqComponents>
+    <fseqHeader>
+      <stringParam byteWidth="8" name="name" />
+      <staticHex name="Reserved">0000000000000000</staticHex>
+      <intParam name="start step of loop point" byteWidth="2" />
+      <intParam name="end step of loop point" byteWidth="2" />
+      <boolParam name="loop mode round not one way" />
+      <intParam name="speed adjust" />
+      <intParam name="tempo velo sens" maxValue="7" />
+      <boolParam name="non pitch mode" />
+      <intParam name="formant note assign" />
+      <intParam name="pitch tuning" shift="-63" maxValue="0x7e"/>
+      <intParam name="formant sequence delay" maxValue="0x63" />
+      <enumParam name="frame data format" >
+	<enumValue name="total of frames 128" value="0" />
+	<enumValue name="total of frames 256" value="1" />
+	<enumValue name="total of frames 384" value="2" />
+	<enumValue name="total of frames 512" value="3" />
+      </enumParam>
+      <staticHex name="reserved" >0000</staticHex>
+      <intParam name="rmtc end step of valid data" byteWidth="2" />
+    </fseqHeader>
+    <fseqFrame>
+      <intParam name="fundamental pitch" byteWidth="2" />
+      <intParam lobyteOffset="8" name="voiced formant frequency hi 1" />
+      <intParam lobyteOffset="8" name="voiced formant frequency hi 2" />
+      <intParam lobyteOffset="8" name="voiced formant frequency hi 3" />
+      <intParam lobyteOffset="8" name="voiced formant frequency hi 4" />
+      <intParam lobyteOffset="8" name="voiced formant frequency hi 5" />
+      <intParam lobyteOffset="8" name="voiced formant frequency hi 6" />
+      <intParam lobyteOffset="8" name="voiced formant frequency hi 7" />
+      <intParam lobyteOffset="8" name="voiced formant frequency hi 8" />
+      <intParam name="voiced formant frequency lo 1" />
+      <intParam name="voiced formant frequency lo 2" />
+      <intParam name="voiced formant frequency lo 3" />
+      <intParam name="voiced formant frequency lo 4" />
+      <intParam name="voiced formant frequency lo 5" />
+      <intParam name="voiced formant frequency lo 6" />
+      <intParam name="voiced formant frequency lo 7" />
+      <intParam name="voiced formant frequency lo 8" />
+      <intParam name="voiced formant level 1" />
+      <intParam name="voiced formant level 2" />
+      <intParam name="voiced formant level 3" />
+      <intParam name="voiced formant level 4" />
+      <intParam name="voiced formant level 5" />
+      <intParam name="voiced formant level 6" />
+      <intParam name="voiced formant level 7" />
+      <intParam name="voiced formant level 8" />
+    </fseqFrame>
+  </fseqComponents>
   <types>
     <type name="formantCtrlDst">
       <orParam>

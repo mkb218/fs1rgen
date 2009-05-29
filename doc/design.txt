@@ -36,3 +36,7 @@ TODO:
 - http://developer.apple.com/documentation/MusicAudio/Reference/CACoreMIDIRef/MIDIServices/CompositePage.html#//apple_ref/c/func/MIDISendSysex
 - boost is ok
 - gui in obj-c obviously
+- GALib?
+- hold off on fseq evolver for now
+- "link" tags mean special cases for assignment of other items of interest
+- performance effect code is going to need a different data model than the rest
