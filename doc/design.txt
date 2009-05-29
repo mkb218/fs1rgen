@@ -40,3 +40,8 @@ TODO:
 - hold off on fseq evolver for now
 - "link" tags mean special cases for assignment of other items of interest
 - performance effect code is going to need a different data model than the rest
+
+workflow:
+	- startup, read xml file
+	- install data model in perf/voice genome class
+	- 
