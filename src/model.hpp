@@ -76,8 +76,7 @@ namespace fs1rgen {
   public:
     virtual ~Param() {}
     virtual ValuePtr newValue() const = 0; // new value across whole range of param
-    virtual ValuePtr newValue(const ValueType &, float) const = 0; // new value based on single parent
-    virtual ValuePtr newValue(const ValueType&, const ValueType&) const = 0; // new value based on two parents
+    virtual ValuePtr newValue(const Value &, const Value &) const = 0; // new value based on two parents
     virtual void validate(const ValueType & val) throw (dataException) {
       if (!this->softValidate(val)) {
 	throw dataException(std::string(typeid(*this).name()) + " failed validation of value " + val.hexString() );
@@ -86,6 +85,7 @@ namespace fs1rgen {
     virtual bool softValidate(const ValueType & val) = 0;
     virtual size_t width() { return width_; }
     virtual void setWidth(size_t width) { width_ = width; }
+    virtual bool operator==(const Param & other) const { return (this == &other); }
   protected:
     std::string name_;
     size_t width_;
@@ -95,8 +95,8 @@ namespace fs1rgen {
   public:
     IntParam(const std::string & name, int min, int max, int shift = 0, double factor = 1.0);
     virtual ValuePtr newValue() const;
-    virtual ValuePtr newValue(const ValueType&, float) const;
-    virtual ValuePtr newValue(const ValueType&, const ValueType&) const;
+
+    virtual ValuePtr newValue(const Value &, const Value &) const;
     virtual bool softValidate(const ValueType & val);
     virtual void setMin(int min) { min_ = min; }
     virtual void setMax(int max) { max_ = max; }
@@ -115,8 +115,8 @@ namespace fs1rgen {
   public:
     ConstParam(const std::string & name, const ValueType & value, size_t width);
     virtual ValuePtr newValue() const;
-    virtual ValuePtr newValue(const ValueType&, float) const;
-    virtual ValuePtr newValue(const ValueType&, const ValueType&) const;
+
+    virtual ValuePtr newValue(const Value &, const Value &) const;
     virtual bool softValidate(const ValueType & val);
     virtual void setValue(const ValueType & val);
   private:
@@ -127,8 +127,8 @@ namespace fs1rgen {
   public:
     EnumParam(const std::string & name, int width, const std::vector<bool> values, const std::vector<auto_ptr<std::string> > & names);
     virtual ValuePtr newValue() const;
-    virtual ValuePtr newValue(const ValueType&, float) const;
-    virtual ValuePtr newValue(const ValueType&, const ValueType&) const;
+
+    virtual ValuePtr newValue(const Value &, const Value &) const;
     virtual bool softValidate(const ValueType & val);
     virtual void setValue(size_t index, bool allowed);
     virtual void setName(size_t index, auto_ptr<std::string> & name);
@@ -142,9 +142,20 @@ namespace fs1rgen {
     BoolParam(const BoolParam &);
     BoolParam(const std::string & name);
     virtual ValuePtr newValue() const;
-    virtual ValuePtr newValue(const ValueType&, float) const;
-    virtual ValuePtr newValue(const ValueType&, const ValueType&) const;
+    virtual ValuePtr newValue(const Value &, const Value &) const;
     virtual bool softValidate(const ValueType & val);
+  };
+
+  template <class T>
+  class RangeMap<T> {
+  public:
+    void setRange(int min, int max, const T& val);
+    size_t values();
+    const T& valueForPosition(int pos);
+    const T& valueAtIndex(int index);
+  private:
+    std::vector<T*> keymap_;
+    std::set<T> values_;
   };
 
   class MultiParam : public Param {
@@ -152,12 +163,12 @@ namespace fs1rgen {
     MultiParam(const MultiParam &);
     MultiParam(const std::string & name, const std::map<int, auto_ptr<Param> > & params);
     virtual ValuePtr newValue() const;
-    virtual ValuePtr newValue(const ValueType&, float) const;
-    virtual ValuePtr newValue(const ValueType&, const ValueType&) const;
+
+    virtual ValuePtr newValue(const Value &, const Value &) const;
     virtual bool softValidate(const ValueType & val);
-    virtual void setParam(int index, auto_ptr<Param> param);
+    virtual void setParam(int min, int max, const Param& param);
   private:
-    std::map<int, auto_ptr<Param> > params_;
+    RangeMap<Param> params_;
   };
   
   class LinkParam : public Param {
@@ -165,8 +176,8 @@ namespace fs1rgen {
     LinkParam(const LinkParam &);
     LinkParam(const std:string & name, const std::set<TableKey> & tableRef) : name_(name),tableRef_(tableRef) {}
     virtual ValuePtr newValue() const;
-    virtual ValuePtr newValue(const ValueType&, float) const;
-    virtual ValuePtr newValue(const ValueType&, const ValueType&) const;
+
+    virtual ValuePtr newValue(const Value &, const Value &) const;
     virtual bool softValidate(const ValueType & val);
   private:
     const std::set<TableKey> & tableRef_;
@@ -177,8 +188,7 @@ namespace fs1rgen {
     BitfieldParam(const BitfieldParam &);
     BitfieldParam(const std::string & name, size_t minBit, size_t maxBit);
     virtual ValuePtr newValue() const;
-    virtual ValuePtr newValue(const ValueType&, float) const;
-    virtual ValuePtr newValue(const ValueType&, const ValueType&) const;
+    virtual ValuePtr newValue(const Value &, const Value &) const;
     virtual bool softValidate(const ValueType & val);
     virtual void setBit(int index, bool used, const std::string & name);
   private:
@@ -195,19 +205,19 @@ namespace fs1rgen {
     virtual void setParam(size_t shift, const Param & param);
     virtual bool softValidate(const ValueType & val);
     virtual ValuePtr newValue() const;
-    virtual ValuePtr newValue(const ValueType&, float) const;
-    virtual ValuePtr newValue(const ValueType&, const ValueType&) const;
+    virtual ValuePtr newValue(const Value &, const Value &) const;
   private:
     std::map<size_t,auto_ptr<Param> > params_;
   };
-
+  
   class Value {
   public:
     Value(const Param & param, const ValueType & val) throw(dataException): param_(param),val_(val) {
       param_.validate();
     }
     Value(const Value & ref) throw (dataException): val_(ref.val_), param_(ref.param_) {}
-    Value(const std::string & strval) throw (dataException);
+    Value(const Param & param, int intval) throw (dataException);
+    Value(const Param & param, const std::string & strval) throw (dataException);
     virtual operator int() const;
     virtual const operator std::string() const;
     virtual const ValueType & get() const { return val_; }
@@ -219,7 +229,7 @@ namespace fs1rgen {
   private:
     ValueType val_;
     mutable std::string string_;
-    Param param_;
+    const Param & param_;
   };
 }
 

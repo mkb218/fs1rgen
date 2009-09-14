@@ -23,14 +23,14 @@ Anyway, here is what will happen:
 
 
 TODO:
+- design model class for use with galib, create basic model for test
+- change staticHex to constParam in layout
 - finish layout.xml
 - write XSD for layout.xml
-- don't bother with perl version!
+- rethink setting and validation. validation should only be necessary when reading from disk
 
 - figure out how to send and receive sysex data in coremidi
 - need midi file version also
-- may need some sort of larger int lib if there is anything larger than 8 bytes wide that isn't a string
-- xerces xml parser in dom mode or http://developer.apple.com/documentation/Cocoa/Conceptual/NSXML_Concepts/NSXML.html
 - http://developer.apple.com/documentation/MusicAudio/Reference/CACoreMIDIRef/MIDIServices/index.html
 - http://developer.apple.com/documentation/MusicAudio/Reference/CACoreMIDIRef/MIDIServices/CompositePage.html#//apple_ref/c/tag/MIDISyse xSendRequest
 - http://developer.apple.com/documentation/MusicAudio/Reference/CACoreMIDIRef/MIDIServices/CompositePage.html#//apple_ref/c/func/MIDISendSysex
@@ -40,6 +40,9 @@ TODO:
 - hold off on fseq evolver for now
 - "link" tags mean special cases for assignment of other items of interest
 - performance effect code is going to need a different data model than the rest
+- maybe use googlemock or google test for cpp tests.
+- mmap xml file for parsing
+- orparam parser must make implicit max values for intparams
 
 workflow:
 	- startup, read xml file

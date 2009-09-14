@@ -309,9 +309,9 @@
       <intParam name="Pitch EG time 3" maxValue="0x63" />
       <intParam name="Pitch EG time 4" maxValue="0x63" />
       <intParam name="Pitch EG velocity sensitivity" maxValue="7" />
-      <typeParam name="FSEQ voiced op switch hi" >
+      <bitfieldParam name="FSEQ voiced op switch hi" >
 	<bit index="0" name="8" />
-      </typeParam>
+      </bitfieldParam>
       <bitfieldParam name="FSEQ voiced op switch lo" >
 	<bit index="6" name="7" />
 	<bit index="5" name="6" />
@@ -458,19 +458,19 @@
       <staticHex name="reserved">000000</staticHex>
       <orParam>
 	<bitShift shift="3">
-	  <intParam maxValue="freq bias sense" maxValue="0x0e" shift="-7" />
+	  <intParam name="freq bias sense" maxValue="0x0e" shift="-7" />
 	</bitShift>
 	<intParam name="pitch mod sense" maxValue="7" />
       </orParam>
       <orParam>
 	<bitShift shift="4">
-	  <intParam maxValue="freq mod sense" maxValue="0x07" />
+	  <intParam name="freq mod sense" maxValue="0x07" />
 	</bitShift>
 	<intParam name="freq velo sense" maxValue="0x0e" shift="-7" />
       </orParam>
       <orParam>
 	<bitShift shift="4">
-	  <intParam maxValue="amp mod sense" maxValue="0x07"  />
+	  <intParam name="amp mod sense" maxValue="0x07"  />
 	</bitShift>
 	<intParam name="pitch mod sense" maxValue="0x0e" shift="-7" />
       </orParam>
@@ -586,7 +586,7 @@
 	    <enumValue name="freq" value="2" />
 	    <enumValue name="width" value="3" />
 	  </enumParam>
-	</bitshift>
+	</bitShift>
 	<bitShift shift="3">
 	  <boolParam name="voicedNotUnvoiced" />
 	</bitShift>
