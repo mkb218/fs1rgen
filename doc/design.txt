@@ -20,10 +20,11 @@ Anyway, here is what will happen:
    7. At any time the user can say "Oh! this is what ! want!" and save off the patch to a safe place.
    8. The app should probably have a config file that lays out all the parameters, their limits, and dependencies. It will probably be easier to do this than to hardcode everything! 
 
-
-
 TODO:
-- design model class for use with galib, create basic model for test
+- design model class for use with galib, create basic model for testing
+- xml parser tests
+- makefile with test target
+- think about using libdispatch
 - change staticHex to constParam in layout
 - finish layout.xml
 - write XSD for layout.xml
