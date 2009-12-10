@@ -1,0 +1,251 @@
+// !$*UTF8*$!
+{
+	08FB7793FE84155DC02AAC07 /* Project object */ = {
+		activeBuildConfigurationName = Debug;
+		activeExecutable = FCD5B22010CDDC9800D120EF /* tonegen */;
+		activeTarget = 8DD76F960486AA7600D96B5E /* tonegen */;
+		addToTargets = (
+			8DD76F960486AA7600D96B5E /* tonegen */,
+		);
+		breakpoints = (
+			FCB5647B10D1321A00573E33 /* genome.cpp:68 */,
+		);
+		codeSenseManager = FCD5B22B10CDDCA600D120EF /* Code sense */;
+		executables = (
+			FCD5B22010CDDC9800D120EF /* tonegen */,
+			FCD5B24310CDE4C900D120EF /* tonegen */,
+			FCD5B24C10CDE4DA00D120EF /* tonegen */,
+		);
+		perUserDictionary = {
+			PBXConfiguration.PBXFileTableDataSource3.PBXFileTableDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					392,
+					20,
+					48,
+					43,
+					43,
+					20,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+					PBXFileDataSource_Target_ColumnID,
+				);
+			};
+			PBXPerProjectTemplateStateSaveDate = 282092308;
+			PBXWorkspaceStateSaveDate = 282092308;
+		};
+		perUserProjectItems = {
+			FCB5645410D11F2D00573E33 /* PBXTextBookmark */ = FCB5645410D11F2D00573E33 /* PBXTextBookmark */;
+			FCB5645A10D11F4F00573E33 /* PBXTextBookmark */ = FCB5645A10D11F4F00573E33 /* PBXTextBookmark */;
+			FCB5648F10D13F8100573E33 /* PBXTextBookmark */ = FCB5648F10D13F8100573E33 /* PBXTextBookmark */;
+			FCB5649010D13F8100573E33 /* PBXTextBookmark */ = FCB5649010D13F8100573E33 /* PBXTextBookmark */;
+		};
+		sourceControlManager = FCD5B22A10CDDCA600D120EF /* Source Control */;
+		userBuildSettings = {
+		};
+	};
+	08FB7796FE84155DC02AAC07 /* tonegen.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {439, 602}}";
+			sepNavSelRange = "{386, 0}";
+			sepNavVisRange = "{78, 635}";
+			sepNavWindowFrame = "{{501, 162}, {861, 716}}";
+		};
+	};
+	8DD76F960486AA7600D96B5E /* tonegen */ = {
+		activeExec = 0;
+		executables = (
+			FCD5B24C10CDE4DA00D120EF /* tonegen */,
+		);
+	};
+	FC7A844510CF0F6300E4B036 /* genetics.mm */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {802, 603}}";
+			sepNavSelRange = "{48, 0}";
+			sepNavVisRange = "{0, 393}";
+			sepNavWindowFrame = "{{453, 124}, {861, 716}}";
+		};
+	};
+	FC7A844710CF0F7300E4B036 /* genetics.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {802, 603}}";
+			sepNavSelRange = "{331, 0}";
+			sepNavVisRange = "{0, 331}";
+			sepNavWindowFrame = "{{116, 162}, {861, 716}}";
+		};
+	};
+	FC7A844F10CF144000E4B036 /* genome.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {802, 603}}";
+			sepNavSelRange = "{935, 0}";
+			sepNavVisRange = "{0, 1083}";
+			sepNavWindowFrame = "{{75, 139}, {861, 716}}";
+		};
+	};
+	FC7A845010CF144000E4B036 /* genome.cpp */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {802, 1568}}";
+			sepNavSelRange = "{2275, 31}";
+			sepNavVisRange = "{1966, 1538}";
+			sepNavWindowFrame = "{{527, 162}, {861, 716}}";
+		};
+	};
+	FCB5645410D11F2D00573E33 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = FC7A845010CF144000E4B036 /* genome.cpp */;
+		name = "genome.cpp: 11";
+		rLen = 0;
+		rLoc = 176;
+		rType = 0;
+		vrLen = 919;
+		vrLoc = 18;
+	};
+	FCB5645A10D11F4F00573E33 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		comments = "error: declaration of ‘~h2p_tonegen::Genome’ as non-function";
+		fRef = FC7A844F10CF144000E4B036 /* genome.h */;
+		rLen = 1;
+		rLoc = 32;
+		rType = 1;
+	};
+	FCB5647B10D1321A00573E33 /* genome.cpp:68 */ = {
+		isa = PBXFileBreakpoint;
+		actions = (
+		);
+		breakpointStyle = 0;
+		continueAfterActions = 0;
+		countType = 0;
+		delayBeforeContinue = 0;
+		fileReference = FC7A845010CF144000E4B036 /* genome.cpp */;
+		functionName = "Genome::Comparator(const GAGenome& left, const GAGenome& right)";
+		hitCount = 0;
+		ignoreCount = 0;
+		lineNumber = 68;
+		modificationTime = 282145752.777143;
+		state = 1;
+	};
+	FCB5648F10D13F8100573E33 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = FC7A845010CF144000E4B036 /* genome.cpp */;
+		name = "genome.cpp: 79";
+		rLen = 31;
+		rLoc = 2275;
+		rType = 0;
+		vrLen = 1538;
+		vrLoc = 1966;
+	};
+	FCB5649010D13F8100573E33 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = FC7A844F10CF144000E4B036 /* genome.h */;
+		name = "genome.h: 35";
+		rLen = 0;
+		rLoc = 935;
+		rType = 0;
+		vrLen = 1083;
+		vrLoc = 0;
+	};
+	FCD5B22010CDDC9800D120EF /* tonegen */ = {
+		isa = PBXExecutable;
+		activeArgIndices = (
+		);
+		argumentStrings = (
+		);
+		autoAttachOnCrash = 1;
+		breakpointsEnabled = 1;
+		configStateDict = {
+		};
+		customDataFormattersEnabled = 1;
+		debuggerPlugin = GDBDebugging;
+		disassemblyDisplayState = 0;
+		enableDebugStr = 1;
+		environmentEntries = (
+		);
+		executableSystemSymbolLevel = 0;
+		executableUserSymbolLevel = 0;
+		libgmallocEnabled = 0;
+		name = tonegen;
+		sourceDirectories = (
+		);
+	};
+	FCD5B22A10CDDCA600D120EF /* Source Control */ = {
+		isa = PBXSourceControlManager;
+		fallbackIsa = XCSourceControlManager;
+		isSCMEnabled = 0;
+		scmConfiguration = {
+		};
+	};
+	FCD5B22B10CDDCA600D120EF /* Code sense */ = {
+		isa = PBXCodeSenseManager;
+		indexTemplatePath = "";
+	};
+	FCD5B24310CDE4C900D120EF /* tonegen */ = {
+		isa = PBXExecutable;
+		activeArgIndices = (
+		);
+		argumentStrings = (
+		);
+		autoAttachOnCrash = 1;
+		breakpointsEnabled = 1;
+		configStateDict = {
+		};
+		customDataFormattersEnabled = 1;
+		debuggerPlugin = GDBDebugging;
+		disassemblyDisplayState = 0;
+		enableDebugStr = 1;
+		environmentEntries = (
+		);
+		executableSystemSymbolLevel = 0;
+		executableUserSymbolLevel = 0;
+		libgmallocEnabled = 0;
+		name = tonegen;
+		sourceDirectories = (
+		);
+	};
+	FCD5B24C10CDE4DA00D120EF /* tonegen */ = {
+		isa = PBXExecutable;
+		activeArgIndices = (
+		);
+		argumentStrings = (
+		);
+		autoAttachOnCrash = 1;
+		breakpointsEnabled = 1;
+		configStateDict = {
+		};
+		customDataFormattersEnabled = 1;
+		debuggerPlugin = GDBDebugging;
+		disassemblyDisplayState = 0;
+		enableDebugStr = 1;
+		environmentEntries = (
+		);
+		executableSystemSymbolLevel = 0;
+		executableUserSymbolLevel = 0;
+		libgmallocEnabled = 0;
+		name = tonegen;
+		sourceDirectories = (
+		);
+	};
+	FCD5B26E10CDEA6800D120EF /* ToneGenApp.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {519, 268}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 115}";
+			sepNavWindowFrame = "{{84, 94}, {861, 716}}";
+		};
+	};
+	FCD5B27410CDEAB000D120EF /* ToneGenApp.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {802, 603}}";
+			sepNavSelRange = "{151, 0}";
+			sepNavVisRange = "{0, 160}";
+			sepNavWindowFrame = "{{130, 52}, {861, 716}}";
+		};
+	};
+}
