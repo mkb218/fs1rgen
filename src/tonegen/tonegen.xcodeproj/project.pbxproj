@@ -14,6 +14,7 @@
 		FC0BF58510D28DFB00A2A196 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC0BF58310D28DFB00A2A196 /* AudioToolbox.framework */; };
 		FC0BF58610D28DFB00A2A196 /* AudioUnit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC0BF58410D28DFB00A2A196 /* AudioUnit.framework */; };
 		FC0BF58810D28E0700A2A196 /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC0BF58710D28E0700A2A196 /* CoreServices.framework */; };
+		FC0BF5A910D2949400A2A196 /* tester.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FC0BF5A810D2949400A2A196 /* tester.cpp */; };
 		FC7A844610CF0F6300E4B036 /* genetics.mm in Sources */ = {isa = PBXBuildFile; fileRef = FC7A844510CF0F6300E4B036 /* genetics.mm */; };
 		FC7A845110CF144000E4B036 /* genome.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FC7A845010CF144000E4B036 /* genome.cpp */; };
 		FCD5B26F10CDEA6800D120EF /* ToneGenApp.m in Sources */ = {isa = PBXBuildFile; fileRef = FCD5B26E10CDEA6800D120EF /* ToneGenApp.m */; };
@@ -42,6 +43,7 @@
 		FC0BF58310D28DFB00A2A196 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		FC0BF58410D28DFB00A2A196 /* AudioUnit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioUnit.framework; path = System/Library/Frameworks/AudioUnit.framework; sourceTree = SDKROOT; };
 		FC0BF58710D28E0700A2A196 /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = System/Library/Frameworks/CoreServices.framework; sourceTree = SDKROOT; };
+		FC0BF5A810D2949400A2A196 /* tester.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = tester.cpp; sourceTree = "<group>"; };
 		FC7A844510CF0F6300E4B036 /* genetics.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = genetics.mm; sourceTree = "<group>"; };
 		FC7A844710CF0F7300E4B036 /* genetics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = genetics.h; sourceTree = "<group>"; };
 		FC7A844F10CF144000E4B036 /* genome.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = genome.h; sourceTree = "<group>"; };
@@ -80,6 +82,7 @@
 		08FB7795FE84155DC02AAC07 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				FC0BF5A810D2949400A2A196 /* tester.cpp */,
 				32A70AAB03705E1F00C91783 /* tonegen_Prefix.pch */,
 				08FB7796FE84155DC02AAC07 /* tonegen.m */,
 				FCD5B27410CDEAB000D120EF /* ToneGenApp.h */,
@@ -167,6 +170,7 @@
 				FCD5B26F10CDEA6800D120EF /* ToneGenApp.m in Sources */,
 				FC7A844610CF0F6300E4B036 /* genetics.mm in Sources */,
 				FC7A845110CF144000E4B036 /* genome.cpp in Sources */,
+				FC0BF5A910D2949400A2A196 /* tester.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

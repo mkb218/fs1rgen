@@ -36,6 +36,7 @@ void Genome::Initializer(GAGenome& genome) {
         for (size_t i = 0; i < bytes; ++i) {
             target.wave_[i] = randombyte();
         }
+        target._evaluated = gaFalse;
     } catch (std::bad_cast & e) {
         std::cerr << "initializer was passed a non tonegen genome" << std::endl;
     }
@@ -55,7 +56,10 @@ int Genome::Mutator(GAGenome& genome, float p) {
         }
         *it ^= flipper;
     }
-    
+
+    if (count > 0) {
+        target._evaluated = gaFalse;
+    }
     return count;
 }
 
@@ -212,6 +216,7 @@ Genome::Genome(int samplerate, int samplesize, int freq) {
     samplerate_ = samplerate;
     samplesize_ = samplesize;
     freq_ = freq;
+    _evaluated = gaFalse;
 }
 
 Genome::Genome(Genome& other) {
@@ -219,15 +224,18 @@ Genome::Genome(Genome& other) {
     samplesize_ = other.samplesize_;
     freq_ = other.freq_;
     wave_ = other.wave_;
+    _evaluated = gaFalse;
 }
 
 Genome& Genome::operator=(const GAGenome & other) {
     copy(other);
+    _evaluated = gaFalse;
     return *this;
 }
  
 GAGenome * Genome::clone(GAGenome::CloneMethod method) {
-    
+    return new Genome(*this);
+}
 
 void Genome::copy(const GAGenome & other) {
     const Genome & src = dynamic_cast<const Genome&>(other);
@@ -235,6 +243,11 @@ void Genome::copy(const GAGenome & other) {
     samplesize_ = src.samplesize_;
     freq_ = src.freq_;
     wave_ = src.wave_;
+    _evaluated = gaFalse;
+}
+
+int Genome::equal(const GAGenome & other) const {
+    return Genome::Comparator(*this, other);
 }
 
 Genome::~Genome() {

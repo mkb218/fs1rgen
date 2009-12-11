@@ -29,6 +29,7 @@ namespace h2p_tonegen {
         Genome(Genome &);
         Genome& operator=(const GAGenome &);
         virtual void copy(const GAGenome &);
+        virtual int equal(const GAGenome &) const;
         virtual GAGenome * clone(GAGenome::CloneMethod);
         virtual ~Genome();
     private:
