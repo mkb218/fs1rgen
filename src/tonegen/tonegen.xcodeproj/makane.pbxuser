@@ -73,6 +73,12 @@
 			FC0BF53C10D285EF00A2A196 = FC0BF53C10D285EF00A2A196 /* PBXTextBookmark */;
 			FC0BF54010D2863B00A2A196 = FC0BF54010D2863B00A2A196 /* PBXTextBookmark */;
 			FC0BF54110D2863B00A2A196 = FC0BF54110D2863B00A2A196 /* PBXTextBookmark */;
+			FC0BF58A10D28E1D00A2A196 /* PBXBookmark */ = FC0BF58A10D28E1D00A2A196 /* PBXBookmark */;
+			FC0BF58B10D28E2400A2A196 /* PBXBookmark */ = FC0BF58B10D28E2400A2A196 /* PBXBookmark */;
+			FC0BF58E10D28E4400A2A196 /* PBXTextBookmark */ = FC0BF58E10D28E4400A2A196 /* PBXTextBookmark */;
+			FC0BF59110D28E4400A2A196 /* PBXTextBookmark */ = FC0BF59110D28E4400A2A196 /* PBXTextBookmark */;
+			FC0BF59410D28EC000A2A196 /* PBXTextBookmark */ = FC0BF59410D28EC000A2A196 /* PBXTextBookmark */;
+			FC0BF59510D28EC000A2A196 /* PBXTextBookmark */ = FC0BF59510D28EC000A2A196 /* PBXTextBookmark */;
 			FCB5645410D11F2D00573E33 = FCB5645410D11F2D00573E33 /* PBXTextBookmark */;
 			FCB5645A10D11F4F00573E33 = FCB5645A10D11F4F00573E33 /* PBXTextBookmark */;
 			FCB5648F10D13F8100573E33 = FCB5648F10D13F8100573E33 /* PBXTextBookmark */;
@@ -111,7 +117,7 @@
 		fRef = FC7A844F10CF144000E4B036 /* genome.h */;
 		name = "genome.h: 35";
 		rLen = 0;
-		rLoc = 1316;
+		rLoc = 1402;
 		rType = 0;
 		vrLen = 1083;
 		vrLoc = 0;
@@ -131,7 +137,7 @@
 		fRef = FC7A844F10CF144000E4B036 /* genome.h */;
 		name = "genome.h: 35";
 		rLen = 0;
-		rLoc = 1316;
+		rLoc = 1402;
 		rType = 0;
 		vrLen = 1083;
 		vrLoc = 0;
@@ -151,7 +157,7 @@
 		fRef = FC7A844F10CF144000E4B036 /* genome.h */;
 		name = "genome.h: 35";
 		rLen = 0;
-		rLoc = 1316;
+		rLoc = 1402;
 		rType = 0;
 		vrLen = 1083;
 		vrLoc = 0;
@@ -171,7 +177,7 @@
 		fRef = FC7A844F10CF144000E4B036 /* genome.h */;
 		name = "genome.h: 35";
 		rLen = 0;
-		rLoc = 1316;
+		rLoc = 1402;
 		rType = 0;
 		vrLen = 1083;
 		vrLoc = 0;
@@ -191,7 +197,7 @@
 		fRef = FC7A844F10CF144000E4B036 /* genome.h */;
 		name = "genome.h: 35";
 		rLen = 0;
-		rLoc = 1316;
+		rLoc = 1402;
 		rType = 0;
 		vrLen = 1083;
 		vrLoc = 0;
@@ -211,7 +217,7 @@
 		fRef = FC7A844F10CF144000E4B036 /* genome.h */;
 		name = "genome.h: 35";
 		rLen = 0;
-		rLoc = 1316;
+		rLoc = 1402;
 		rType = 0;
 		vrLen = 1083;
 		vrLoc = 0;
@@ -231,7 +237,7 @@
 		fRef = FC7A844F10CF144000E4B036 /* genome.h */;
 		name = "genome.h: 35";
 		rLen = 0;
-		rLoc = 1316;
+		rLoc = 1402;
 		rType = 0;
 		vrLen = 1083;
 		vrLoc = 0;
@@ -251,7 +257,7 @@
 		fRef = FC7A844F10CF144000E4B036 /* genome.h */;
 		name = "genome.h: 35";
 		rLen = 0;
-		rLoc = 1316;
+		rLoc = 1402;
 		rType = 0;
 		vrLen = 1083;
 		vrLoc = 0;
@@ -271,7 +277,7 @@
 		fRef = FC7A844F10CF144000E4B036 /* genome.h */;
 		name = "genome.h: 35";
 		rLen = 0;
-		rLoc = 921;
+		rLoc = 1007;
 		rType = 0;
 		vrLen = 1114;
 		vrLoc = 0;
@@ -281,7 +287,7 @@
 		fRef = FC7A844F10CF144000E4B036 /* genome.h */;
 		name = "genome.h: 35";
 		rLen = 0;
-		rLoc = 910;
+		rLoc = 996;
 		rType = 0;
 		vrLen = 1431;
 		vrLoc = 0;
@@ -311,7 +317,7 @@
 		fRef = FC7A844F10CF144000E4B036 /* genome.h */;
 		name = "genome.h: 41";
 		rLen = 0;
-		rLoc = 1315;
+		rLoc = 1401;
 		rType = 0;
 		vrLen = 1433;
 		vrLoc = 0;
@@ -331,7 +337,7 @@
 		fRef = FC7A844F10CF144000E4B036 /* genome.h */;
 		name = "genome.h: 41";
 		rLen = 0;
-		rLoc = 1315;
+		rLoc = 1401;
 		rType = 0;
 		vrLen = 1433;
 		vrLoc = 0;
@@ -341,7 +347,7 @@
 		fRef = FC7A845010CF144000E4B036 /* genome.cpp */;
 		name = "genome.cpp: 215";
 		rLen = 0;
-		rLoc = 8797;
+		rLoc = 8860;
 		rType = 0;
 		vrLen = 1915;
 		vrLoc = 6356;
@@ -351,9 +357,9 @@
 		fRef = FC7A844F10CF144000E4B036 /* genome.h */;
 		name = "genome.h: 41";
 		rLen = 0;
-		rLoc = 1315;
+		rLoc = 1401;
 		rType = 0;
-		vrLen = 1454;
+		vrLen = 1433;
 		vrLoc = 31;
 	};
 	FC0BF53B10D285EF00A2A196 /* PBXTextBookmark */ = {
@@ -361,7 +367,7 @@
 		fRef = FC7A844F10CF144000E4B036 /* genome.h */;
 		name = "genome.h: 26";
 		rLen = 0;
-		rLoc = 586;
+		rLoc = 672;
 		rType = 0;
 		vrLen = 1433;
 		vrLoc = 31;
@@ -391,10 +397,58 @@
 		fRef = FC7A844F10CF144000E4B036 /* genome.h */;
 		name = "genome.h: 26";
 		rLen = 0;
-		rLoc = 586;
+		rLoc = 672;
 		rType = 0;
 		vrLen = 1433;
 		vrLoc = 31;
+	};
+	FC0BF58A10D28E1D00A2A196 /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = FC7A845010CF144000E4B036 /* genome.cpp */;
+	};
+	FC0BF58B10D28E2400A2A196 /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = FC7A844F10CF144000E4B036 /* genome.h */;
+	};
+	FC0BF58E10D28E4400A2A196 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = FC7A845010CF144000E4B036 /* genome.cpp */;
+		name = "genome.cpp: 230";
+		rLen = 0;
+		rLoc = 8584;
+		rType = 0;
+		vrLen = 1405;
+		vrLoc = 7404;
+	};
+	FC0BF59110D28E4400A2A196 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = FC7A844F10CF144000E4B036 /* genome.h */;
+		name = "genome.h: 26";
+		rLen = 0;
+		rLoc = 672;
+		rType = 0;
+		vrLen = 1433;
+		vrLoc = 31;
+	};
+	FC0BF59410D28EC000A2A196 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = FC7A844F10CF144000E4B036 /* genome.h */;
+		name = "genome.h: 26";
+		rLen = 0;
+		rLoc = 671;
+		rType = 0;
+		vrLen = 1492;
+		vrLoc = 31;
+	};
+	FC0BF59510D28EC000A2A196 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = FC7A845010CF144000E4B036 /* genome.cpp */;
+		name = "genome.cpp: 230";
+		rLen = 0;
+		rLoc = 8584;
+		rType = 0;
+		vrLen = 1405;
+		vrLoc = 7404;
 	};
 	FC7A844510CF0F6300E4B036 /* genetics.mm */ = {
 		uiCtxt = {
@@ -414,17 +468,17 @@
 	};
 	FC7A844F10CF144000E4B036 /* genome.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {802, 672}}";
-			sepNavSelRange = "{586, 0}";
-			sepNavVisRange = "{31, 1433}";
+			sepNavIntBoundsRect = "{{0, 0}, {802, 686}}";
+			sepNavSelRange = "{671, 0}";
+			sepNavVisRange = "{31, 1492}";
 			sepNavWindowFrame = "{{75, 139}, {861, 716}}";
 		};
 	};
 	FC7A845010CF144000E4B036 /* genome.cpp */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {802, 3122}}";
-			sepNavSelRange = "{8346, 0}";
-			sepNavVisRange = "{6669, 1736}";
+			sepNavIntBoundsRect = "{{0, 0}, {802, 3304}}";
+			sepNavSelRange = "{8584, 0}";
+			sepNavVisRange = "{7404, 1405}";
 			sepNavWindowFrame = "{{527, 162}, {861, 716}}";
 		};
 	};
@@ -443,7 +497,7 @@
 		comments = "error: declaration of ‘~h2p_tonegen::Genome’ as non-function";
 		fRef = FC7A844F10CF144000E4B036 /* genome.h */;
 		rLen = 1;
-		rLoc = 31;
+		rLoc = 32;
 		rType = 1;
 	};
 	FCB5647B10D1321A00573E33 /* genome.cpp:72 */ = {
@@ -477,7 +531,7 @@
 		fRef = FC7A844F10CF144000E4B036 /* genome.h */;
 		name = "genome.h: 35";
 		rLen = 0;
-		rLoc = 1316;
+		rLoc = 1402;
 		rType = 0;
 		vrLen = 1083;
 		vrLoc = 0;

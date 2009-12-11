@@ -226,6 +226,9 @@ Genome& Genome::operator=(const GAGenome & other) {
     return *this;
 }
  
+GAGenome * Genome::clone(GAGenome::CloneMethod method) {
+    
+
 void Genome::copy(const GAGenome & other) {
     const Genome & src = dynamic_cast<const Genome&>(other);
     samplerate_ = src.samplerate_;

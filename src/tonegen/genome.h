@@ -23,6 +23,7 @@ namespace h2p_tonegen {
         static int Mutator(GAGenome&, float);
         static float Comparator(const GAGenome&, const GAGenome&);
         static float Evaluator(GAGenome&);
+        static int Crossover(const GAGenome&, const GAGenome&, GAGenome*, GAGenome*);
     public:
         Genome(int samplerate = 44100, int samplesize = 2, int freq = 440);
         Genome(Genome &);
