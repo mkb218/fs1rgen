@@ -23,7 +23,6 @@ namespace h2p_tonegen {
         static int Mutator(GAGenome&, float);
         static float Comparator(const GAGenome&, const GAGenome&);
         static float Evaluator(GAGenome&);
-        static void PathInitializer(GAGenome&);
     public:
         Genome(int samplerate = 44100, int samplesize = 2, int freq = 440);
         Genome(Genome &);
@@ -32,6 +31,13 @@ namespace h2p_tonegen {
         virtual GAGenome * clone(GAGenome::CloneMethod);
         virtual ~Genome();
     private:
+        static OSStatus playSample(void 				*inRefCon, 
+                                AudioUnitRenderActionFlags 	*ioActionFlags, 
+                                const AudioTimeStamp 		*inTimeStamp, 
+                                UInt32 						inBusNumber, 
+                                UInt32 						inNumberFrames, 
+                                AudioBufferList 			*ioData);
+        static void playTheSample(Genome&);
         int samplerate_;
         int samplesize_;
         int freq_;
