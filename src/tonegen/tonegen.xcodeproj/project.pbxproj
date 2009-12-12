@@ -14,10 +14,17 @@
 		FC0BF58510D28DFB00A2A196 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC0BF58310D28DFB00A2A196 /* AudioToolbox.framework */; };
 		FC0BF58610D28DFB00A2A196 /* AudioUnit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC0BF58410D28DFB00A2A196 /* AudioUnit.framework */; };
 		FC0BF58810D28E0700A2A196 /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC0BF58710D28E0700A2A196 /* CoreServices.framework */; };
-		FC0BF5A910D2949400A2A196 /* tester.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FC0BF5A810D2949400A2A196 /* tester.cpp */; };
+		FC55203210D305ED00841204 /* genome.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FC7A845010CF144000E4B036 /* genome.cpp */; };
+		FC55203310D305ED00841204 /* tester.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FC0BF5A810D2949400A2A196 /* tester.cpp */; };
+		FC55203510D305ED00841204 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC0BF57F10D28DD300A2A196 /* CoreAudio.framework */; };
+		FC55203610D305ED00841204 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC0BF58010D28DD300A2A196 /* Foundation.framework */; };
+		FC55203710D305ED00841204 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC0BF58310D28DFB00A2A196 /* AudioToolbox.framework */; };
+		FC55203810D305ED00841204 /* AudioUnit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC0BF58410D28DFB00A2A196 /* AudioUnit.framework */; };
+		FC55203910D305ED00841204 /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC0BF58710D28E0700A2A196 /* CoreServices.framework */; };
+		FC55203B10D305ED00841204 /* tonegen.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = C6859EA3029092ED04C91782 /* tonegen.1 */; };
+		FC55205D10D307D500841204 /* ToneGenApp.mm in Sources */ = {isa = PBXBuildFile; fileRef = FC55205C10D307D500841204 /* ToneGenApp.mm */; };
 		FC7A844610CF0F6300E4B036 /* genetics.mm in Sources */ = {isa = PBXBuildFile; fileRef = FC7A844510CF0F6300E4B036 /* genetics.mm */; };
 		FC7A845110CF144000E4B036 /* genome.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FC7A845010CF144000E4B036 /* genome.cpp */; };
-		FCD5B26F10CDEA6800D120EF /* ToneGenApp.m in Sources */ = {isa = PBXBuildFile; fileRef = FCD5B26E10CDEA6800D120EF /* ToneGenApp.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,6 +35,16 @@
 			dstSubfolderSpec = 0;
 			files = (
 				8DD76F9F0486AA7600D96B5E /* tonegen.1 in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		FC55203A10D305ED00841204 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 8;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+				FC55203B10D305ED00841204 /* tonegen.1 in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
@@ -43,12 +60,13 @@
 		FC0BF58310D28DFB00A2A196 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		FC0BF58410D28DFB00A2A196 /* AudioUnit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioUnit.framework; path = System/Library/Frameworks/AudioUnit.framework; sourceTree = SDKROOT; };
 		FC0BF58710D28E0700A2A196 /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = System/Library/Frameworks/CoreServices.framework; sourceTree = SDKROOT; };
-		FC0BF5A810D2949400A2A196 /* tester.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = tester.cpp; sourceTree = "<group>"; };
+		FC0BF5A810D2949400A2A196 /* tester.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; path = tester.cpp; sourceTree = "<group>"; };
+		FC55203F10D305ED00841204 /* tonegen */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = tonegen; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC55205C10D307D500841204 /* ToneGenApp.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ToneGenApp.mm; sourceTree = "<group>"; };
 		FC7A844510CF0F6300E4B036 /* genetics.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = genetics.mm; sourceTree = "<group>"; };
 		FC7A844710CF0F7300E4B036 /* genetics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = genetics.h; sourceTree = "<group>"; };
 		FC7A844F10CF144000E4B036 /* genome.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = genome.h; sourceTree = "<group>"; };
 		FC7A845010CF144000E4B036 /* genome.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = genome.cpp; sourceTree = "<group>"; };
-		FCD5B26E10CDEA6800D120EF /* ToneGenApp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ToneGenApp.m; sourceTree = "<group>"; };
 		FCD5B27410CDEAB000D120EF /* ToneGenApp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ToneGenApp.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -62,6 +80,18 @@
 				FC0BF58510D28DFB00A2A196 /* AudioToolbox.framework in Frameworks */,
 				FC0BF58610D28DFB00A2A196 /* AudioUnit.framework in Frameworks */,
 				FC0BF58810D28E0700A2A196 /* CoreServices.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC55203410D305ED00841204 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC55203510D305ED00841204 /* CoreAudio.framework in Frameworks */,
+				FC55203610D305ED00841204 /* Foundation.framework in Frameworks */,
+				FC55203710D305ED00841204 /* AudioToolbox.framework in Frameworks */,
+				FC55203810D305ED00841204 /* AudioUnit.framework in Frameworks */,
+				FC55203910D305ED00841204 /* CoreServices.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,11 +112,11 @@
 		08FB7795FE84155DC02AAC07 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				FC55205C10D307D500841204 /* ToneGenApp.mm */,
 				FC0BF5A810D2949400A2A196 /* tester.cpp */,
 				32A70AAB03705E1F00C91783 /* tonegen_Prefix.pch */,
 				08FB7796FE84155DC02AAC07 /* tonegen.m */,
 				FCD5B27410CDEAB000D120EF /* ToneGenApp.h */,
-				FCD5B26E10CDEA6800D120EF /* ToneGenApp.m */,
 				FC7A844510CF0F6300E4B036 /* genetics.mm */,
 				FC7A844710CF0F7300E4B036 /* genetics.h */,
 				FC7A844F10CF144000E4B036 /* genome.h */,
@@ -99,6 +129,7 @@
 			isa = PBXGroup;
 			children = (
 				8DD76FA10486AA7600D96B5E /* tonegen */,
+				FC55203F10D305ED00841204 /* tonegen */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -144,6 +175,24 @@
 			productReference = 8DD76FA10486AA7600D96B5E /* tonegen */;
 			productType = "com.apple.product-type.tool";
 		};
+		FC55202D10D305ED00841204 /* tonegen test */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FC55203C10D305ED00841204 /* Build configuration list for PBXNativeTarget "tonegen test" */;
+			buildPhases = (
+				FC55202E10D305ED00841204 /* Sources */,
+				FC55203410D305ED00841204 /* Frameworks */,
+				FC55203A10D305ED00841204 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "tonegen test";
+			productInstallPath = "$(HOME)/bin";
+			productName = tonegen;
+			productReference = FC55203F10D305ED00841204 /* tonegen */;
+			productType = "com.apple.product-type.tool";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -157,6 +206,7 @@
 			projectRoot = "";
 			targets = (
 				8DD76F960486AA7600D96B5E /* tonegen */,
+				FC55202D10D305ED00841204 /* tonegen test */,
 			);
 		};
 /* End PBXProject section */
@@ -167,10 +217,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				8DD76F9A0486AA7600D96B5E /* tonegen.m in Sources */,
-				FCD5B26F10CDEA6800D120EF /* ToneGenApp.m in Sources */,
 				FC7A844610CF0F6300E4B036 /* genetics.mm in Sources */,
 				FC7A845110CF144000E4B036 /* genome.cpp in Sources */,
-				FC0BF5A910D2949400A2A196 /* tester.cpp in Sources */,
+				FC55205D10D307D500841204 /* ToneGenApp.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC55202E10D305ED00841204 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC55203210D305ED00841204 /* genome.cpp in Sources */,
+				FC55203310D305ED00841204 /* tester.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -239,6 +297,42 @@
 			};
 			name = Release;
 		};
+		FC55203D10D305ED00841204 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = tonegen_Prefix.pch;
+				HEADER_SEARCH_PATHS = ../../../galib247;
+				INSTALL_PATH = /usr/local/bin;
+				LIBRARY_SEARCH_PATHS = ../../../galib247/ga;
+				OTHER_LDFLAGS = "-lga";
+				PRODUCT_NAME = tonegen;
+				USER_HEADER_SEARCH_PATHS = galib247;
+			};
+			name = Debug;
+		};
+		FC55203E10D305ED00841204 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = tonegen_Prefix.pch;
+				HEADER_SEARCH_PATHS = ../../../galib247;
+				INSTALL_PATH = /usr/local/bin;
+				LIBRARY_SEARCH_PATHS = ../../../galib247/ga;
+				OTHER_LDFLAGS = "-lga";
+				PRODUCT_NAME = tonegen;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -256,6 +350,15 @@
 			buildConfigurations = (
 				1DEB927908733DD40010E9CD /* Debug */,
 				1DEB927A08733DD40010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FC55203C10D305ED00841204 /* Build configuration list for PBXNativeTarget "tonegen test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC55203D10D305ED00841204 /* Debug */,
+				FC55203E10D305ED00841204 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

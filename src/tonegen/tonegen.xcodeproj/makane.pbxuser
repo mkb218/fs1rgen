@@ -8,21 +8,51 @@
 			8DD76F960486AA7600D96B5E /* tonegen */,
 		);
 		breakpoints = (
-			FCB5647B10D1321A00573E33 /* genome.cpp:76 */,
+			FCB5647B10D1321A00573E33 /* genome.cpp:80 */,
+			FC551FF210D302A400841204 /* genome.cpp:88 */,
+			FC551FF610D302EC00841204 /* genome.cpp:149 */,
+			FC551FF910D3032500841204 /* genome.cpp:155 */,
+			FC55200010D303AD00841204 /* genome.cpp:32 */,
+			FC55200510D303D500841204 /* genome.cpp:34 */,
 		);
 		codeSenseManager = FCD5B22B10CDDCA600D120EF /* Code sense */;
 		executables = (
 			FCD5B22010CDDC9800D120EF /* tonegen */,
 			FCD5B24310CDE4C900D120EF /* tonegen */,
 			FCD5B24C10CDE4DA00D120EF /* tonegen */,
+			FC55204010D305ED00841204 /* tonegen test */,
 		);
 		perUserDictionary = {
+			"PBXConfiguration.PBXBreakpointsDataSource.v1:1CA1AED706398EBD00589147" = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXBreakpointsDataSource_BreakpointID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					20,
+					198,
+					20,
+					99,
+					99,
+					29,
+					20,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXBreakpointsDataSource_ActionID,
+					PBXBreakpointsDataSource_TypeID,
+					PBXBreakpointsDataSource_BreakpointID,
+					PBXBreakpointsDataSource_UseID,
+					PBXBreakpointsDataSource_LocationID,
+					PBXBreakpointsDataSource_ConditionID,
+					PBXBreakpointsDataSource_IgnoreCountID,
+					PBXBreakpointsDataSource_ContinueID,
+				);
+			};
 			PBXConfiguration.PBXFileTableDataSource3.PBXFileTableDataSource = {
 				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
 				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
 				PBXFileTableDataSourceColumnWidthsKey = (
 					20,
-					392,
+					315,
 					20,
 					48,
 					43,
@@ -39,8 +69,51 @@
 					PBXFileDataSource_Target_ColumnID,
 				);
 			};
-			PBXPerProjectTemplateStateSaveDate = 282233698;
-			PBXWorkspaceStateSaveDate = 282233698;
+			PBXPerProjectTemplateStateSaveDate = 282263704;
+			PBXWorkspaceStateSaveDate = 282263704;
+		};
+		perUserProjectItems = {
+			FC551FB510D300D300841204 /* PBXBookmark */ = FC551FB510D300D300841204 /* PBXBookmark */;
+			FC551FB710D300EB00841204 /* PBXBookmark */ = FC551FB710D300EB00841204 /* PBXBookmark */;
+			FC551FD210D3013900841204 /* PBXTextBookmark */ = FC551FD210D3013900841204 /* PBXTextBookmark */;
+			FC551FD510D3013900841204 /* PBXTextBookmark */ = FC551FD510D3013900841204 /* PBXTextBookmark */;
+			FC551FD810D3013900841204 /* PBXTextBookmark */ = FC551FD810D3013900841204 /* PBXTextBookmark */;
+			FC551FD910D3013900841204 /* PBXTextBookmark */ = FC551FD910D3013900841204 /* PBXTextBookmark */;
+			FC551FE510D3024000841204 /* PBXTextBookmark */ = FC551FE510D3024000841204 /* PBXTextBookmark */;
+			FC551FE610D3024000841204 /* PBXTextBookmark */ = FC551FE610D3024000841204 /* PBXTextBookmark */;
+			FC551FE710D3024000841204 /* PBXTextBookmark */ = FC551FE710D3024000841204 /* PBXTextBookmark */;
+			FC551FE810D3024000841204 /* PBXTextBookmark */ = FC551FE810D3024000841204 /* PBXTextBookmark */;
+			FC55200F10D3045700841204 /* PBXTextBookmark */ = FC55200F10D3045700841204 /* PBXTextBookmark */;
+			FC55201010D3045700841204 /* PBXTextBookmark */ = FC55201010D3045700841204 /* PBXTextBookmark */;
+			FC55201110D3045700841204 /* PBXTextBookmark */ = FC55201110D3045700841204 /* PBXTextBookmark */;
+			FC55204510D3064600841204 /* PBXBookmark */ = FC55204510D3064600841204 /* PBXBookmark */;
+			FC55205210D307C000841204 /* PBXTextBookmark */ = FC55205210D307C000841204 /* PBXTextBookmark */;
+			FC55205310D307C000841204 /* PBXTextBookmark */ = FC55205310D307C000841204 /* PBXTextBookmark */;
+			FC55205410D307C000841204 /* PBXTextBookmark */ = FC55205410D307C000841204 /* PBXTextBookmark */;
+			FC55205510D307C000841204 /* PBXTextBookmark */ = FC55205510D307C000841204 /* PBXTextBookmark */;
+			FC55205610D307C000841204 /* PBXTextBookmark */ = FC55205610D307C000841204 /* PBXTextBookmark */;
+			FC55205910D307C000841204 /* PBXTextBookmark */ = FC55205910D307C000841204 /* PBXTextBookmark */;
+			FC55205E10D307E700841204 /* PBXBookmark */ = FC55205E10D307E700841204 /* PBXBookmark */;
+			FC55205F10D3084C00841204 /* PBXBookmark */ = FC55205F10D3084C00841204 /* PBXBookmark */;
+			FC55206310D3088300841204 /* PBXTextBookmark */ = FC55206310D3088300841204 /* PBXTextBookmark */;
+			FC55206410D3088300841204 /* PBXTextBookmark */ = FC55206410D3088300841204 /* PBXTextBookmark */;
+			FC55206510D3088300841204 /* PBXTextBookmark */ = FC55206510D3088300841204 /* PBXTextBookmark */;
+			FC55206610D3088300841204 /* PBXTextBookmark */ = FC55206610D3088300841204 /* PBXTextBookmark */;
+			FC55206910D3088300841204 /* PBXTextBookmark */ = FC55206910D3088300841204 /* PBXTextBookmark */;
+			FC55206A10D3088300841204 /* PBXTextBookmark */ = FC55206A10D3088300841204 /* PBXTextBookmark */;
+			FC55206B10D3088300841204 /* PBXTextBookmark */ = FC55206B10D3088300841204 /* PBXTextBookmark */;
+			FC55206C10D308BC00841204 /* PBXTextBookmark */ = FC55206C10D308BC00841204 /* PBXTextBookmark */;
+			FC55206D10D308BC00841204 /* PBXTextBookmark */ = FC55206D10D308BC00841204 /* PBXTextBookmark */;
+			FC55206E10D308BC00841204 /* PBXTextBookmark */ = FC55206E10D308BC00841204 /* PBXTextBookmark */;
+			FC55206F10D308BC00841204 /* PBXTextBookmark */ = FC55206F10D308BC00841204 /* PBXTextBookmark */;
+			FC55207010D308BC00841204 /* PBXTextBookmark */ = FC55207010D308BC00841204 /* PBXTextBookmark */;
+			FC55207110D308BC00841204 /* PBXTextBookmark */ = FC55207110D308BC00841204 /* PBXTextBookmark */;
+			FC55207210D3097800841204 /* PBXTextBookmark */ = FC55207210D3097800841204 /* PBXTextBookmark */;
+			FC55207310D3097800841204 /* PBXTextBookmark */ = FC55207310D3097800841204 /* PBXTextBookmark */;
+			FC55207410D3097800841204 /* PBXTextBookmark */ = FC55207410D3097800841204 /* PBXTextBookmark */;
+			FC55207510D3097800841204 /* PBXTextBookmark */ = FC55207510D3097800841204 /* PBXTextBookmark */;
+			FC55207610D3097800841204 /* PBXTextBookmark */ = FC55207610D3097800841204 /* PBXTextBookmark */;
+			FC55207710D3097800841204 /* PBXTextBookmark */ = FC55207710D3097800841204 /* PBXTextBookmark */;
 		};
 		sourceControlManager = FCD5B22A10CDDCA600D120EF /* Source Control */;
 		userBuildSettings = {
@@ -48,9 +121,9 @@
 	};
 	08FB7796FE84155DC02AAC07 /* tonegen.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {439, 602}}";
-			sepNavSelRange = "{386, 0}";
-			sepNavVisRange = "{78, 635}";
+			sepNavIntBoundsRect = "{{0, 0}, {802, 603}}";
+			sepNavSelRange = "{1191, 0}";
+			sepNavVisRange = "{0, 1191}";
 			sepNavWindowFrame = "{{501, 162}, {861, 716}}";
 		};
 	};
@@ -63,10 +136,513 @@
 	FC0BF5A810D2949400A2A196 /* tester.cpp */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {802, 603}}";
-			sepNavSelRange = "{158, 0}";
-			sepNavVisRange = "{0, 1140}";
+			sepNavSelRange = "{215, 0}";
+			sepNavVisRange = "{0, 215}";
 			sepNavWindowFrame = "{{15, 157}, {861, 716}}";
 		};
+	};
+	FC551FB510D300D300841204 /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = FC7A844F10CF144000E4B036 /* genome.h */;
+	};
+	FC551FB710D300EB00841204 /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = 08FB7796FE84155DC02AAC07 /* tonegen.m */;
+	};
+	FC551FD210D3013900841204 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 08FB7796FE84155DC02AAC07 /* tonegen.m */;
+		name = "tonegen.m: 5";
+		rLen = 0;
+		rLoc = 82;
+		rType = 0;
+		vrLen = 1458;
+		vrLoc = 0;
+	};
+	FC551FD510D3013900841204 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = FC7A844F10CF144000E4B036 /* genome.h */;
+		name = "genome.h: 27";
+		rLen = 0;
+		rLoc = 683;
+		rType = 0;
+		vrLen = 1543;
+		vrLoc = 28;
+	};
+	FC551FD810D3013900841204 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = FC0BF5A810D2949400A2A196 /* tester.cpp */;
+		name = "tester.cpp: 7";
+		rLen = 0;
+		rLoc = 196;
+		rType = 0;
+		vrLen = 1140;
+		vrLoc = 0;
+	};
+	FC551FD910D3013900841204 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = FC0BF5A810D2949400A2A196 /* tester.cpp */;
+		name = "tester.cpp: 7";
+		rLen = 0;
+		rLoc = 196;
+		rType = 0;
+		vrLen = 182;
+		vrLoc = 0;
+	};
+	FC551FDC10D3019300841204 /* tonegen */ = {
+		isa = PBXFileReference;
+		lastKnownFileType = "compiled.mach-o.executable";
+		name = tonegen;
+		path = build/Debug/tonegen;
+		sourceTree = SOURCE_ROOT;
+	};
+	FC551FE510D3024000841204 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = FC0BF5A810D2949400A2A196 /* tester.cpp */;
+		name = "tester.cpp: 7";
+		rLen = 0;
+		rLoc = 196;
+		rType = 0;
+		vrLen = 182;
+		vrLoc = 0;
+	};
+	FC551FE610D3024000841204 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = FC0BF5A810D2949400A2A196 /* tester.cpp */;
+		name = "tester.cpp: 13";
+		rLen = 0;
+		rLoc = 215;
+		rType = 0;
+		vrLen = 215;
+		vrLoc = 0;
+	};
+	FC551FE710D3024000841204 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 08FB7796FE84155DC02AAC07 /* tonegen.m */;
+		name = "tonegen.m: 22";
+		rLen = 0;
+		rLoc = 723;
+		rType = 0;
+		vrLen = 1442;
+		vrLoc = 0;
+	};
+	FC551FE810D3024000841204 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = FC7A844F10CF144000E4B036 /* genome.h */;
+		name = "genome.h: 27";
+		rLen = 0;
+		rLoc = 683;
+		rType = 0;
+		vrLen = 1536;
+		vrLoc = 28;
+	};
+	FC551FF210D302A400841204 /* genome.cpp:88 */ = {
+		isa = PBXFileBreakpoint;
+		actions = (
+		);
+		breakpointStyle = 0;
+		continueAfterActions = 0;
+		countType = 0;
+		delayBeforeContinue = 0;
+		fileReference = FC7A845010CF144000E4B036 /* genome.cpp */;
+		functionName = "Genome::Evaluator(GAGenome& target)";
+		hitCount = 0;
+		ignoreCount = 0;
+		lineNumber = 88;
+		modificationTime = 282264620.792907;
+		state = 1;
+	};
+	FC551FF610D302EC00841204 /* genome.cpp:149 */ = {
+		isa = PBXFileBreakpoint;
+		actions = (
+		);
+		breakpointStyle = 0;
+		continueAfterActions = 0;
+		countType = 0;
+		delayBeforeContinue = 0;
+		fileReference = FC7A845010CF144000E4B036 /* genome.cpp */;
+		functionName = "Genome::playSample(void *inRefCon, AudioUnitRenderActionFlags *ioActionFlags, const AudioTimeStamp *inTimeStamp, UInt32 inBusNumber, UInt32 inNumberFrames, AudioBufferList *ioData)";
+		hitCount = 0;
+		ignoreCount = 0;
+		lineNumber = 149;
+		modificationTime = 282264613.122204;
+		state = 2;
+	};
+	FC551FF910D3032500841204 /* genome.cpp:155 */ = {
+		isa = PBXFileBreakpoint;
+		actions = (
+		);
+		breakpointStyle = 0;
+		continueAfterActions = 0;
+		countType = 0;
+		delayBeforeContinue = 0;
+		fileReference = FC7A845010CF144000E4B036 /* genome.cpp */;
+		functionName = "Genome::playSample(void *inRefCon, AudioUnitRenderActionFlags *ioActionFlags, const AudioTimeStamp *inTimeStamp, UInt32 inBusNumber, UInt32 inNumberFrames, AudioBufferList *ioData)";
+		hitCount = 0;
+		ignoreCount = 0;
+		lineNumber = 155;
+		modificationTime = 282264620.794881;
+		state = 1;
+	};
+	FC55200010D303AD00841204 /* genome.cpp:32 */ = {
+		isa = PBXFileBreakpoint;
+		actions = (
+		);
+		breakpointStyle = 0;
+		continueAfterActions = 0;
+		countType = 0;
+		delayBeforeContinue = 0;
+		fileReference = FC7A845010CF144000E4B036 /* genome.cpp */;
+		functionName = "Genome::Initializer(GAGenome& genome)";
+		hitCount = 0;
+		ignoreCount = 0;
+		lineNumber = 32;
+		modificationTime = 282264620.79533;
+		state = 1;
+	};
+	FC55200510D303D500841204 /* genome.cpp:34 */ = {
+		isa = PBXFileBreakpoint;
+		actions = (
+		);
+		breakpointStyle = 0;
+		continueAfterActions = 0;
+		countType = 0;
+		delayBeforeContinue = 0;
+		fileReference = FC7A845010CF144000E4B036 /* genome.cpp */;
+		functionName = "Genome::Initializer(GAGenome& genome)";
+		hitCount = 0;
+		ignoreCount = 0;
+		lineNumber = 34;
+		modificationTime = 282264620.793991;
+		state = 1;
+	};
+	FC55200F10D3045700841204 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = FC0BF5A810D2949400A2A196 /* tester.cpp */;
+		name = "tester.cpp: 13";
+		rLen = 0;
+		rLoc = 215;
+		rType = 0;
+		vrLen = 215;
+		vrLoc = 0;
+	};
+	FC55201010D3045700841204 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 08FB7796FE84155DC02AAC07 /* tonegen.m */;
+		name = "tonegen.m: 22";
+		rLen = 0;
+		rLoc = 723;
+		rType = 0;
+		vrLen = 1458;
+		vrLoc = 0;
+	};
+	FC55201110D3045700841204 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = FC7A844F10CF144000E4B036 /* genome.h */;
+		name = "genome.h: 27";
+		rLen = 0;
+		rLoc = 683;
+		rType = 0;
+		vrLen = 1543;
+		vrLoc = 28;
+	};
+	FC55202D10D305ED00841204 /* tonegen test */ = {
+		activeExec = 0;
+		executables = (
+			FC55204010D305ED00841204 /* tonegen test */,
+		);
+	};
+	FC55204010D305ED00841204 /* tonegen test */ = {
+		isa = PBXExecutable;
+		activeArgIndices = (
+		);
+		argumentStrings = (
+		);
+		autoAttachOnCrash = 1;
+		breakpointsEnabled = 1;
+		configStateDict = {
+		};
+		customDataFormattersEnabled = 1;
+		debuggerPlugin = GDBDebugging;
+		disassemblyDisplayState = 0;
+		enableDebugStr = 1;
+		environmentEntries = (
+		);
+		executableSystemSymbolLevel = 0;
+		executableUserSymbolLevel = 0;
+		libgmallocEnabled = 0;
+		name = "tonegen test";
+		sourceDirectories = (
+		);
+	};
+	FC55204510D3064600841204 /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = FCD5B27410CDEAB000D120EF /* ToneGenApp.h */;
+	};
+	FC55205210D307C000841204 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 08FB7796FE84155DC02AAC07 /* tonegen.m */;
+		name = "tonegen.m: 22";
+		rLen = 0;
+		rLoc = 723;
+		rType = 0;
+		vrLen = 1458;
+		vrLoc = 0;
+	};
+	FC55205310D307C000841204 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 08FB7796FE84155DC02AAC07 /* tonegen.m */;
+		name = "tonegen.m: 33";
+		rLen = 57;
+		rLoc = 1087;
+		rType = 0;
+		vrLen = 1191;
+		vrLoc = 0;
+	};
+	FC55205410D307C000841204 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = FC0BF5A810D2949400A2A196 /* tester.cpp */;
+		name = "tester.cpp: 13";
+		rLen = 0;
+		rLoc = 215;
+		rType = 0;
+		vrLen = 215;
+		vrLoc = 0;
+	};
+	FC55205510D307C000841204 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = FC0BF5A810D2949400A2A196 /* tester.cpp */;
+		name = "tester.cpp: 13";
+		rLen = 0;
+		rLoc = 215;
+		rType = 0;
+		vrLen = 215;
+		vrLoc = 0;
+	};
+	FC55205610D307C000841204 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = FC7A844F10CF144000E4B036 /* genome.h */;
+		name = "genome.h: 25";
+		rLen = 0;
+		rLoc = 585;
+		rType = 0;
+		vrLen = 1526;
+		vrLoc = 75;
+	};
+	FC55205910D307C000841204 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = FCD5B27410CDEAB000D120EF /* ToneGenApp.h */;
+		name = "ToneGenApp.h: 14";
+		rLen = 85;
+		rLoc = 154;
+		rType = 0;
+		vrLen = 245;
+		vrLoc = 0;
+	};
+	FC55205C10D307D500841204 /* ToneGenApp.mm */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {802, 603}}";
+			sepNavSelRange = "{219, 0}";
+			sepNavVisRange = "{0, 228}";
+		};
+	};
+	FC55205E10D307E700841204 /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = FC55205C10D307D500841204 /* ToneGenApp.mm */;
+	};
+	FC55205F10D3084C00841204 /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = FC7A845010CF144000E4B036 /* genome.cpp */;
+	};
+	FC55206310D3088300841204 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = FC7A845010CF144000E4B036 /* genome.cpp */;
+		name = "genome.cpp: 220";
+		rLen = 0;
+		rLoc = 8619;
+		rType = 0;
+		vrLen = 1499;
+		vrLoc = 7621;
+	};
+	FC55206410D3088300841204 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = FC7A844F10CF144000E4B036 /* genome.h */;
+		name = "genome.h: 25";
+		rLen = 0;
+		rLoc = 585;
+		rType = 0;
+		vrLen = 1526;
+		vrLoc = 75;
+	};
+	FC55206510D3088300841204 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = FC7A844F10CF144000E4B036 /* genome.h */;
+		name = "genome.h: 25";
+		rLen = 0;
+		rLoc = 585;
+		rType = 0;
+		vrLen = 1526;
+		vrLoc = 75;
+	};
+	FC55206610D3088300841204 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 08FB7796FE84155DC02AAC07 /* tonegen.m */;
+		name = "tonegen.m: 38";
+		rLen = 0;
+		rLoc = 1191;
+		rType = 0;
+		vrLen = 1191;
+		vrLoc = 0;
+	};
+	FC55206910D3088300841204 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = FC55205C10D307D500841204 /* ToneGenApp.mm */;
+		name = "ToneGenApp.mm: 13";
+		rLen = 0;
+		rLoc = 219;
+		rType = 0;
+		vrLen = 228;
+		vrLoc = 0;
+	};
+	FC55206A10D3088300841204 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = FC0BF5A810D2949400A2A196 /* tester.cpp */;
+		name = "tester.cpp: 13";
+		rLen = 0;
+		rLoc = 215;
+		rType = 0;
+		vrLen = 215;
+		vrLoc = 0;
+	};
+	FC55206B10D3088300841204 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = FCD5B27410CDEAB000D120EF /* ToneGenApp.h */;
+		name = "ToneGenApp.h: 14";
+		rLen = 85;
+		rLoc = 154;
+		rType = 0;
+		vrLen = 245;
+		vrLoc = 0;
+	};
+	FC55206C10D308BC00841204 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = FC7A845010CF144000E4B036 /* genome.cpp */;
+		name = "genome.cpp: 266";
+		rLen = 0;
+		rLoc = 9716;
+		rType = 0;
+		vrLen = 978;
+		vrLoc = 8704;
+	};
+	FC55206D10D308BC00841204 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = FC7A844F10CF144000E4B036 /* genome.h */;
+		name = "genome.h: 26";
+		rLen = 56;
+		rLoc = 614;
+		rType = 0;
+		vrLen = 1526;
+		vrLoc = 75;
+	};
+	FC55206E10D308BC00841204 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 08FB7796FE84155DC02AAC07 /* tonegen.m */;
+		name = "tonegen.m: 38";
+		rLen = 0;
+		rLoc = 1191;
+		rType = 0;
+		vrLen = 1191;
+		vrLoc = 0;
+	};
+	FC55206F10D308BC00841204 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = FC55205C10D307D500841204 /* ToneGenApp.mm */;
+		name = "ToneGenApp.mm: 13";
+		rLen = 0;
+		rLoc = 219;
+		rType = 0;
+		vrLen = 228;
+		vrLoc = 0;
+	};
+	FC55207010D308BC00841204 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = FC0BF5A810D2949400A2A196 /* tester.cpp */;
+		name = "tester.cpp: 13";
+		rLen = 0;
+		rLoc = 215;
+		rType = 0;
+		vrLen = 215;
+		vrLoc = 0;
+	};
+	FC55207110D308BC00841204 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = FCD5B27410CDEAB000D120EF /* ToneGenApp.h */;
+		name = "ToneGenApp.h: 14";
+		rLen = 85;
+		rLoc = 154;
+		rType = 0;
+		vrLen = 245;
+		vrLoc = 0;
+	};
+	FC55207210D3097800841204 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = FC7A845010CF144000E4B036 /* genome.cpp */;
+		name = "genome.cpp: 277";
+		rLen = 0;
+		rLoc = 10060;
+		rType = 0;
+		vrLen = 1123;
+		vrLoc = 8937;
+	};
+	FC55207310D3097800841204 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = FC7A844F10CF144000E4B036 /* genome.h */;
+		name = "genome.h: 26";
+		rLen = 56;
+		rLoc = 614;
+		rType = 0;
+		vrLen = 1526;
+		vrLoc = 75;
+	};
+	FC55207410D3097800841204 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 08FB7796FE84155DC02AAC07 /* tonegen.m */;
+		name = "tonegen.m: 38";
+		rLen = 0;
+		rLoc = 1191;
+		rType = 0;
+		vrLen = 1191;
+		vrLoc = 0;
+	};
+	FC55207510D3097800841204 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = FC55205C10D307D500841204 /* ToneGenApp.mm */;
+		name = "ToneGenApp.mm: 13";
+		rLen = 0;
+		rLoc = 219;
+		rType = 0;
+		vrLen = 228;
+		vrLoc = 0;
+	};
+	FC55207610D3097800841204 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = FC0BF5A810D2949400A2A196 /* tester.cpp */;
+		name = "tester.cpp: 13";
+		rLen = 0;
+		rLoc = 215;
+		rType = 0;
+		vrLen = 215;
+		vrLoc = 0;
+	};
+	FC55207710D3097800841204 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = FCD5B27410CDEAB000D120EF /* ToneGenApp.h */;
+		name = "ToneGenApp.h: 14";
+		rLen = 85;
+		rLoc = 154;
+		rType = 0;
+		vrLen = 245;
+		vrLoc = 0;
 	};
 	FC7A844510CF0F6300E4B036 /* genetics.mm */ = {
 		uiCtxt = {
@@ -87,20 +663,20 @@
 	FC7A844F10CF144000E4B036 /* genome.h */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {802, 700}}";
-			sepNavSelRange = "{683, 0}";
-			sepNavVisRange = "{28, 1543}";
+			sepNavSelRange = "{614, 56}";
+			sepNavVisRange = "{75, 1526}";
 			sepNavWindowFrame = "{{75, 139}, {861, 716}}";
 		};
 	};
 	FC7A845010CF144000E4B036 /* genome.cpp */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {439, 3752}}";
-			sepNavSelRange = "{934, 0}";
-			sepNavVisRange = "{783, 297}";
+			sepNavIntBoundsRect = "{{0, 0}, {802, 4088}}";
+			sepNavSelRange = "{10060, 0}";
+			sepNavVisRange = "{8937, 1123}";
 			sepNavWindowFrame = "{{527, 162}, {861, 716}}";
 		};
 	};
-	FCB5647B10D1321A00573E33 /* genome.cpp:76 */ = {
+	FCB5647B10D1321A00573E33 /* genome.cpp:80 */ = {
 		isa = PBXFileBreakpoint;
 		actions = (
 		);
@@ -112,8 +688,8 @@
 		functionName = "Genome::Comparator(const GAGenome& left, const GAGenome& right)";
 		hitCount = 0;
 		ignoreCount = 0;
-		lineNumber = 76;
-		modificationTime = 282145752.777143;
+		lineNumber = 80;
+		modificationTime = 282264620.794456;
 		state = 1;
 	};
 	FCD5B22010CDDC9800D120EF /* tonegen */ = {
@@ -123,21 +699,57 @@
 		argumentStrings = (
 		);
 		autoAttachOnCrash = 1;
-		breakpointsEnabled = 1;
+		breakpointsEnabled = 0;
 		configStateDict = {
+			"PBXLSLaunchAction-0" = {
+				PBXLSLaunchAction = 0;
+				PBXLSLaunchStartAction = 1;
+				PBXLSLaunchStdioStyle = 2;
+				PBXLSLaunchStyle = 0;
+				class = PBXLSRunLaunchConfig;
+				commandLineArgs = (
+				);
+				displayName = "Executable Runner";
+				environment = {
+				};
+				identifier = com.apple.Xcode.launch.runConfig;
+				remoteHostInfo = "";
+				startActionInfo = "";
+			};
+			"PBXLSLaunchAction-1" = {
+				PBXLSLaunchAction = 1;
+				PBXLSLaunchStartAction = 1;
+				PBXLSLaunchStdioStyle = 2;
+				PBXLSLaunchStyle = 0;
+				class = PBXGDB_LaunchConfig;
+				commandLineArgs = (
+				);
+				displayName = GDB;
+				environment = {
+				};
+				identifier = com.apple.Xcode.launch.GDBMI_Config;
+				remoteHostInfo = "";
+				startActionInfo = "";
+			};
 		};
 		customDataFormattersEnabled = 1;
 		debuggerPlugin = GDBDebugging;
 		disassemblyDisplayState = 0;
+		dylibVariantSuffix = "";
 		enableDebugStr = 1;
 		environmentEntries = (
 		);
 		executableSystemSymbolLevel = 0;
 		executableUserSymbolLevel = 0;
+		launchableReference = FC551FDC10D3019300841204 /* tonegen */;
 		libgmallocEnabled = 0;
 		name = tonegen;
+		savedGlobals = {
+		};
 		sourceDirectories = (
 		);
+		variableFormatDictionary = {
+		};
 	};
 	FCD5B22A10CDDCA600D120EF /* Source Control */ = {
 		isa = PBXSourceControlManager;
@@ -196,19 +808,11 @@
 		sourceDirectories = (
 		);
 	};
-	FCD5B26E10CDEA6800D120EF /* ToneGenApp.m */ = {
-		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {519, 268}}";
-			sepNavSelRange = "{0, 0}";
-			sepNavVisRange = "{0, 115}";
-			sepNavWindowFrame = "{{84, 94}, {861, 716}}";
-		};
-	};
 	FCD5B27410CDEAB000D120EF /* ToneGenApp.h */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {802, 603}}";
-			sepNavSelRange = "{151, 0}";
-			sepNavVisRange = "{0, 160}";
+			sepNavSelRange = "{154, 85}";
+			sepNavVisRange = "{0, 245}";
 			sepNavWindowFrame = "{{130, 52}, {861, 716}}";
 		};
 	};

@@ -25,7 +25,7 @@ namespace h2p_tonegen {
         static float Evaluator(GAGenome&);
         static int Crossover(const GAGenome&, const GAGenome&, GAGenome*, GAGenome*);
     public:
-        Genome(int samplerate = 44100, int samplesize = 2, int freq = 440);
+        Genome(int samplerate = 44100, int samplesize = 2, int freq = 220);
         Genome(Genome &);
         Genome& operator=(const GAGenome &);
         virtual void copy(const GAGenome &);

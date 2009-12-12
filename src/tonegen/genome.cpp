@@ -9,6 +9,7 @@
 
 #include "genome.h"
 #include "ga/ga.h"
+#include <iomanip>
 #include <cstdlib>
 #include <ctime>
 #include <cmath>
@@ -29,13 +30,16 @@ static unsigned char randombyte() {
 
 void Genome::Initializer(GAGenome& genome) {
     try {
+        unsigned int checksum = 0;
         Genome & target = dynamic_cast<Genome&> (genome);
         target.wave_.clear();
         size_t bytes = target.samplerate_ * target.samplesize_ / target.freq_;
         target.wave_.reserve(bytes);
         for (size_t i = 0; i < bytes; ++i) {
-            target.wave_[i] = randombyte();
+            target.wave_.push_back(randombyte());
+            checksum += *(target.wave_.end()-1);
         }
+        std::cerr << "target wave has " << target.wave_.size() << " bytes and checksum " << std::hex << std::setw(8) << std::setfill('0') << checksum << "." << std::endl;
         target._evaluated = gaFalse;
     } catch (std::bad_cast & e) {
         std::cerr << "initializer was passed a non tonegen genome" << std::endl;
@@ -122,7 +126,7 @@ float Genome::Evaluator(GAGenome& target) {
 
         std::cout << "Rate what you just heard from 0 to 10, or -1 to listen again:" << std::flush;
         std::cin >> score;
-    } while (score >= 0.0 and score <= 10.0);
+    } while (score <= 0.0 or score >= 10.0);
     
     return score;
 }
@@ -146,7 +150,8 @@ OSStatus	Genome::playSample(void 				*inRefCon,
         for (size_t byte = 0; byte < currentlyPlayingGenome->samplesize_; ++byte) {
             static_cast<unsigned char *>(ioData->mBuffers[0].mData)[frame*currentlyPlayingGenome->samplesize_+byte] = currentlyPlayingGenome->wave_[lastIndex+byte];
         }
-        if (++lastIndex <= maxSize) {
+        
+        if (++lastIndex >= maxSize) {
             lastIndex = 0;
         }
     }
@@ -212,7 +217,9 @@ void Genome::playTheSample(Genome & genome) {
 	if (err) { printf ("AudioUnitUninitialize=%ld\n", (long int)err); return; }
 }   
 
-Genome::Genome(int samplerate, int samplesize, int freq) {
+Genome::Genome(int samplerate, int samplesize, int freq) : GAGenome(Initializer, Mutator, Comparator) {
+    evaluator(Evaluator);
+    crossover(Crossover);
     samplerate_ = samplerate;
     samplesize_ = samplesize;
     freq_ = freq;
@@ -252,4 +259,18 @@ int Genome::equal(const GAGenome & other) const {
 
 Genome::~Genome() {
     // jeffries tube - GNDN
+}
+
+int Genome::Crossover(const GAGenome& a, const GAGenome& b, GAGenome* c, GAGenome* d) {
+    const Genome & mom = dynamic_cast<const Genome &> a;
+    const Genome & dad = dynamic_cast<const Genome &> b;
+    int n = 0;
+    if (c != NULL) { // if there are NULL then wtf
+        Genome & sister = dynamic_cast<Genome &>(*c);
+        // crossover with mom and dad
+    }
+    if (d != NULL) {
+        Genome & brother = dynamic_cast<Genome &>(*d);
+        // crossover with mom and dad
+    }
 }
