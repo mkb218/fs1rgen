@@ -262,15 +262,43 @@ Genome::~Genome() {
 }
 
 int Genome::Crossover(const GAGenome& a, const GAGenome& b, GAGenome* c, GAGenome* d) {
-    const Genome & mom = dynamic_cast<const Genome &> a;
-    const Genome & dad = dynamic_cast<const Genome &> b;
+    const Genome & mom = dynamic_cast<const Genome &>(a);
+    const Genome & dad = dynamic_cast<const Genome &> (b);
     int n = 0;
     if (c != NULL) { // if there are NULL then wtf
         Genome & sister = dynamic_cast<Genome &>(*c);
         // crossover with mom and dad
+        makeChild(mom,dad,sister);
+        n += 1;
     }
     if (d != NULL) {
         Genome & brother = dynamic_cast<Genome &>(*d);
         // crossover with mom and dad
+        makeChild(mom,dad,brother);
+        n += 1;
+    }
+    
+    return n;
+}
+
+void Genome::makeChild(const Genome& mom, const Genome& dad, Genome& spawn) {
+    spawn = mom;
+    for (size_t i = 0; i < spawn.wave_.size() && i < dad.wave_.size(); ++i) {
+        switch (randombyte() & 0x3) {
+            case 0:
+                spawn.wave_[i] = dad.wave_[i];
+                break;
+            case 1:
+                spawn.wave_[i] = dad.wave_[i] & mom.wave_[i];
+                break;
+            case 2:
+                spawn.wave_[i] = dad.wave_[i] | mom.wave_[i];
+                break;
+            case 3:
+                // noop;
+                break;
+            default:
+                std::cerr << "something impossible happened" << std::endl;
+        }
     }
 }

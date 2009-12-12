@@ -40,6 +40,7 @@ namespace h2p_tonegen {
                                 UInt32 						inNumberFrames, 
                                 AudioBufferList 			*ioData);
         static void playTheSample(Genome&);
+        static void makeChild(const Genome&, const Genome&, Genome&);
         int samplerate_;
         int samplesize_;
         int freq_;
