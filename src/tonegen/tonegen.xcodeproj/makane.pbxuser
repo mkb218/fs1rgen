@@ -137,6 +137,25 @@
 			FC55208F10D3F1DE00841204 /* PBXTextBookmark */ = FC55208F10D3F1DE00841204 /* PBXTextBookmark */;
 			FC55209010D3F1DE00841204 /* PBXTextBookmark */ = FC55209010D3F1DE00841204 /* PBXTextBookmark */;
 			FC55209110D3F1DE00841204 /* PBXTextBookmark */ = FC55209110D3F1DE00841204 /* PBXTextBookmark */;
+			FC55209710D3F26400841204 /* PBXTextBookmark */ = FC55209710D3F26400841204 /* PBXTextBookmark */;
+			FC55209810D3F26400841204 /* PBXTextBookmark */ = FC55209810D3F26400841204 /* PBXTextBookmark */;
+			FC55209910D3F26500841204 /* PBXTextBookmark */ = FC55209910D3F26500841204 /* PBXTextBookmark */;
+			FC55209C10D3F38700841204 /* PBXTextBookmark */ = FC55209C10D3F38700841204 /* PBXTextBookmark */;
+			FC55209D10D3F38700841204 /* PBXTextBookmark */ = FC55209D10D3F38700841204 /* PBXTextBookmark */;
+			FC55209E10D3F38700841204 /* PBXTextBookmark */ = FC55209E10D3F38700841204 /* PBXTextBookmark */;
+			FC55209F10D3F38700841204 /* PBXTextBookmark */ = FC55209F10D3F38700841204 /* PBXTextBookmark */;
+			FC5520A010D3F38700841204 /* PBXTextBookmark */ = FC5520A010D3F38700841204 /* PBXTextBookmark */;
+			FC5520A110D3F38700841204 /* PBXTextBookmark */ = FC5520A110D3F38700841204 /* PBXTextBookmark */;
+			FC5520A210D3F39F00841204 /* PBXTextBookmark */ = FC5520A210D3F39F00841204 /* PBXTextBookmark */;
+			FC5520A310D3F39F00841204 /* PBXTextBookmark */ = FC5520A310D3F39F00841204 /* PBXTextBookmark */;
+			FC5520A410D3F39F00841204 /* PBXTextBookmark */ = FC5520A410D3F39F00841204 /* PBXTextBookmark */;
+			FC5520A510D3F39F00841204 /* PBXTextBookmark */ = FC5520A510D3F39F00841204 /* PBXTextBookmark */;
+			FC5520A610D3F39F00841204 /* PBXTextBookmark */ = FC5520A610D3F39F00841204 /* PBXTextBookmark */;
+			FC5520AB10D3F41900841204 /* PBXTextBookmark */ = FC5520AB10D3F41900841204 /* PBXTextBookmark */;
+			FC5520AC10D3F41900841204 /* PBXTextBookmark */ = FC5520AC10D3F41900841204 /* PBXTextBookmark */;
+			FC5520AD10D3F41900841204 /* PBXTextBookmark */ = FC5520AD10D3F41900841204 /* PBXTextBookmark */;
+			FC5520AE10D3F41900841204 /* PBXTextBookmark */ = FC5520AE10D3F41900841204 /* PBXTextBookmark */;
+			FC5520AF10D3F41900841204 /* PBXTextBookmark */ = FC5520AF10D3F41900841204 /* PBXTextBookmark */;
 		};
 		sourceControlManager = FCD5B22A10CDDCA600D120EF /* Source Control */;
 		userBuildSettings = {
@@ -187,7 +206,7 @@
 		fRef = FC7A844F10CF144000E4B036 /* genome.h */;
 		name = "genome.h: 27";
 		rLen = 0;
-		rLoc = 683;
+		rLoc = 701;
 		rType = 0;
 		vrLen = 1543;
 		vrLoc = 28;
@@ -254,7 +273,7 @@
 		fRef = FC7A844F10CF144000E4B036 /* genome.h */;
 		name = "genome.h: 27";
 		rLen = 0;
-		rLoc = 683;
+		rLoc = 701;
 		rType = 0;
 		vrLen = 1536;
 		vrLoc = 28;
@@ -364,7 +383,7 @@
 		fRef = FC7A844F10CF144000E4B036 /* genome.h */;
 		name = "genome.h: 27";
 		rLen = 0;
-		rLoc = 683;
+		rLoc = 701;
 		rType = 0;
 		vrLen = 1543;
 		vrLoc = 28;
@@ -447,7 +466,7 @@
 		fRef = FC7A844F10CF144000E4B036 /* genome.h */;
 		name = "genome.h: 25";
 		rLen = 0;
-		rLoc = 585;
+		rLoc = 603;
 		rType = 0;
 		vrLen = 1526;
 		vrLoc = 75;
@@ -456,7 +475,7 @@
 		isa = PBXTextBookmark;
 		fRef = FCD5B27410CDEAB000D120EF /* ToneGenApp.h */;
 		name = "ToneGenApp.h: 14";
-		rLen = 85;
+		rLen = 119;
 		rLoc = 154;
 		rType = 0;
 		vrLen = 245;
@@ -465,8 +484,8 @@
 	FC55205C10D307D500841204 /* ToneGenApp.mm */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {802, 603}}";
-			sepNavSelRange = "{219, 0}";
-			sepNavVisRange = "{0, 228}";
+			sepNavSelRange = "{288, 0}";
+			sepNavVisRange = "{0, 448}";
 		};
 	};
 	FC55205E10D307E700841204 /* PBXBookmark */ = {
@@ -492,7 +511,7 @@
 		fRef = FC7A844F10CF144000E4B036 /* genome.h */;
 		name = "genome.h: 25";
 		rLen = 0;
-		rLoc = 585;
+		rLoc = 603;
 		rType = 0;
 		vrLen = 1526;
 		vrLoc = 75;
@@ -502,7 +521,7 @@
 		fRef = FC7A844F10CF144000E4B036 /* genome.h */;
 		name = "genome.h: 25";
 		rLen = 0;
-		rLoc = 585;
+		rLoc = 603;
 		rType = 0;
 		vrLen = 1526;
 		vrLoc = 75;
@@ -522,7 +541,7 @@
 		fRef = FC55205C10D307D500841204 /* ToneGenApp.mm */;
 		name = "ToneGenApp.mm: 13";
 		rLen = 0;
-		rLoc = 219;
+		rLoc = 442;
 		rType = 0;
 		vrLen = 228;
 		vrLoc = 0;
@@ -541,7 +560,7 @@
 		isa = PBXTextBookmark;
 		fRef = FCD5B27410CDEAB000D120EF /* ToneGenApp.h */;
 		name = "ToneGenApp.h: 14";
-		rLen = 85;
+		rLen = 119;
 		rLoc = 154;
 		rType = 0;
 		vrLen = 245;
@@ -562,7 +581,7 @@
 		fRef = FC7A844F10CF144000E4B036 /* genome.h */;
 		name = "genome.h: 26";
 		rLen = 56;
-		rLoc = 614;
+		rLoc = 632;
 		rType = 0;
 		vrLen = 1526;
 		vrLoc = 75;
@@ -582,7 +601,7 @@
 		fRef = FC55205C10D307D500841204 /* ToneGenApp.mm */;
 		name = "ToneGenApp.mm: 13";
 		rLen = 0;
-		rLoc = 219;
+		rLoc = 442;
 		rType = 0;
 		vrLen = 228;
 		vrLoc = 0;
@@ -601,7 +620,7 @@
 		isa = PBXTextBookmark;
 		fRef = FCD5B27410CDEAB000D120EF /* ToneGenApp.h */;
 		name = "ToneGenApp.h: 14";
-		rLen = 85;
+		rLen = 119;
 		rLoc = 154;
 		rType = 0;
 		vrLen = 245;
@@ -612,7 +631,7 @@
 		fRef = FC7A845010CF144000E4B036 /* genome.cpp */;
 		name = "genome.cpp: 277";
 		rLen = 0;
-		rLoc = 10878;
+		rLoc = 10930;
 		rType = 0;
 		vrLen = 1123;
 		vrLoc = 8937;
@@ -622,7 +641,7 @@
 		fRef = FC7A844F10CF144000E4B036 /* genome.h */;
 		name = "genome.h: 26";
 		rLen = 56;
-		rLoc = 614;
+		rLoc = 632;
 		rType = 0;
 		vrLen = 1526;
 		vrLoc = 75;
@@ -642,7 +661,7 @@
 		fRef = FC55205C10D307D500841204 /* ToneGenApp.mm */;
 		name = "ToneGenApp.mm: 13";
 		rLen = 0;
-		rLoc = 219;
+		rLoc = 442;
 		rType = 0;
 		vrLen = 228;
 		vrLoc = 0;
@@ -661,7 +680,7 @@
 		isa = PBXTextBookmark;
 		fRef = FCD5B27410CDEAB000D120EF /* ToneGenApp.h */;
 		name = "ToneGenApp.h: 14";
-		rLen = 85;
+		rLen = 119;
 		rLoc = 154;
 		rType = 0;
 		vrLen = 245;
@@ -672,7 +691,7 @@
 		fRef = FC7A844F10CF144000E4B036 /* genome.h */;
 		name = "genome.h: 43";
 		rLen = 0;
-		rLoc = 1468;
+		rLoc = 1529;
 		rType = 0;
 		vrLen = 1515;
 		vrLoc = 75;
@@ -702,7 +721,7 @@
 		fRef = FC55205C10D307D500841204 /* ToneGenApp.mm */;
 		name = "ToneGenApp.mm: 13";
 		rLen = 0;
-		rLoc = 219;
+		rLoc = 442;
 		rType = 0;
 		vrLen = 228;
 		vrLoc = 0;
@@ -721,7 +740,7 @@
 		isa = PBXTextBookmark;
 		fRef = FCD5B27410CDEAB000D120EF /* ToneGenApp.h */;
 		name = "ToneGenApp.h: 14";
-		rLen = 85;
+		rLen = 119;
 		rLoc = 154;
 		rType = 0;
 		vrLen = 245;
@@ -732,7 +751,7 @@
 		fRef = FC7A845010CF144000E4B036 /* genome.cpp */;
 		name = "genome.cpp: 302";
 		rLen = 0;
-		rLoc = 10878;
+		rLoc = 10930;
 		rType = 0;
 		vrLen = 1334;
 		vrLoc = 9520;
@@ -742,7 +761,7 @@
 		fRef = FC7A844F10CF144000E4B036 /* genome.h */;
 		name = "genome.h: 43";
 		rLen = 70;
-		rLoc = 1453;
+		rLoc = 1514;
 		rType = 0;
 		vrLen = 1569;
 		vrLoc = 75;
@@ -762,7 +781,7 @@
 		fRef = FC55205C10D307D500841204 /* ToneGenApp.mm */;
 		name = "ToneGenApp.mm: 13";
 		rLen = 0;
-		rLoc = 219;
+		rLoc = 442;
 		rType = 0;
 		vrLen = 228;
 		vrLoc = 0;
@@ -781,7 +800,7 @@
 		isa = PBXTextBookmark;
 		fRef = FCD5B27410CDEAB000D120EF /* ToneGenApp.h */;
 		name = "ToneGenApp.h: 14";
-		rLen = 85;
+		rLen = 119;
 		rLoc = 154;
 		rType = 0;
 		vrLen = 245;
@@ -848,7 +867,7 @@
 		fRef = FC7A844F10CF144000E4B036 /* genome.h */;
 		name = "genome.h: 43";
 		rLen = 70;
-		rLoc = 1453;
+		rLoc = 1514;
 		rType = 0;
 		vrLen = 1569;
 		vrLoc = 75;
@@ -868,7 +887,7 @@
 		fRef = FC55205C10D307D500841204 /* ToneGenApp.mm */;
 		name = "ToneGenApp.mm: 13";
 		rLen = 0;
-		rLoc = 219;
+		rLoc = 442;
 		rType = 0;
 		vrLen = 228;
 		vrLoc = 0;
@@ -887,10 +906,197 @@
 		isa = PBXTextBookmark;
 		fRef = FCD5B27410CDEAB000D120EF /* ToneGenApp.h */;
 		name = "ToneGenApp.h: 14";
-		rLen = 85;
+		rLen = 119;
 		rLoc = 154;
 		rType = 0;
 		vrLen = 245;
+		vrLoc = 0;
+	};
+	FC55209710D3F26400841204 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = FC7A845010CF144000E4B036 /* genome.cpp */;
+		name = "genome.cpp: 295";
+		rLen = 0;
+		rLoc = 10654;
+		rType = 0;
+		vrLen = 322;
+		vrLoc = 10464;
+	};
+	FC55209810D3F26400841204 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = FC7A845010CF144000E4B036 /* genome.cpp */;
+		name = "genome.cpp: 295";
+		rLen = 0;
+		rLoc = 10654;
+		rType = 0;
+		vrLen = 322;
+		vrLoc = 10464;
+	};
+	FC55209910D3F26500841204 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = FC7A845010CF144000E4B036 /* genome.cpp */;
+		name = "genome.cpp: 295";
+		rLen = 0;
+		rLoc = 10654;
+		rType = 0;
+		vrLen = 322;
+		vrLoc = 10464;
+	};
+	FC55209C10D3F38700841204 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = FC7A844F10CF144000E4B036 /* genome.h */;
+		name = "genome.h: 38";
+		rLen = 0;
+		rLoc = 1255;
+		rType = 0;
+		vrLen = 1592;
+		vrLoc = 79;
+	};
+	FC55209D10D3F38700841204 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = FC55205C10D307D500841204 /* ToneGenApp.mm */;
+		rLen = 1;
+		rLoc = 10;
+		rType = 1;
+	};
+	FC55209E10D3F38700841204 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = FC55205C10D307D500841204 /* ToneGenApp.mm */;
+		name = "ToneGenApp.mm: 15";
+		rLen = 0;
+		rLoc = 339;
+		rType = 0;
+		vrLen = 339;
+		vrLoc = 0;
+	};
+	FC55209F10D3F38700841204 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 08FB7796FE84155DC02AAC07 /* tonegen.m */;
+		name = "tonegen.m: 38";
+		rLen = 0;
+		rLoc = 1191;
+		rType = 0;
+		vrLen = 1191;
+		vrLoc = 0;
+	};
+	FC5520A010D3F38700841204 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = FC7A845010CF144000E4B036 /* genome.cpp */;
+		name = "genome.cpp: 301";
+		rLen = 0;
+		rLoc = 10854;
+		rType = 0;
+		vrLen = 1337;
+		vrLoc = 9541;
+	};
+	FC5520A110D3F38700841204 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = FC0BF5A810D2949400A2A196 /* tester.cpp */;
+		name = "tester.cpp: 13";
+		rLen = 0;
+		rLoc = 215;
+		rType = 0;
+		vrLen = 215;
+		vrLoc = 0;
+	};
+	FC5520A210D3F39F00841204 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = FC55205C10D307D500841204 /* ToneGenApp.mm */;
+		name = "ToneGenApp.mm: 17";
+		rLen = 0;
+		rLoc = 442;
+		rType = 0;
+		vrLen = 364;
+		vrLoc = 0;
+	};
+	FC5520A310D3F39F00841204 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = FC7A844F10CF144000E4B036 /* genome.h */;
+		name = "genome.h: 38";
+		rLen = 0;
+		rLoc = 1255;
+		rType = 0;
+		vrLen = 1592;
+		vrLoc = 79;
+	};
+	FC5520A410D3F39F00841204 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 08FB7796FE84155DC02AAC07 /* tonegen.m */;
+		name = "tonegen.m: 38";
+		rLen = 0;
+		rLoc = 1191;
+		rType = 0;
+		vrLen = 1191;
+		vrLoc = 0;
+	};
+	FC5520A510D3F39F00841204 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = FC7A845010CF144000E4B036 /* genome.cpp */;
+		name = "genome.cpp: 301";
+		rLen = 0;
+		rLoc = 10854;
+		rType = 0;
+		vrLen = 1337;
+		vrLoc = 9541;
+	};
+	FC5520A610D3F39F00841204 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = FC0BF5A810D2949400A2A196 /* tester.cpp */;
+		name = "tester.cpp: 13";
+		rLen = 0;
+		rLoc = 215;
+		rType = 0;
+		vrLen = 215;
+		vrLoc = 0;
+	};
+	FC5520AB10D3F41900841204 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = FC55205C10D307D500841204 /* ToneGenApp.mm */;
+		name = "ToneGenApp.mm: 14";
+		rLen = 0;
+		rLoc = 288;
+		rType = 0;
+		vrLen = 448;
+		vrLoc = 0;
+	};
+	FC5520AC10D3F41900841204 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = FC7A845010CF144000E4B036 /* genome.cpp */;
+		name = "genome.cpp: 307";
+		rLen = 0;
+		rLoc = 10928;
+		rType = 0;
+		vrLen = 1270;
+		vrLoc = 9660;
+	};
+	FC5520AD10D3F41900841204 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = FC7A844F10CF144000E4B036 /* genome.h */;
+		name = "genome.h: 16";
+		rLen = 0;
+		rLoc = 260;
+		rType = 0;
+		vrLen = 1625;
+		vrLoc = 79;
+	};
+	FC5520AE10D3F41900841204 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 08FB7796FE84155DC02AAC07 /* tonegen.m */;
+		name = "tonegen.m: 38";
+		rLen = 0;
+		rLoc = 1191;
+		rType = 0;
+		vrLen = 1191;
+		vrLoc = 0;
+	};
+	FC5520AF10D3F41900841204 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = FC0BF5A810D2949400A2A196 /* tester.cpp */;
+		name = "tester.cpp: 13";
+		rLen = 0;
+		rLoc = 215;
+		rType = 0;
+		vrLen = 215;
 		vrLoc = 0;
 	};
 	FC7A844510CF0F6300E4B036 /* genetics.mm */ = {
@@ -911,17 +1117,17 @@
 	};
 	FC7A844F10CF144000E4B036 /* genome.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {802, 714}}";
-			sepNavSelRange = "{1453, 70}";
-			sepNavVisRange = "{75, 1569}";
+			sepNavIntBoundsRect = "{{0, 0}, {802, 742}}";
+			sepNavSelRange = "{260, 0}";
+			sepNavVisRange = "{79, 1625}";
 			sepNavWindowFrame = "{{75, 139}, {861, 716}}";
 		};
 	};
 	FC7A845010CF144000E4B036 /* genome.cpp */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {802, 4298}}";
-			sepNavSelRange = "{10854, 0}";
-			sepNavVisRange = "{9541, 1337}";
+			sepNavIntBoundsRect = "{{0, 0}, {802, 4354}}";
+			sepNavSelRange = "{10928, 0}";
+			sepNavVisRange = "{9660, 1270}";
 			sepNavWindowFrame = "{{527, 162}, {861, 716}}";
 		};
 	};
@@ -1060,9 +1266,9 @@
 	FCD5B27410CDEAB000D120EF /* ToneGenApp.h */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {802, 603}}";
-			sepNavSelRange = "{154, 85}";
-			sepNavVisRange = "{0, 245}";
-			sepNavWindowFrame = "{{130, 52}, {861, 716}}";
+			sepNavSelRange = "{272, 0}";
+			sepNavVisRange = "{0, 279}";
+			sepNavWindowFrame = "{{129, 52}, {861, 716}}";
 		};
 	};
 }

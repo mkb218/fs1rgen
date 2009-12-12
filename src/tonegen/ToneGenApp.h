@@ -11,5 +11,5 @@
 @interface ToneGenApp : NSObject {
 }
 
--(void)goWithSampleRate: (int)sampleRate sampleSize: (int)sampleSize freq: (int)freq;
+-(void)goWithSampleRate: (int)sampleRate sampleSize: (int)sampleSize freq: (int)freq outputfile: (NSString *) filename;
 @end

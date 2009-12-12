@@ -302,3 +302,7 @@ void Genome::makeChild(const Genome& mom, const Genome& dad, Genome& spawn) {
         }
     }
 }
+
+void Genome::toFile(std::string filename) {
+    
+}

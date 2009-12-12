@@ -5,12 +5,17 @@
 //  Created by Kane, Matthew on 12/7/09.
 //
 
+#import "ToneGenApp.h"
 #include "ga/ga.h"
+#include "genome.h"
 
 @implementation ToneGenApp
 
--(void)goWithSampleRate: (int)sampleRate sampleSize: (int)sampleSize freq: (int)freq {
-    
+-(void)goWithSampleRate: (int)sampleRate sampleSize: (int)sampleSize freq: (int)freq outputfile: (NSString*) filename {
+    Genome genome(sampleRate, sampleSize, freq);
+    GASteadyStateGA ga(genome);
+    ga.evolve();
+    NSLog("winnar!ga.statistics().bestIndividual()");
 }
 
 @end

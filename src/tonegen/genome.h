@@ -12,6 +12,7 @@
 #include <vector>
 #include <CoreServices/CoreServices.h>
 #include <AudioUnit/AudioUnit.h>
+#include <string>
 
 #include "ga/ga.h"
 
@@ -28,6 +29,7 @@ namespace h2p_tonegen {
         Genome(int samplerate = 44100, int samplesize = 2, int freq = 220);
         Genome(Genome &);
         Genome& operator=(const GAGenome &);
+        void toFile(std::string filename);
         virtual void copy(const GAGenome &);
         virtual int equal(const GAGenome &) const;
         virtual GAGenome * clone(GAGenome::CloneMethod);
