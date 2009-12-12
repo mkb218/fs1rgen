@@ -31,7 +31,7 @@ static unsigned char randombyte() {
 void Genome::Initializer(GAGenome& genome) {
     try {
         unsigned int checksum = 0;
-        Genome & target = dynamic_cast<Genome&> (genome);
+        Genome & target = (Genome&)(genome);
         target.wave_.clear();
         size_t bytes = target.samplerate_ * target.samplesize_ / target.freq_;
         target.wave_.reserve(bytes);
@@ -48,7 +48,7 @@ void Genome::Initializer(GAGenome& genome) {
 
 int Genome::Mutator(GAGenome& genome, float p) {
     unsigned char count;
-    Genome & target = dynamic_cast<Genome&> (genome);
+    Genome & target = (Genome&)(genome);
     for (std::vector<unsigned char>::iterator it = target.wave_.begin(); it < target.wave_.end(); ++it) {
         unsigned char flipper = 0;
         for (int i = 0; i < 8; ++i) {
@@ -68,8 +68,8 @@ int Genome::Mutator(GAGenome& genome, float p) {
 }
 
 float Genome::Comparator(const GAGenome& left, const GAGenome& right) {
-    const Genome & cast_left = dynamic_cast<const Genome&>(left);
-    const Genome & cast_right = dynamic_cast<const Genome&>(right);
+    const Genome & cast_left = (const Genome&)(left);
+    const Genome & cast_right = (const Genome&)(right);
     
     double diff = 0.0;
     double size = static_cast<double>(cast_left.wave_.size());
@@ -82,7 +82,7 @@ float Genome::Comparator(const GAGenome& left, const GAGenome& right) {
 }
 
 float Genome::Evaluator(GAGenome& target) {
-    Genome & genome = dynamic_cast<Genome&> (target);
+    Genome & genome = (Genome&)(target);
     float score = -1.0;
     do {
         OSStatus err = noErr;
@@ -226,7 +226,7 @@ Genome::Genome(int samplerate, int samplesize, int freq) : GAGenome(Initializer,
     _evaluated = gaFalse;
 }
 
-Genome::Genome(Genome& other) {
+Genome::Genome(const Genome& other) {
     samplerate_ = other.samplerate_;
     samplesize_ = other.samplesize_;
     freq_ = other.freq_;
@@ -240,12 +240,12 @@ Genome& Genome::operator=(const GAGenome & other) {
     return *this;
 }
  
-GAGenome * Genome::clone(GAGenome::CloneMethod method) {
+GAGenome * Genome::clone(GAGenome::CloneMethod method) const {
     return new Genome(*this);
 }
 
 void Genome::copy(const GAGenome & other) {
-    const Genome & src = dynamic_cast<const Genome&>(other);
+    const Genome & src = (const Genome&)(other);
     samplerate_ = src.samplerate_;
     samplesize_ = src.samplesize_;
     freq_ = src.freq_;
@@ -262,8 +262,8 @@ Genome::~Genome() {
 }
 
 int Genome::Crossover(const GAGenome& a, const GAGenome& b, GAGenome* c, GAGenome* d) {
-    const Genome & mom = dynamic_cast<const Genome &>(a);
-    const Genome & dad = dynamic_cast<const Genome &> (b);
+    const Genome & mom = (const Genome &)(a);
+    const Genome & dad = (const Genome &) (b);
     int n = 0;
     if (c != NULL) { // if there are NULL then wtf
         Genome & sister = dynamic_cast<Genome &>(*c);

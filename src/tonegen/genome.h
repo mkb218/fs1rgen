@@ -27,12 +27,12 @@ namespace h2p_tonegen {
         static int Crossover(const GAGenome&, const GAGenome&, GAGenome*, GAGenome*);
     public:
         Genome(int samplerate = 44100, int samplesize = 2, int freq = 220);
-        Genome(Genome &);
+        Genome(const Genome &);
         Genome& operator=(const GAGenome &);
         void toFile(std::string filename);
         virtual void copy(const GAGenome &);
         virtual int equal(const GAGenome &) const;
-        virtual GAGenome * clone(GAGenome::CloneMethod);
+        virtual GAGenome * clone(GAGenome::CloneMethod) const;
         virtual ~Genome();
     private:
         static OSStatus playSample(void 				*inRefCon, 
