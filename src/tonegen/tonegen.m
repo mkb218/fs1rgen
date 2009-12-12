@@ -30,7 +30,7 @@ int main (int argc, const char *argv[]) {
         }
     }
     
-    [[[ToneGenApp alloc] init] goWithSampleRate: sampleRate sampleSize: sampleSize freq: freq];
+    [[[ToneGenApp alloc] init] goWithSampleRate: sampleRate sampleSize: sampleSize freq: freq outputfile: @"out"];
     
     [pool drain];
     return 0;

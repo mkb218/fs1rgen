@@ -9,13 +9,14 @@
 #include "ga/ga.h"
 #include "genome.h"
 
+using namespace h2p_tonegen;
 @implementation ToneGenApp
 
 -(void)goWithSampleRate: (int)sampleRate sampleSize: (int)sampleSize freq: (int)freq outputfile: (NSString*) filename {
     Genome genome(sampleRate, sampleSize, freq);
     GASteadyStateGA ga(genome);
     ga.evolve();
-    NSLog("winnar!ga.statistics().bestIndividual()");
+    NSLog(@"winnar!ga.statistics().bestIndividual()");
 }
 
 @end
