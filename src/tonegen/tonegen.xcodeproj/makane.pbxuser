@@ -8,12 +8,12 @@
 			8DD76F960486AA7600D96B5E /* tonegen */,
 		);
 		breakpoints = (
-			FCB5647B10D1321A00573E33 /* genome.cpp:34 */,
-			FC551FF210D302A400841204 /* genome.cpp:71 */,
-			FC551FF610D302EC00841204 /* genome.cpp:71 */,
-			FC551FF910D3032500841204 /* genome.cpp:71 */,
-			FC55200010D303AD00841204 /* genome.cpp:32 */,
-			FC55200510D303D500841204 /* genome.cpp:34 */,
+			FCB5647B10D1321A00573E33 /* genome.cpp:39 */,
+			FC551FF210D302A400841204 /* genome.cpp:76 */,
+			FC551FF610D302EC00841204 /* genome.cpp:76 */,
+			FC551FF910D3032500841204 /* genome.cpp:76 */,
+			FC55200010D303AD00841204 /* genome.cpp:37 */,
+			FC55200510D303D500841204 /* genome.cpp:39 */,
 		);
 		codeSenseManager = FCD5B22B10CDDCA600D120EF /* Code sense */;
 		executables = (
@@ -73,128 +73,16 @@
 			PBXWorkspaceStateSaveDate = 282263704;
 		};
 		perUserProjectItems = {
-			FC551FB510D300D300841204 /* PBXBookmark */ = FC551FB510D300D300841204 /* PBXBookmark */;
-			FC551FB710D300EB00841204 /* PBXBookmark */ = FC551FB710D300EB00841204 /* PBXBookmark */;
-			FC551FD210D3013900841204 /* PBXTextBookmark */ = FC551FD210D3013900841204 /* PBXTextBookmark */;
-			FC551FD510D3013900841204 /* PBXTextBookmark */ = FC551FD510D3013900841204 /* PBXTextBookmark */;
-			FC551FD810D3013900841204 /* PBXTextBookmark */ = FC551FD810D3013900841204 /* PBXTextBookmark */;
-			FC551FD910D3013900841204 /* PBXTextBookmark */ = FC551FD910D3013900841204 /* PBXTextBookmark */;
-			FC551FE510D3024000841204 /* PBXTextBookmark */ = FC551FE510D3024000841204 /* PBXTextBookmark */;
-			FC551FE610D3024000841204 /* PBXTextBookmark */ = FC551FE610D3024000841204 /* PBXTextBookmark */;
-			FC551FE710D3024000841204 /* PBXTextBookmark */ = FC551FE710D3024000841204 /* PBXTextBookmark */;
-			FC551FE810D3024000841204 /* PBXTextBookmark */ = FC551FE810D3024000841204 /* PBXTextBookmark */;
-			FC55200F10D3045700841204 /* PBXTextBookmark */ = FC55200F10D3045700841204 /* PBXTextBookmark */;
-			FC55201010D3045700841204 /* PBXTextBookmark */ = FC55201010D3045700841204 /* PBXTextBookmark */;
-			FC55201110D3045700841204 /* PBXTextBookmark */ = FC55201110D3045700841204 /* PBXTextBookmark */;
-			FC55204510D3064600841204 /* PBXBookmark */ = FC55204510D3064600841204 /* PBXBookmark */;
 			FC55205210D307C000841204 /* PBXTextBookmark */ = FC55205210D307C000841204 /* PBXTextBookmark */;
-			FC55205310D307C000841204 /* PBXTextBookmark */ = FC55205310D307C000841204 /* PBXTextBookmark */;
 			FC55205410D307C000841204 /* PBXTextBookmark */ = FC55205410D307C000841204 /* PBXTextBookmark */;
-			FC55205510D307C000841204 /* PBXTextBookmark */ = FC55205510D307C000841204 /* PBXTextBookmark */;
-			FC55205610D307C000841204 /* PBXTextBookmark */ = FC55205610D307C000841204 /* PBXTextBookmark */;
-			FC55205910D307C000841204 /* PBXTextBookmark */ = FC55205910D307C000841204 /* PBXTextBookmark */;
-			FC55205E10D307E700841204 /* PBXBookmark */ = FC55205E10D307E700841204 /* PBXBookmark */;
-			FC55205F10D3084C00841204 /* PBXBookmark */ = FC55205F10D3084C00841204 /* PBXBookmark */;
-			FC55206310D3088300841204 /* PBXTextBookmark */ = FC55206310D3088300841204 /* PBXTextBookmark */;
-			FC55206410D3088300841204 /* PBXTextBookmark */ = FC55206410D3088300841204 /* PBXTextBookmark */;
-			FC55206510D3088300841204 /* PBXTextBookmark */ = FC55206510D3088300841204 /* PBXTextBookmark */;
-			FC55206610D3088300841204 /* PBXTextBookmark */ = FC55206610D3088300841204 /* PBXTextBookmark */;
-			FC55206910D3088300841204 /* PBXTextBookmark */ = FC55206910D3088300841204 /* PBXTextBookmark */;
-			FC55206A10D3088300841204 /* PBXTextBookmark */ = FC55206A10D3088300841204 /* PBXTextBookmark */;
-			FC55206B10D3088300841204 /* PBXTextBookmark */ = FC55206B10D3088300841204 /* PBXTextBookmark */;
-			FC55206C10D308BC00841204 /* PBXTextBookmark */ = FC55206C10D308BC00841204 /* PBXTextBookmark */;
-			FC55206D10D308BC00841204 /* PBXTextBookmark */ = FC55206D10D308BC00841204 /* PBXTextBookmark */;
-			FC55206E10D308BC00841204 /* PBXTextBookmark */ = FC55206E10D308BC00841204 /* PBXTextBookmark */;
-			FC55206F10D308BC00841204 /* PBXTextBookmark */ = FC55206F10D308BC00841204 /* PBXTextBookmark */;
-			FC55207010D308BC00841204 /* PBXTextBookmark */ = FC55207010D308BC00841204 /* PBXTextBookmark */;
-			FC55207110D308BC00841204 /* PBXTextBookmark */ = FC55207110D308BC00841204 /* PBXTextBookmark */;
-			FC55207210D3097800841204 /* PBXTextBookmark */ = FC55207210D3097800841204 /* PBXTextBookmark */;
-			FC55207310D3097800841204 /* PBXTextBookmark */ = FC55207310D3097800841204 /* PBXTextBookmark */;
-			FC55207410D3097800841204 /* PBXTextBookmark */ = FC55207410D3097800841204 /* PBXTextBookmark */;
-			FC55207510D3097800841204 /* PBXTextBookmark */ = FC55207510D3097800841204 /* PBXTextBookmark */;
-			FC55207610D3097800841204 /* PBXTextBookmark */ = FC55207610D3097800841204 /* PBXTextBookmark */;
-			FC55207710D3097800841204 /* PBXTextBookmark */ = FC55207710D3097800841204 /* PBXTextBookmark */;
-			FC55207810D3F00C00841204 /* PBXTextBookmark */ = FC55207810D3F00C00841204 /* PBXTextBookmark */;
-			FC55207910D3F00C00841204 /* PBXTextBookmark */ = FC55207910D3F00C00841204 /* PBXTextBookmark */;
-			FC55207A10D3F00C00841204 /* PBXTextBookmark */ = FC55207A10D3F00C00841204 /* PBXTextBookmark */;
-			FC55207B10D3F00C00841204 /* PBXTextBookmark */ = FC55207B10D3F00C00841204 /* PBXTextBookmark */;
-			FC55207C10D3F00C00841204 /* PBXTextBookmark */ = FC55207C10D3F00C00841204 /* PBXTextBookmark */;
-			FC55207D10D3F00C00841204 /* PBXTextBookmark */ = FC55207D10D3F00C00841204 /* PBXTextBookmark */;
-			FC55207F10D3F19B00841204 /* PBXTextBookmark */ = FC55207F10D3F19B00841204 /* PBXTextBookmark */;
-			FC55208010D3F19B00841204 /* PBXTextBookmark */ = FC55208010D3F19B00841204 /* PBXTextBookmark */;
-			FC55208110D3F19B00841204 /* PBXTextBookmark */ = FC55208110D3F19B00841204 /* PBXTextBookmark */;
-			FC55208210D3F19B00841204 /* PBXTextBookmark */ = FC55208210D3F19B00841204 /* PBXTextBookmark */;
-			FC55208310D3F19B00841204 /* PBXTextBookmark */ = FC55208310D3F19B00841204 /* PBXTextBookmark */;
-			FC55208410D3F19B00841204 /* PBXTextBookmark */ = FC55208410D3F19B00841204 /* PBXTextBookmark */;
-			FC55208610D3F1C600841204 /* PBXTextBookmark */ = FC55208610D3F1C600841204 /* PBXTextBookmark */;
-			FC55208810D3F1D400841204 /* PBXTextBookmark */ = FC55208810D3F1D400841204 /* PBXTextBookmark */;
-			FC55208910D3F1D400841204 /* PBXTextBookmark */ = FC55208910D3F1D400841204 /* PBXTextBookmark */;
-			FC55208A10D3F1D400841204 /* PBXTextBookmark */ = FC55208A10D3F1D400841204 /* PBXTextBookmark */;
-			FC55208B10D3F1D400841204 /* PBXTextBookmark */ = FC55208B10D3F1D400841204 /* PBXTextBookmark */;
-			FC55208C10D3F1DE00841204 /* PBXTextBookmark */ = FC55208C10D3F1DE00841204 /* PBXTextBookmark */;
-			FC55208D10D3F1DE00841204 /* PBXTextBookmark */ = FC55208D10D3F1DE00841204 /* PBXTextBookmark */;
-			FC55208E10D3F1DE00841204 /* PBXTextBookmark */ = FC55208E10D3F1DE00841204 /* PBXTextBookmark */;
-			FC55208F10D3F1DE00841204 /* PBXTextBookmark */ = FC55208F10D3F1DE00841204 /* PBXTextBookmark */;
-			FC55209010D3F1DE00841204 /* PBXTextBookmark */ = FC55209010D3F1DE00841204 /* PBXTextBookmark */;
-			FC55209110D3F1DE00841204 /* PBXTextBookmark */ = FC55209110D3F1DE00841204 /* PBXTextBookmark */;
-			FC55209710D3F26400841204 /* PBXTextBookmark */ = FC55209710D3F26400841204 /* PBXTextBookmark */;
-			FC55209810D3F26400841204 /* PBXTextBookmark */ = FC55209810D3F26400841204 /* PBXTextBookmark */;
-			FC55209910D3F26500841204 /* PBXTextBookmark */ = FC55209910D3F26500841204 /* PBXTextBookmark */;
-			FC55209C10D3F38700841204 /* PBXTextBookmark */ = FC55209C10D3F38700841204 /* PBXTextBookmark */;
 			FC55209D10D3F38700841204 /* PBXTextBookmark */ = FC55209D10D3F38700841204 /* PBXTextBookmark */;
-			FC55209E10D3F38700841204 /* PBXTextBookmark */ = FC55209E10D3F38700841204 /* PBXTextBookmark */;
-			FC55209F10D3F38700841204 /* PBXTextBookmark */ = FC55209F10D3F38700841204 /* PBXTextBookmark */;
-			FC5520A010D3F38700841204 /* PBXTextBookmark */ = FC5520A010D3F38700841204 /* PBXTextBookmark */;
-			FC5520A110D3F38700841204 /* PBXTextBookmark */ = FC5520A110D3F38700841204 /* PBXTextBookmark */;
-			FC5520A210D3F39F00841204 /* PBXTextBookmark */ = FC5520A210D3F39F00841204 /* PBXTextBookmark */;
-			FC5520A310D3F39F00841204 /* PBXTextBookmark */ = FC5520A310D3F39F00841204 /* PBXTextBookmark */;
-			FC5520A410D3F39F00841204 /* PBXTextBookmark */ = FC5520A410D3F39F00841204 /* PBXTextBookmark */;
-			FC5520A510D3F39F00841204 /* PBXTextBookmark */ = FC5520A510D3F39F00841204 /* PBXTextBookmark */;
-			FC5520A610D3F39F00841204 /* PBXTextBookmark */ = FC5520A610D3F39F00841204 /* PBXTextBookmark */;
-			FC5520AB10D3F41900841204 /* PBXTextBookmark */ = FC5520AB10D3F41900841204 /* PBXTextBookmark */;
-			FC5520AC10D3F41900841204 /* PBXTextBookmark */ = FC5520AC10D3F41900841204 /* PBXTextBookmark */;
-			FC5520AD10D3F41900841204 /* PBXTextBookmark */ = FC5520AD10D3F41900841204 /* PBXTextBookmark */;
-			FC5520AE10D3F41900841204 /* PBXTextBookmark */ = FC5520AE10D3F41900841204 /* PBXTextBookmark */;
-			FC5520AF10D3F41900841204 /* PBXTextBookmark */ = FC5520AF10D3F41900841204 /* PBXTextBookmark */;
-			FC5520B410D3F51E00841204 /* PBXTextBookmark */ = FC5520B410D3F51E00841204 /* PBXTextBookmark */;
-			FC5520B510D3F51E00841204 /* PBXTextBookmark */ = FC5520B510D3F51E00841204 /* PBXTextBookmark */;
-			FC5520B610D3F51E00841204 /* PBXTextBookmark */ = FC5520B610D3F51E00841204 /* PBXTextBookmark */;
-			FC5520C010D3F56B00841204 /* PBXTextBookmark */ = FC5520C010D3F56B00841204 /* PBXTextBookmark */;
-			FC5520C110D3F56C00841204 /* PBXTextBookmark */ = FC5520C110D3F56C00841204 /* PBXTextBookmark */;
-			FC5520C210D3F56C00841204 /* PBXTextBookmark */ = FC5520C210D3F56C00841204 /* PBXTextBookmark */;
-			FC5520C410D3F59300841204 /* PBXTextBookmark */ = FC5520C410D3F59300841204 /* PBXTextBookmark */;
-			FC5520C510D3F59300841204 /* PBXTextBookmark */ = FC5520C510D3F59300841204 /* PBXTextBookmark */;
-			FC5520C610D3F59400841204 /* PBXTextBookmark */ = FC5520C610D3F59400841204 /* PBXTextBookmark */;
-			FC5520C910D3F88400841204 /* PBXTextBookmark */ = FC5520C910D3F88400841204 /* PBXTextBookmark */;
-			FC5520CA10D3F88400841204 /* PBXTextBookmark */ = FC5520CA10D3F88400841204 /* PBXTextBookmark */;
-			FC5520CB10D3F88500841204 /* PBXTextBookmark */ = FC5520CB10D3F88500841204 /* PBXTextBookmark */;
-			FC5520CD10D3F88700841204 /* PBXTextBookmark */ = FC5520CD10D3F88700841204 /* PBXTextBookmark */;
-			FC5520CE10D3F88700841204 /* PBXTextBookmark */ = FC5520CE10D3F88700841204 /* PBXTextBookmark */;
-			FC5520CF10D3F88700841204 /* PBXTextBookmark */ = FC5520CF10D3F88700841204 /* PBXTextBookmark */;
-			FC5520D010D3F89400841204 /* PBXTextBookmark */ = FC5520D010D3F89400841204 /* PBXTextBookmark */;
-			FC5520D110D3F8A500841204 /* PBXTextBookmark */ = FC5520D110D3F8A500841204 /* PBXTextBookmark */;
-			FC5520D210D3F8A500841204 /* PBXTextBookmark */ = FC5520D210D3F8A500841204 /* PBXTextBookmark */;
-			FC5520D310D3F8A500841204 /* PBXTextBookmark */ = FC5520D310D3F8A500841204 /* PBXTextBookmark */;
-			FC5520D410D3F8A500841204 /* PBXTextBookmark */ = FC5520D410D3F8A500841204 /* PBXTextBookmark */;
-			FC5520D510D3F8A500841204 /* PBXTextBookmark */ = FC5520D510D3F8A500841204 /* PBXTextBookmark */;
-			FC5520D610D3F8A500841204 /* PBXTextBookmark */ = FC5520D610D3F8A500841204 /* PBXTextBookmark */;
 			FC5520D810D3F95800841204 /* PBXTextBookmark */ = FC5520D810D3F95800841204 /* PBXTextBookmark */;
-			FC5520D910D3F95800841204 /* PBXTextBookmark */ = FC5520D910D3F95800841204 /* PBXTextBookmark */;
-			FC5520DA10D3F95800841204 /* PBXTextBookmark */ = FC5520DA10D3F95800841204 /* PBXTextBookmark */;
-			FC5520DB10D3F95800841204 /* PBXTextBookmark */ = FC5520DB10D3F95800841204 /* PBXTextBookmark */;
-			FC5520DC10D3F95800841204 /* PBXTextBookmark */ = FC5520DC10D3F95800841204 /* PBXTextBookmark */;
-			FC5520DD10D3F95800841204 /* PBXTextBookmark */ = FC5520DD10D3F95800841204 /* PBXTextBookmark */;
-			FC5520E310D3FA3800841204 /* PBXTextBookmark */ = FC5520E310D3FA3800841204 /* PBXTextBookmark */;
-			FC5520E410D3FA3800841204 /* PBXTextBookmark */ = FC5520E410D3FA3800841204 /* PBXTextBookmark */;
-			FC5520E510D3FA3900841204 /* PBXTextBookmark */ = FC5520E510D3FA3900841204 /* PBXTextBookmark */;
-			FC5520E610D3FA3900841204 /* PBXTextBookmark */ = FC5520E610D3FA3900841204 /* PBXTextBookmark */;
-			FC5520E810D3FA3E00841204 /* PBXTextBookmark */ = FC5520E810D3FA3E00841204 /* PBXTextBookmark */;
-			FC5520E910D3FA3F00841204 /* PBXTextBookmark */ = FC5520E910D3FA3F00841204 /* PBXTextBookmark */;
-			FC5520EA10D3FA3F00841204 /* PBXTextBookmark */ = FC5520EA10D3FA3F00841204 /* PBXTextBookmark */;
-			FC5520ED10D3FA4A00841204 /* PBXTextBookmark */ = FC5520ED10D3FA4A00841204 /* PBXTextBookmark */;
-			FC5520F110D3FA4F00841204 /* PBXTextBookmark */ = FC5520F110D3FA4F00841204 /* PBXTextBookmark */;
-			FC5520F210D3FA4F00841204 /* PBXTextBookmark */ = FC5520F210D3FA4F00841204 /* PBXTextBookmark */;
-			FC5520F310D3FA4F00841204 /* PBXTextBookmark */ = FC5520F310D3FA4F00841204 /* PBXTextBookmark */;
+			FC5520E110D3FA3300841204 /* PBXTextBookmark */ = FC5520E110D3FA3300841204 /* PBXTextBookmark */;
+			FC55212A10D4967000841204 /* PBXTextBookmark */ = FC55212A10D4967000841204 /* PBXTextBookmark */;
+			FC55212B10D4967000841204 /* PBXTextBookmark */ = FC55212B10D4967000841204 /* PBXTextBookmark */;
+			FC55212C10D4967000841204 /* PBXTextBookmark */ = FC55212C10D4967000841204 /* PBXTextBookmark */;
+			FC55212D10D4967000841204 /* PBXTextBookmark */ = FC55212D10D4967000841204 /* PBXTextBookmark */;
+			FC55212E10D4967000841204 /* PBXTextBookmark */ = FC55212E10D4967000841204 /* PBXTextBookmark */;
 		};
 		sourceControlManager = FCD5B22A10CDDCA600D120EF /* Source Control */;
 		userBuildSettings = {
@@ -202,10 +90,10 @@
 	};
 	08FB7796FE84155DC02AAC07 /* tonegen.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {802, 580}}";
+			sepNavIntBoundsRect = "{{0, 0}, {802, 603}}";
 			sepNavSelRange = "{1210, 0}";
 			sepNavVisRange = "{0, 1210}";
-			sepNavWindowFrame = "{{501, 162}, {861, 716}}";
+			sepNavWindowFrame = "{{468, 161}, {861, 716}}";
 		};
 	};
 	8DD76F960486AA7600D96B5E /* tonegen */ = {
@@ -216,59 +104,11 @@
 	};
 	FC0BF5A810D2949400A2A196 /* tester.cpp */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {802, 580}}";
+			sepNavIntBoundsRect = "{{0, 0}, {802, 603}}";
 			sepNavSelRange = "{215, 0}";
 			sepNavVisRange = "{0, 215}";
-			sepNavWindowFrame = "{{15, 157}, {861, 716}}";
+			sepNavWindowFrame = "{{397, 145}, {861, 716}}";
 		};
-	};
-	FC551FB510D300D300841204 /* PBXBookmark */ = {
-		isa = PBXBookmark;
-		fRef = FC7A844F10CF144000E4B036 /* genome.h */;
-	};
-	FC551FB710D300EB00841204 /* PBXBookmark */ = {
-		isa = PBXBookmark;
-		fRef = 08FB7796FE84155DC02AAC07 /* tonegen.m */;
-	};
-	FC551FD210D3013900841204 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 08FB7796FE84155DC02AAC07 /* tonegen.m */;
-		name = "tonegen.m: 5";
-		rLen = 0;
-		rLoc = 82;
-		rType = 0;
-		vrLen = 1458;
-		vrLoc = 0;
-	};
-	FC551FD510D3013900841204 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = FC7A844F10CF144000E4B036 /* genome.h */;
-		name = "genome.h: 27";
-		rLen = 0;
-		rLoc = 701;
-		rType = 0;
-		vrLen = 1543;
-		vrLoc = 28;
-	};
-	FC551FD810D3013900841204 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = FC0BF5A810D2949400A2A196 /* tester.cpp */;
-		name = "tester.cpp: 7";
-		rLen = 0;
-		rLoc = 196;
-		rType = 0;
-		vrLen = 1140;
-		vrLoc = 0;
-	};
-	FC551FD910D3013900841204 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = FC0BF5A810D2949400A2A196 /* tester.cpp */;
-		name = "tester.cpp: 7";
-		rLen = 0;
-		rLoc = 196;
-		rType = 0;
-		vrLen = 182;
-		vrLoc = 0;
 	};
 	FC551FDC10D3019300841204 /* tonegen */ = {
 		isa = PBXFileReference;
@@ -277,47 +117,7 @@
 		path = build/Debug/tonegen;
 		sourceTree = SOURCE_ROOT;
 	};
-	FC551FE510D3024000841204 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = FC0BF5A810D2949400A2A196 /* tester.cpp */;
-		name = "tester.cpp: 7";
-		rLen = 0;
-		rLoc = 196;
-		rType = 0;
-		vrLen = 182;
-		vrLoc = 0;
-	};
-	FC551FE610D3024000841204 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = FC0BF5A810D2949400A2A196 /* tester.cpp */;
-		name = "tester.cpp: 13";
-		rLen = 0;
-		rLoc = 215;
-		rType = 0;
-		vrLen = 215;
-		vrLoc = 0;
-	};
-	FC551FE710D3024000841204 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 08FB7796FE84155DC02AAC07 /* tonegen.m */;
-		name = "tonegen.m: 22";
-		rLen = 0;
-		rLoc = 723;
-		rType = 0;
-		vrLen = 1442;
-		vrLoc = 0;
-	};
-	FC551FE810D3024000841204 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = FC7A844F10CF144000E4B036 /* genome.h */;
-		name = "genome.h: 27";
-		rLen = 0;
-		rLoc = 701;
-		rType = 0;
-		vrLen = 1536;
-		vrLoc = 28;
-	};
-	FC551FF210D302A400841204 /* genome.cpp:71 */ = {
+	FC551FF210D302A400841204 /* genome.cpp:76 */ = {
 		isa = PBXFileBreakpoint;
 		actions = (
 		);
@@ -329,11 +129,11 @@
 		functionName = "Genome::Evaluator(GAGenome& target)";
 		hitCount = 0;
 		ignoreCount = 0;
-		lineNumber = 71;
+		lineNumber = 76;
 		modificationTime = 282326421.566636;
 		state = 0;
 	};
-	FC551FF610D302EC00841204 /* genome.cpp:71 */ = {
+	FC551FF610D302EC00841204 /* genome.cpp:76 */ = {
 		isa = PBXFileBreakpoint;
 		actions = (
 		);
@@ -345,11 +145,11 @@
 		functionName = "Genome::playSample(void *inRefCon, AudioUnitRenderActionFlags *ioActionFlags, const AudioTimeStamp *inTimeStamp, UInt32 inBusNumber, UInt32 inNumberFrames, AudioBufferList *ioData)";
 		hitCount = 0;
 		ignoreCount = 0;
-		lineNumber = 71;
+		lineNumber = 76;
 		modificationTime = 282326421.262655;
 		state = 2;
 	};
-	FC551FF910D3032500841204 /* genome.cpp:71 */ = {
+	FC551FF910D3032500841204 /* genome.cpp:76 */ = {
 		isa = PBXFileBreakpoint;
 		actions = (
 		);
@@ -361,11 +161,11 @@
 		functionName = "Genome::playSample(void *inRefCon, AudioUnitRenderActionFlags *ioActionFlags, const AudioTimeStamp *inTimeStamp, UInt32 inBusNumber, UInt32 inNumberFrames, AudioBufferList *ioData)";
 		hitCount = 0;
 		ignoreCount = 0;
-		lineNumber = 71;
+		lineNumber = 76;
 		modificationTime = 282326421.753037;
 		state = 0;
 	};
-	FC55200010D303AD00841204 /* genome.cpp:32 */ = {
+	FC55200010D303AD00841204 /* genome.cpp:37 */ = {
 		isa = PBXFileBreakpoint;
 		actions = (
 		);
@@ -377,11 +177,11 @@
 		functionName = "Genome::Initializer(GAGenome& genome)";
 		hitCount = 0;
 		ignoreCount = 0;
-		lineNumber = 32;
+		lineNumber = 37;
 		modificationTime = 282326421.836776;
 		state = 0;
 	};
-	FC55200510D303D500841204 /* genome.cpp:34 */ = {
+	FC55200510D303D500841204 /* genome.cpp:39 */ = {
 		isa = PBXFileBreakpoint;
 		actions = (
 		);
@@ -393,39 +193,9 @@
 		functionName = "Genome::Initializer(GAGenome& genome)";
 		hitCount = 0;
 		ignoreCount = 0;
-		lineNumber = 34;
+		lineNumber = 39;
 		modificationTime = 282326421.999945;
 		state = 0;
-	};
-	FC55200F10D3045700841204 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = FC0BF5A810D2949400A2A196 /* tester.cpp */;
-		name = "tester.cpp: 13";
-		rLen = 0;
-		rLoc = 215;
-		rType = 0;
-		vrLen = 215;
-		vrLoc = 0;
-	};
-	FC55201010D3045700841204 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 08FB7796FE84155DC02AAC07 /* tonegen.m */;
-		name = "tonegen.m: 22";
-		rLen = 0;
-		rLoc = 723;
-		rType = 0;
-		vrLen = 1458;
-		vrLoc = 0;
-	};
-	FC55201110D3045700841204 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = FC7A844F10CF144000E4B036 /* genome.h */;
-		name = "genome.h: 27";
-		rLen = 0;
-		rLoc = 701;
-		rType = 0;
-		vrLen = 1543;
-		vrLoc = 28;
 	};
 	FC55202D10D305ED00841204 /* tonegen test */ = {
 		activeExec = 0;
@@ -456,10 +226,6 @@
 		sourceDirectories = (
 		);
 	};
-	FC55204510D3064600841204 /* PBXBookmark */ = {
-		isa = PBXBookmark;
-		fRef = FCD5B27410CDEAB000D120EF /* ToneGenApp.h */;
-	};
 	FC55205210D307C000841204 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
 		fRef = 08FB7796FE84155DC02AAC07 /* tonegen.m */;
@@ -468,16 +234,6 @@
 		rLoc = 723;
 		rType = 0;
 		vrLen = 1458;
-		vrLoc = 0;
-	};
-	FC55205310D307C000841204 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 08FB7796FE84155DC02AAC07 /* tonegen.m */;
-		name = "tonegen.m: 33";
-		rLen = 57;
-		rLoc = 1087;
-		rType = 0;
-		vrLen = 1191;
 		vrLoc = 0;
 	};
 	FC55205410D307C000841204 /* PBXTextBookmark */ = {
@@ -490,506 +246,13 @@
 		vrLen = 215;
 		vrLoc = 0;
 	};
-	FC55205510D307C000841204 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = FC0BF5A810D2949400A2A196 /* tester.cpp */;
-		name = "tester.cpp: 13";
-		rLen = 0;
-		rLoc = 215;
-		rType = 0;
-		vrLen = 215;
-		vrLoc = 0;
-	};
-	FC55205610D307C000841204 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = FC7A844F10CF144000E4B036 /* genome.h */;
-		name = "genome.h: 25";
-		rLen = 0;
-		rLoc = 603;
-		rType = 0;
-		vrLen = 1526;
-		vrLoc = 75;
-	};
-	FC55205910D307C000841204 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = FCD5B27410CDEAB000D120EF /* ToneGenApp.h */;
-		name = "ToneGenApp.h: 14";
-		rLen = 119;
-		rLoc = 154;
-		rType = 0;
-		vrLen = 245;
-		vrLoc = 0;
-	};
 	FC55205C10D307D500841204 /* ToneGenApp.mm */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {802, 580}}";
-			sepNavSelRange = "{429, 0}";
-			sepNavVisRange = "{0, 481}";
+			sepNavIntBoundsRect = "{{0, 0}, {802, 603}}";
+			sepNavSelRange = "{199, 0}";
+			sepNavVisRange = "{0, 556}";
+			sepNavWindowFrame = "{{534, 162}, {861, 716}}";
 		};
-	};
-	FC55205E10D307E700841204 /* PBXBookmark */ = {
-		isa = PBXBookmark;
-		fRef = FC55205C10D307D500841204 /* ToneGenApp.mm */;
-	};
-	FC55205F10D3084C00841204 /* PBXBookmark */ = {
-		isa = PBXBookmark;
-		fRef = FC7A845010CF144000E4B036 /* genome.cpp */;
-	};
-	FC55206310D3088300841204 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = FC7A845010CF144000E4B036 /* genome.cpp */;
-		name = "genome.cpp: 220";
-		rLen = 0;
-		rLoc = 2009;
-		rType = 0;
-		vrLen = 1499;
-		vrLoc = 7621;
-	};
-	FC55206410D3088300841204 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = FC7A844F10CF144000E4B036 /* genome.h */;
-		name = "genome.h: 25";
-		rLen = 0;
-		rLoc = 603;
-		rType = 0;
-		vrLen = 1526;
-		vrLoc = 75;
-	};
-	FC55206510D3088300841204 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = FC7A844F10CF144000E4B036 /* genome.h */;
-		name = "genome.h: 25";
-		rLen = 0;
-		rLoc = 603;
-		rType = 0;
-		vrLen = 1526;
-		vrLoc = 75;
-	};
-	FC55206610D3088300841204 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 08FB7796FE84155DC02AAC07 /* tonegen.m */;
-		name = "tonegen.m: 38";
-		rLen = 0;
-		rLoc = 1210;
-		rType = 0;
-		vrLen = 1191;
-		vrLoc = 0;
-	};
-	FC55206910D3088300841204 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = FC55205C10D307D500841204 /* ToneGenApp.mm */;
-		name = "ToneGenApp.mm: 13";
-		rLen = 0;
-		rLoc = 472;
-		rType = 0;
-		vrLen = 228;
-		vrLoc = 0;
-	};
-	FC55206A10D3088300841204 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = FC0BF5A810D2949400A2A196 /* tester.cpp */;
-		name = "tester.cpp: 13";
-		rLen = 0;
-		rLoc = 215;
-		rType = 0;
-		vrLen = 215;
-		vrLoc = 0;
-	};
-	FC55206B10D3088300841204 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = FCD5B27410CDEAB000D120EF /* ToneGenApp.h */;
-		name = "ToneGenApp.h: 14";
-		rLen = 119;
-		rLoc = 154;
-		rType = 0;
-		vrLen = 245;
-		vrLoc = 0;
-	};
-	FC55206C10D308BC00841204 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = FC7A845010CF144000E4B036 /* genome.cpp */;
-		name = "genome.cpp: 266";
-		rLen = 0;
-		rLoc = 9642;
-		rType = 0;
-		vrLen = 978;
-		vrLoc = 8704;
-	};
-	FC55206D10D308BC00841204 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = FC7A844F10CF144000E4B036 /* genome.h */;
-		name = "genome.h: 26";
-		rLen = 56;
-		rLoc = 632;
-		rType = 0;
-		vrLen = 1526;
-		vrLoc = 75;
-	};
-	FC55206E10D308BC00841204 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 08FB7796FE84155DC02AAC07 /* tonegen.m */;
-		name = "tonegen.m: 38";
-		rLen = 0;
-		rLoc = 1210;
-		rType = 0;
-		vrLen = 1191;
-		vrLoc = 0;
-	};
-	FC55206F10D308BC00841204 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = FC55205C10D307D500841204 /* ToneGenApp.mm */;
-		name = "ToneGenApp.mm: 13";
-		rLen = 0;
-		rLoc = 472;
-		rType = 0;
-		vrLen = 228;
-		vrLoc = 0;
-	};
-	FC55207010D308BC00841204 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = FC0BF5A810D2949400A2A196 /* tester.cpp */;
-		name = "tester.cpp: 13";
-		rLen = 0;
-		rLoc = 215;
-		rType = 0;
-		vrLen = 215;
-		vrLoc = 0;
-	};
-	FC55207110D308BC00841204 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = FCD5B27410CDEAB000D120EF /* ToneGenApp.h */;
-		name = "ToneGenApp.h: 14";
-		rLen = 119;
-		rLoc = 154;
-		rType = 0;
-		vrLen = 245;
-		vrLoc = 0;
-	};
-	FC55207210D3097800841204 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = FC7A845010CF144000E4B036 /* genome.cpp */;
-		name = "genome.cpp: 277";
-		rLen = 0;
-		rLoc = 10843;
-		rType = 0;
-		vrLen = 1123;
-		vrLoc = 8937;
-	};
-	FC55207310D3097800841204 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = FC7A844F10CF144000E4B036 /* genome.h */;
-		name = "genome.h: 26";
-		rLen = 56;
-		rLoc = 632;
-		rType = 0;
-		vrLen = 1526;
-		vrLoc = 75;
-	};
-	FC55207410D3097800841204 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 08FB7796FE84155DC02AAC07 /* tonegen.m */;
-		name = "tonegen.m: 38";
-		rLen = 0;
-		rLoc = 1210;
-		rType = 0;
-		vrLen = 1191;
-		vrLoc = 0;
-	};
-	FC55207510D3097800841204 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = FC55205C10D307D500841204 /* ToneGenApp.mm */;
-		name = "ToneGenApp.mm: 13";
-		rLen = 0;
-		rLoc = 472;
-		rType = 0;
-		vrLen = 228;
-		vrLoc = 0;
-	};
-	FC55207610D3097800841204 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = FC0BF5A810D2949400A2A196 /* tester.cpp */;
-		name = "tester.cpp: 13";
-		rLen = 0;
-		rLoc = 215;
-		rType = 0;
-		vrLen = 215;
-		vrLoc = 0;
-	};
-	FC55207710D3097800841204 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = FCD5B27410CDEAB000D120EF /* ToneGenApp.h */;
-		name = "ToneGenApp.h: 14";
-		rLen = 119;
-		rLoc = 154;
-		rType = 0;
-		vrLen = 245;
-		vrLoc = 0;
-	};
-	FC55207810D3F00C00841204 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = FC7A844F10CF144000E4B036 /* genome.h */;
-		name = "genome.h: 43";
-		rLen = 0;
-		rLoc = 1541;
-		rType = 0;
-		vrLen = 1515;
-		vrLoc = 75;
-	};
-	FC55207910D3F00C00841204 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = FC7A845010CF144000E4B036 /* genome.cpp */;
-		name = "genome.cpp: 278";
-		rLen = 0;
-		rLoc = 10070;
-		rType = 0;
-		vrLen = 1145;
-		vrLoc = 9018;
-	};
-	FC55207A10D3F00C00841204 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 08FB7796FE84155DC02AAC07 /* tonegen.m */;
-		name = "tonegen.m: 38";
-		rLen = 0;
-		rLoc = 1210;
-		rType = 0;
-		vrLen = 1191;
-		vrLoc = 0;
-	};
-	FC55207B10D3F00C00841204 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = FC55205C10D307D500841204 /* ToneGenApp.mm */;
-		name = "ToneGenApp.mm: 13";
-		rLen = 0;
-		rLoc = 472;
-		rType = 0;
-		vrLen = 228;
-		vrLoc = 0;
-	};
-	FC55207C10D3F00C00841204 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = FC0BF5A810D2949400A2A196 /* tester.cpp */;
-		name = "tester.cpp: 13";
-		rLen = 0;
-		rLoc = 215;
-		rType = 0;
-		vrLen = 215;
-		vrLoc = 0;
-	};
-	FC55207D10D3F00C00841204 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = FCD5B27410CDEAB000D120EF /* ToneGenApp.h */;
-		name = "ToneGenApp.h: 14";
-		rLen = 119;
-		rLoc = 154;
-		rType = 0;
-		vrLen = 245;
-		vrLoc = 0;
-	};
-	FC55207F10D3F19B00841204 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = FC7A845010CF144000E4B036 /* genome.cpp */;
-		name = "genome.cpp: 302";
-		rLen = 0;
-		rLoc = 10843;
-		rType = 0;
-		vrLen = 1334;
-		vrLoc = 9520;
-	};
-	FC55208010D3F19B00841204 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = FC7A844F10CF144000E4B036 /* genome.h */;
-		name = "genome.h: 43";
-		rLen = 70;
-		rLoc = 1526;
-		rType = 0;
-		vrLen = 1569;
-		vrLoc = 75;
-	};
-	FC55208110D3F19B00841204 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 08FB7796FE84155DC02AAC07 /* tonegen.m */;
-		name = "tonegen.m: 38";
-		rLen = 0;
-		rLoc = 1210;
-		rType = 0;
-		vrLen = 1191;
-		vrLoc = 0;
-	};
-	FC55208210D3F19B00841204 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = FC55205C10D307D500841204 /* ToneGenApp.mm */;
-		name = "ToneGenApp.mm: 13";
-		rLen = 0;
-		rLoc = 472;
-		rType = 0;
-		vrLen = 228;
-		vrLoc = 0;
-	};
-	FC55208310D3F19B00841204 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = FC0BF5A810D2949400A2A196 /* tester.cpp */;
-		name = "tester.cpp: 13";
-		rLen = 0;
-		rLoc = 215;
-		rType = 0;
-		vrLen = 215;
-		vrLoc = 0;
-	};
-	FC55208410D3F19B00841204 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = FCD5B27410CDEAB000D120EF /* ToneGenApp.h */;
-		name = "ToneGenApp.h: 14";
-		rLen = 119;
-		rLoc = 154;
-		rType = 0;
-		vrLen = 245;
-		vrLoc = 0;
-	};
-	FC55208610D3F1C600841204 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		comments = "error: 'const class h2p_tonegen::Genome' has no member named 'wave'";
-		fRef = FC7A845010CF144000E4B036 /* genome.cpp */;
-		rLen = 1;
-		rLoc = 294;
-		rType = 1;
-	};
-	FC55208810D3F1D400841204 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		comments = "error: 'const class h2p_tonegen::Genome' has no member named 'wave'";
-		fRef = FC7A845010CF144000E4B036 /* genome.cpp */;
-		rLen = 1;
-		rLoc = 294;
-		rType = 1;
-	};
-	FC55208910D3F1D400841204 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = FC7A845010CF144000E4B036 /* genome.cpp */;
-		name = "genome.cpp: 295";
-		rLen = 0;
-		rLoc = 10567;
-		rType = 0;
-		vrLen = 322;
-		vrLoc = 10464;
-	};
-	FC55208A10D3F1D400841204 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = FC7A845010CF144000E4B036 /* genome.cpp */;
-		name = "genome.cpp: 295";
-		rLen = 0;
-		rLoc = 10567;
-		rType = 0;
-		vrLen = 322;
-		vrLoc = 10464;
-	};
-	FC55208B10D3F1D400841204 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = FC7A845010CF144000E4B036 /* genome.cpp */;
-		name = "genome.cpp: 295";
-		rLen = 0;
-		rLoc = 10567;
-		rType = 0;
-		vrLen = 322;
-		vrLoc = 10464;
-	};
-	FC55208C10D3F1DE00841204 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = FC7A845010CF144000E4B036 /* genome.cpp */;
-		name = "genome.cpp: 301";
-		rLen = 0;
-		rLoc = 10767;
-		rType = 0;
-		vrLen = 1337;
-		vrLoc = 9541;
-	};
-	FC55208D10D3F1DE00841204 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = FC7A844F10CF144000E4B036 /* genome.h */;
-		name = "genome.h: 43";
-		rLen = 70;
-		rLoc = 1526;
-		rType = 0;
-		vrLen = 1569;
-		vrLoc = 75;
-	};
-	FC55208E10D3F1DE00841204 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 08FB7796FE84155DC02AAC07 /* tonegen.m */;
-		name = "tonegen.m: 38";
-		rLen = 0;
-		rLoc = 1210;
-		rType = 0;
-		vrLen = 1191;
-		vrLoc = 0;
-	};
-	FC55208F10D3F1DE00841204 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = FC55205C10D307D500841204 /* ToneGenApp.mm */;
-		name = "ToneGenApp.mm: 13";
-		rLen = 0;
-		rLoc = 472;
-		rType = 0;
-		vrLen = 228;
-		vrLoc = 0;
-	};
-	FC55209010D3F1DE00841204 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = FC0BF5A810D2949400A2A196 /* tester.cpp */;
-		name = "tester.cpp: 13";
-		rLen = 0;
-		rLoc = 215;
-		rType = 0;
-		vrLen = 215;
-		vrLoc = 0;
-	};
-	FC55209110D3F1DE00841204 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = FCD5B27410CDEAB000D120EF /* ToneGenApp.h */;
-		name = "ToneGenApp.h: 14";
-		rLen = 119;
-		rLoc = 154;
-		rType = 0;
-		vrLen = 245;
-		vrLoc = 0;
-	};
-	FC55209710D3F26400841204 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = FC7A845010CF144000E4B036 /* genome.cpp */;
-		name = "genome.cpp: 295";
-		rLen = 0;
-		rLoc = 10567;
-		rType = 0;
-		vrLen = 322;
-		vrLoc = 10464;
-	};
-	FC55209810D3F26400841204 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = FC7A845010CF144000E4B036 /* genome.cpp */;
-		name = "genome.cpp: 295";
-		rLen = 0;
-		rLoc = 10567;
-		rType = 0;
-		vrLen = 322;
-		vrLoc = 10464;
-	};
-	FC55209910D3F26500841204 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = FC7A845010CF144000E4B036 /* genome.cpp */;
-		name = "genome.cpp: 295";
-		rLen = 0;
-		rLoc = 10567;
-		rType = 0;
-		vrLen = 322;
-		vrLoc = 10464;
-	};
-	FC55209C10D3F38700841204 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = FC7A844F10CF144000E4B036 /* genome.h */;
-		name = "genome.h: 38";
-		rLen = 0;
-		rLoc = 1267;
-		rType = 0;
-		vrLen = 1592;
-		vrLoc = 79;
 	};
 	FC55209D10D3F38700841204 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
@@ -997,366 +260,6 @@
 		rLen = 1;
 		rLoc = 11;
 		rType = 1;
-	};
-	FC55209E10D3F38700841204 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = FC55205C10D307D500841204 /* ToneGenApp.mm */;
-		name = "ToneGenApp.mm: 15";
-		rLen = 0;
-		rLoc = 368;
-		rType = 0;
-		vrLen = 339;
-		vrLoc = 0;
-	};
-	FC55209F10D3F38700841204 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 08FB7796FE84155DC02AAC07 /* tonegen.m */;
-		name = "tonegen.m: 38";
-		rLen = 0;
-		rLoc = 1210;
-		rType = 0;
-		vrLen = 1191;
-		vrLoc = 0;
-	};
-	FC5520A010D3F38700841204 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = FC7A845010CF144000E4B036 /* genome.cpp */;
-		name = "genome.cpp: 301";
-		rLen = 0;
-		rLoc = 10767;
-		rType = 0;
-		vrLen = 1337;
-		vrLoc = 9541;
-	};
-	FC5520A110D3F38700841204 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = FC0BF5A810D2949400A2A196 /* tester.cpp */;
-		name = "tester.cpp: 13";
-		rLen = 0;
-		rLoc = 215;
-		rType = 0;
-		vrLen = 215;
-		vrLoc = 0;
-	};
-	FC5520A210D3F39F00841204 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = FC55205C10D307D500841204 /* ToneGenApp.mm */;
-		name = "ToneGenApp.mm: 17";
-		rLen = 0;
-		rLoc = 472;
-		rType = 0;
-		vrLen = 364;
-		vrLoc = 0;
-	};
-	FC5520A310D3F39F00841204 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = FC7A844F10CF144000E4B036 /* genome.h */;
-		name = "genome.h: 38";
-		rLen = 0;
-		rLoc = 1267;
-		rType = 0;
-		vrLen = 1592;
-		vrLoc = 79;
-	};
-	FC5520A410D3F39F00841204 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 08FB7796FE84155DC02AAC07 /* tonegen.m */;
-		name = "tonegen.m: 38";
-		rLen = 0;
-		rLoc = 1210;
-		rType = 0;
-		vrLen = 1191;
-		vrLoc = 0;
-	};
-	FC5520A510D3F39F00841204 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = FC7A845010CF144000E4B036 /* genome.cpp */;
-		name = "genome.cpp: 301";
-		rLen = 0;
-		rLoc = 10767;
-		rType = 0;
-		vrLen = 1337;
-		vrLoc = 9541;
-	};
-	FC5520A610D3F39F00841204 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = FC0BF5A810D2949400A2A196 /* tester.cpp */;
-		name = "tester.cpp: 13";
-		rLen = 0;
-		rLoc = 215;
-		rType = 0;
-		vrLen = 215;
-		vrLoc = 0;
-	};
-	FC5520AB10D3F41900841204 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = FC55205C10D307D500841204 /* ToneGenApp.mm */;
-		name = "ToneGenApp.mm: 14";
-		rLen = 0;
-		rLoc = 317;
-		rType = 0;
-		vrLen = 448;
-		vrLoc = 0;
-	};
-	FC5520AC10D3F41900841204 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = FC7A845010CF144000E4B036 /* genome.cpp */;
-		name = "genome.cpp: 307";
-		rLen = 0;
-		rLoc = 10841;
-		rType = 0;
-		vrLen = 1270;
-		vrLoc = 9660;
-	};
-	FC5520AD10D3F41900841204 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = FC7A844F10CF144000E4B036 /* genome.h */;
-		name = "genome.h: 16";
-		rLen = 0;
-		rLoc = 260;
-		rType = 0;
-		vrLen = 1625;
-		vrLoc = 79;
-	};
-	FC5520AE10D3F41900841204 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 08FB7796FE84155DC02AAC07 /* tonegen.m */;
-		name = "tonegen.m: 38";
-		rLen = 0;
-		rLoc = 1210;
-		rType = 0;
-		vrLen = 1191;
-		vrLoc = 0;
-	};
-	FC5520AF10D3F41900841204 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = FC0BF5A810D2949400A2A196 /* tester.cpp */;
-		name = "tester.cpp: 13";
-		rLen = 0;
-		rLoc = 215;
-		rType = 0;
-		vrLen = 215;
-		vrLoc = 0;
-	};
-	FC5520B410D3F51E00841204 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = FC7A845010CF144000E4B036 /* genome.cpp */;
-		name = "genome.cpp: 295";
-		rLen = 0;
-		rLoc = 10567;
-		rType = 0;
-		vrLen = 322;
-		vrLoc = 10464;
-	};
-	FC5520B510D3F51E00841204 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = FC7A845010CF144000E4B036 /* genome.cpp */;
-		name = "genome.cpp: 295";
-		rLen = 0;
-		rLoc = 10567;
-		rType = 0;
-		vrLen = 322;
-		vrLoc = 10464;
-	};
-	FC5520B610D3F51E00841204 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = FC7A845010CF144000E4B036 /* genome.cpp */;
-		name = "genome.cpp: 295";
-		rLen = 0;
-		rLoc = 10567;
-		rType = 0;
-		vrLen = 322;
-		vrLoc = 10464;
-	};
-	FC5520C010D3F56B00841204 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = FC7A845010CF144000E4B036 /* genome.cpp */;
-		name = "genome.cpp: 295";
-		rLen = 0;
-		rLoc = 10567;
-		rType = 0;
-		vrLen = 322;
-		vrLoc = 10464;
-	};
-	FC5520C110D3F56C00841204 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = FC7A845010CF144000E4B036 /* genome.cpp */;
-		name = "genome.cpp: 295";
-		rLen = 0;
-		rLoc = 10567;
-		rType = 0;
-		vrLen = 322;
-		vrLoc = 10464;
-	};
-	FC5520C210D3F56C00841204 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = FC7A845010CF144000E4B036 /* genome.cpp */;
-		name = "genome.cpp: 295";
-		rLen = 0;
-		rLoc = 10567;
-		rType = 0;
-		vrLen = 322;
-		vrLoc = 10464;
-	};
-	FC5520C410D3F59300841204 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = FC7A845010CF144000E4B036 /* genome.cpp */;
-		name = "genome.cpp: 295";
-		rLen = 0;
-		rLoc = 10567;
-		rType = 0;
-		vrLen = 322;
-		vrLoc = 10464;
-	};
-	FC5520C510D3F59300841204 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = FC7A845010CF144000E4B036 /* genome.cpp */;
-		name = "genome.cpp: 295";
-		rLen = 0;
-		rLoc = 10567;
-		rType = 0;
-		vrLen = 322;
-		vrLoc = 10464;
-	};
-	FC5520C610D3F59400841204 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = FC7A845010CF144000E4B036 /* genome.cpp */;
-		name = "genome.cpp: 295";
-		rLen = 0;
-		rLoc = 10567;
-		rType = 0;
-		vrLen = 322;
-		vrLoc = 10464;
-	};
-	FC5520C910D3F88400841204 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = FC7A845010CF144000E4B036 /* genome.cpp */;
-		name = "genome.cpp: 295";
-		rLen = 0;
-		rLoc = 10567;
-		rType = 0;
-		vrLen = 302;
-		vrLoc = 10470;
-	};
-	FC5520CA10D3F88400841204 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = FC7A845010CF144000E4B036 /* genome.cpp */;
-		name = "genome.cpp: 295";
-		rLen = 0;
-		rLoc = 10567;
-		rType = 0;
-		vrLen = 302;
-		vrLoc = 10470;
-	};
-	FC5520CB10D3F88500841204 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = FC7A845010CF144000E4B036 /* genome.cpp */;
-		name = "genome.cpp: 295";
-		rLen = 0;
-		rLoc = 10567;
-		rType = 0;
-		vrLen = 302;
-		vrLoc = 10470;
-	};
-	FC5520CD10D3F88700841204 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = FC7A845010CF144000E4B036 /* genome.cpp */;
-		name = "genome.cpp: 295";
-		rLen = 0;
-		rLoc = 10567;
-		rType = 0;
-		vrLen = 302;
-		vrLoc = 10470;
-	};
-	FC5520CE10D3F88700841204 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = FC7A845010CF144000E4B036 /* genome.cpp */;
-		name = "genome.cpp: 295";
-		rLen = 0;
-		rLoc = 10567;
-		rType = 0;
-		vrLen = 302;
-		vrLoc = 10470;
-	};
-	FC5520CF10D3F88700841204 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = FC7A845010CF144000E4B036 /* genome.cpp */;
-		name = "genome.cpp: 295";
-		rLen = 0;
-		rLoc = 10567;
-		rType = 0;
-		vrLen = 302;
-		vrLoc = 10470;
-	};
-	FC5520D010D3F89400841204 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = FC7A845010CF144000E4B036 /* genome.cpp */;
-		name = "genome.cpp: 295";
-		rLen = 0;
-		rLoc = 10567;
-		rType = 0;
-		vrLen = 286;
-		vrLoc = 10470;
-	};
-	FC5520D110D3F8A500841204 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = FC7A845010CF144000E4B036 /* genome.cpp */;
-		name = "genome.cpp: 307";
-		rLen = 0;
-		rLoc = 10841;
-		rType = 0;
-		vrLen = 1270;
-		vrLoc = 9660;
-	};
-	FC5520D210D3F8A500841204 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = FC7A845010CF144000E4B036 /* genome.cpp */;
-		name = "genome.cpp: 243";
-		rLen = 0;
-		rLoc = 9088;
-		rType = 0;
-		vrLen = 1070;
-		vrLoc = 9016;
-	};
-	FC5520D310D3F8A500841204 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 08FB7796FE84155DC02AAC07 /* tonegen.m */;
-		name = "tonegen.m: 38";
-		rLen = 0;
-		rLoc = 1210;
-		rType = 0;
-		vrLen = 1210;
-		vrLoc = 0;
-	};
-	FC5520D410D3F8A500841204 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = FC0BF5A810D2949400A2A196 /* tester.cpp */;
-		name = "tester.cpp: 13";
-		rLen = 0;
-		rLoc = 215;
-		rType = 0;
-		vrLen = 215;
-		vrLoc = 0;
-	};
-	FC5520D510D3F8A500841204 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = FC55205C10D307D500841204 /* ToneGenApp.mm */;
-		name = "ToneGenApp.mm: 19";
-		rLen = 0;
-		rLoc = 429;
-		rType = 0;
-		vrLen = 481;
-		vrLoc = 0;
-	};
-	FC5520D610D3F8A500841204 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = FC7A844F10CF144000E4B036 /* genome.h */;
-		name = "genome.h: 16";
-		rLen = 0;
-		rLoc = 260;
-		rType = 0;
-		vrLen = 1623;
-		vrLoc = 79;
 	};
 	FC5520D810D3F95800841204 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
@@ -1368,27 +271,45 @@
 		vrLen = 1623;
 		vrLoc = 79;
 	};
-	FC5520D910D3F95800841204 /* PBXTextBookmark */ = {
+	FC5520E110D3FA3300841204 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
-		fRef = FC7A844F10CF144000E4B036 /* genome.h */;
-		name = "genome.h: 35";
-		rLen = 0;
-		rLoc = 1055;
-		rType = 0;
-		vrLen = 1629;
-		vrLoc = 79;
+		comments = "error: prototype for 'h2p_tonegen::Genome::Genome(h2p_tonegen::Genome&)' does not match any in class 'h2p_tonegen::Genome'";
+		fRef = FC7A845010CF144000E4B036 /* genome.cpp */;
+		rLen = 1;
+		rLoc = 234;
+		rType = 1;
 	};
-	FC5520DA10D3F95800841204 /* PBXTextBookmark */ = {
+	FC55212A10D4967000841204 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
 		fRef = FC7A845010CF144000E4B036 /* genome.cpp */;
-		name = "genome.cpp: 243";
+		name = "genome.cpp: 27";
 		rLen = 0;
-		rLoc = 9087;
+		rLoc = 594;
 		rType = 0;
-		vrLen = 1076;
-		vrLoc = 9016;
+		vrLen = 1603;
+		vrLoc = 370;
 	};
-	FC5520DB10D3F95800841204 /* PBXTextBookmark */ = {
+	FC55212B10D4967000841204 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = FC55205C10D307D500841204 /* ToneGenApp.mm */;
+		name = "ToneGenApp.mm: 14";
+		rLen = 0;
+		rLoc = 199;
+		rType = 0;
+		vrLen = 556;
+		vrLoc = 0;
+	};
+	FC55212C10D4967000841204 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = FC7A844F10CF144000E4B036 /* genome.h */;
+		name = "genome.h: 30";
+		rLen = 0;
+		rLoc = 799;
+		rType = 0;
+		vrLen = 1637;
+		vrLoc = 79;
+	};
+	FC55212D10D4967000841204 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
 		fRef = 08FB7796FE84155DC02AAC07 /* tonegen.m */;
 		name = "tonegen.m: 38";
@@ -1398,7 +319,7 @@
 		vrLen = 1210;
 		vrLoc = 0;
 	};
-	FC5520DC10D3F95800841204 /* PBXTextBookmark */ = {
+	FC55212E10D4967000841204 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
 		fRef = FC0BF5A810D2949400A2A196 /* tester.cpp */;
 		name = "tester.cpp: 13";
@@ -1407,124 +328,6 @@
 		rType = 0;
 		vrLen = 215;
 		vrLoc = 0;
-	};
-	FC5520DD10D3F95800841204 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = FC55205C10D307D500841204 /* ToneGenApp.mm */;
-		name = "ToneGenApp.mm: 19";
-		rLen = 0;
-		rLoc = 429;
-		rType = 0;
-		vrLen = 481;
-		vrLoc = 0;
-	};
-	FC5520E310D3FA3800841204 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		comments = "error: no matching function for call to 'h2p_tonegen::Genome::Genome(const h2p_tonegen::Genome&)'";
-		fRef = FC7A845010CF144000E4B036 /* genome.cpp */;
-		rLen = 1;
-		rLoc = 243;
-		rType = 1;
-	};
-	FC5520E410D3FA3800841204 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = FC7A845010CF144000E4B036 /* genome.cpp */;
-		name = "genome.cpp: 244";
-		rLen = 30;
-		rLoc = 9089;
-		rType = 0;
-		vrLen = 305;
-		vrLoc = 9026;
-	};
-	FC5520E510D3FA3900841204 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = FC7A845010CF144000E4B036 /* genome.cpp */;
-		name = "genome.cpp: 244";
-		rLen = 30;
-		rLoc = 9089;
-		rType = 0;
-		vrLen = 305;
-		vrLoc = 9026;
-	};
-	FC5520E610D3FA3900841204 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = FC7A845010CF144000E4B036 /* genome.cpp */;
-		name = "genome.cpp: 244";
-		rLen = 30;
-		rLoc = 9089;
-		rType = 0;
-		vrLen = 305;
-		vrLoc = 9026;
-	};
-	FC5520E810D3FA3E00841204 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = FC7A845010CF144000E4B036 /* genome.cpp */;
-		name = "genome.cpp: 244";
-		rLen = 30;
-		rLoc = 9089;
-		rType = 0;
-		vrLen = 331;
-		vrLoc = 9026;
-	};
-	FC5520E910D3FA3F00841204 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = FC7A845010CF144000E4B036 /* genome.cpp */;
-		name = "genome.cpp: 244";
-		rLen = 30;
-		rLoc = 9089;
-		rType = 0;
-		vrLen = 331;
-		vrLoc = 9026;
-	};
-	FC5520EA10D3FA3F00841204 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = FC7A845010CF144000E4B036 /* genome.cpp */;
-		name = "genome.cpp: 244";
-		rLen = 30;
-		rLoc = 9089;
-		rType = 0;
-		vrLen = 331;
-		vrLoc = 9026;
-	};
-	FC5520ED10D3FA4A00841204 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = FC7A845010CF144000E4B036 /* genome.cpp */;
-		name = "genome.cpp: 244";
-		rLen = 30;
-		rLoc = 9089;
-		rType = 0;
-		vrLen = 331;
-		vrLoc = 9026;
-	};
-	FC5520F110D3FA4F00841204 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = FC7A845010CF144000E4B036 /* genome.cpp */;
-		name = "genome.cpp: 244";
-		rLen = 30;
-		rLoc = 9089;
-		rType = 0;
-		vrLen = 331;
-		vrLoc = 9026;
-	};
-	FC5520F210D3FA4F00841204 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = FC7A845010CF144000E4B036 /* genome.cpp */;
-		name = "genome.cpp: 244";
-		rLen = 30;
-		rLoc = 9089;
-		rType = 0;
-		vrLen = 331;
-		vrLoc = 9026;
-	};
-	FC5520F310D3FA4F00841204 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = FC7A845010CF144000E4B036 /* genome.cpp */;
-		name = "genome.cpp: 244";
-		rLen = 30;
-		rLoc = 9089;
-		rType = 0;
-		vrLen = 331;
-		vrLoc = 9026;
 	};
 	FC7A844510CF0F6300E4B036 /* genetics.mm */ = {
 		uiCtxt = {
@@ -1545,20 +348,20 @@
 	FC7A844F10CF144000E4B036 /* genome.h */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {802, 742}}";
-			sepNavSelRange = "{1049, 0}";
-			sepNavVisRange = "{79, 1629}";
+			sepNavSelRange = "{799, 0}";
+			sepNavVisRange = "{79, 1637}";
 			sepNavWindowFrame = "{{75, 139}, {861, 716}}";
 		};
 	};
 	FC7A845010CF144000E4B036 /* genome.cpp */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {439, 4564}}";
-			sepNavSelRange = "{9089, 30}";
-			sepNavVisRange = "{9026, 331}";
-			sepNavWindowFrame = "{{527, 162}, {861, 716}}";
+			sepNavIntBoundsRect = "{{0, 0}, {802, 4522}}";
+			sepNavSelRange = "{594, 0}";
+			sepNavVisRange = "{370, 1603}";
+			sepNavWindowFrame = "{{438, 162}, {861, 716}}";
 		};
 	};
-	FCB5647B10D1321A00573E33 /* genome.cpp:34 */ = {
+	FCB5647B10D1321A00573E33 /* genome.cpp:39 */ = {
 		isa = PBXFileBreakpoint;
 		actions = (
 		);
@@ -1570,7 +373,7 @@
 		functionName = "Genome::Comparator(const GAGenome& left, const GAGenome& right)";
 		hitCount = 0;
 		ignoreCount = 0;
-		lineNumber = 34;
+		lineNumber = 39;
 		modificationTime = 282326421.492774;
 		state = 0;
 	};

@@ -14,9 +14,12 @@ using namespace h2p_tonegen;
 
 -(void)goWithSampleRate: (int)sampleRate sampleSize: (int)sampleSize freq: (int)freq outputfile: (NSString*) filename {
     Genome genome(sampleRate, sampleSize, freq);
-    GASteadyStateGA ga(genome);
+    GAPopulation pop(genome, 10);
+    GASteadyStateGA ga(pop);
     ga.evolve();
     NSLog(@"winnar!ga.statistics().bestIndividual()");
 }
+                     
+                     
 
 @end

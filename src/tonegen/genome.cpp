@@ -23,12 +23,17 @@ static Genome *currentlyPlayingGenome = NULL;
 static unsigned char randombyte() {
     static bool srandcalled = false;
     if (!srandcalled) {
+        std::cerr << "calling srandom" << std::endl;
+        srandcalled = true;
         srandom(time(NULL));
     }
-    return random() & 0xff;
+    unsigned char byte = random() & 0xff;
+    std::cerr << "returning " << (int)byte << std::endl;
+    return byte;
 }
 
 void Genome::Initializer(GAGenome& genome) {
+    std::cerr << "init" << std::endl;
     try {
         unsigned int checksum = 0;
         Genome & target = (Genome&)(genome);
@@ -128,6 +133,7 @@ float Genome::Evaluator(GAGenome& target) {
         std::cin >> score;
     } while (score <= 0.0 or score >= 10.0);
     
+    genome._evaluated = gaTrue;
     return score;
 }
 
@@ -227,6 +233,11 @@ Genome::Genome(int samplerate, int samplesize, int freq) : GAGenome(Initializer,
 }
 
 Genome::Genome(const Genome& other) {
+    initializer(Initializer);
+    mutator(Mutator);
+    comparator(Comparator);
+    evaluator(Evaluator);
+    crossover(Crossover);
     samplerate_ = other.samplerate_;
     samplesize_ = other.samplesize_;
     freq_ = other.freq_;
@@ -301,6 +312,7 @@ void Genome::makeChild(const Genome& mom, const Genome& dad, Genome& spawn) {
                 std::cerr << "something impossible happened" << std::endl;
         }
     }
+    spawn._evaluated = gaFalse;
 }
 
 void Genome::toFile(std::string filename) {
