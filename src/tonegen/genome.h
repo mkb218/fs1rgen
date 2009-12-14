@@ -29,6 +29,7 @@ namespace h2p_tonegen {
         Genome(int samplerate = 44100, int samplesize = 2, int freq = 220);
         Genome(const Genome &);
         Genome& operator=(const GAGenome &);
+        unsigned long long int checksum() const { return checksum_; }
         void toFile(std::string filename);
         virtual void copy(const GAGenome &);
         virtual int equal(const GAGenome &) const;
@@ -46,6 +47,7 @@ namespace h2p_tonegen {
         int samplerate_;
         int samplesize_;
         int freq_;
+        unsigned long long int checksum_;
         std::vector<unsigned char> wave_;
     };
 }

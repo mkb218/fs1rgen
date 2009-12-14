@@ -28,23 +28,21 @@ static unsigned char randombyte() {
         srandom(time(NULL));
     }
     unsigned char byte = random() & 0xff;
-    std::cerr << "returning " << (int)byte << std::endl;
     return byte;
 }
 
 void Genome::Initializer(GAGenome& genome) {
-    std::cerr << "init" << std::endl;
+    std::cerr << "initializer" << std::endl;
     try {
-        unsigned int checksum = 0;
         Genome & target = (Genome&)(genome);
+        target.checksum_ = 0;
         target.wave_.clear();
         size_t bytes = target.samplerate_ * target.samplesize_ / target.freq_;
         target.wave_.reserve(bytes);
         for (size_t i = 0; i < bytes; ++i) {
             target.wave_.push_back(randombyte());
-            checksum += *(target.wave_.end()-1);
+            target.checksum_ += *(target.wave_.end()-1);
         }
-        std::cerr << "target wave has " << target.wave_.size() << " bytes and checksum " << std::hex << std::setw(8) << std::setfill('0') << checksum << "." << std::endl;
         target._evaluated = gaFalse;
     } catch (std::bad_cast & e) {
         std::cerr << "initializer was passed a non tonegen genome" << std::endl;
@@ -229,7 +227,8 @@ Genome::Genome(int samplerate, int samplesize, int freq) : GAGenome(Initializer,
     samplerate_ = samplerate;
     samplesize_ = samplesize;
     freq_ = freq;
-    _evaluated = gaFalse;
+    checksum_ = 0;
+    _evaluated = gaTrue;
 }
 
 Genome::Genome(const Genome& other) {
@@ -242,12 +241,12 @@ Genome::Genome(const Genome& other) {
     samplesize_ = other.samplesize_;
     freq_ = other.freq_;
     wave_ = other.wave_;
-    _evaluated = gaFalse;
+    checksum_ = other.checksum_;
+    _evaluated = other._evaluated;
 }
 
 Genome& Genome::operator=(const GAGenome & other) {
     copy(other);
-    _evaluated = gaFalse;
     return *this;
 }
  
@@ -261,7 +260,8 @@ void Genome::copy(const GAGenome & other) {
     samplesize_ = src.samplesize_;
     freq_ = src.freq_;
     wave_ = src.wave_;
-    _evaluated = gaFalse;
+    checksum_ = src.checksum_;
+    _evaluated = gaTrue;
 }
 
 int Genome::equal(const GAGenome & other) const {

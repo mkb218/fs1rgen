@@ -23,7 +23,6 @@
 		FC55203910D305ED00841204 /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC0BF58710D28E0700A2A196 /* CoreServices.framework */; };
 		FC55203B10D305ED00841204 /* tonegen.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = C6859EA3029092ED04C91782 /* tonegen.1 */; };
 		FC55205D10D307D500841204 /* ToneGenApp.mm in Sources */ = {isa = PBXBuildFile; fileRef = FC55205C10D307D500841204 /* ToneGenApp.mm */; };
-		FC7A844610CF0F6300E4B036 /* genetics.mm in Sources */ = {isa = PBXBuildFile; fileRef = FC7A844510CF0F6300E4B036 /* genetics.mm */; };
 		FC7A845110CF144000E4B036 /* genome.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FC7A845010CF144000E4B036 /* genome.cpp */; };
 /* End PBXBuildFile section */
 
@@ -63,8 +62,6 @@
 		FC0BF5A810D2949400A2A196 /* tester.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; path = tester.cpp; sourceTree = "<group>"; };
 		FC55203F10D305ED00841204 /* tonegen */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = tonegen; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC55205C10D307D500841204 /* ToneGenApp.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ToneGenApp.mm; sourceTree = "<group>"; };
-		FC7A844510CF0F6300E4B036 /* genetics.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = genetics.mm; sourceTree = "<group>"; };
-		FC7A844710CF0F7300E4B036 /* genetics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = genetics.h; sourceTree = "<group>"; };
 		FC7A844F10CF144000E4B036 /* genome.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = genome.h; sourceTree = "<group>"; };
 		FC7A845010CF144000E4B036 /* genome.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = genome.cpp; sourceTree = "<group>"; };
 		FCD5B27410CDEAB000D120EF /* ToneGenApp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ToneGenApp.h; sourceTree = "<group>"; };
@@ -117,8 +114,6 @@
 				32A70AAB03705E1F00C91783 /* tonegen_Prefix.pch */,
 				08FB7796FE84155DC02AAC07 /* tonegen.m */,
 				FCD5B27410CDEAB000D120EF /* ToneGenApp.h */,
-				FC7A844510CF0F6300E4B036 /* genetics.mm */,
-				FC7A844710CF0F7300E4B036 /* genetics.h */,
 				FC7A844F10CF144000E4B036 /* genome.h */,
 				FC7A845010CF144000E4B036 /* genome.cpp */,
 			);
@@ -217,7 +212,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				8DD76F9A0486AA7600D96B5E /* tonegen.m in Sources */,
-				FC7A844610CF0F6300E4B036 /* genetics.mm in Sources */,
 				FC7A845110CF144000E4B036 /* genome.cpp in Sources */,
 				FC55205D10D307D500841204 /* ToneGenApp.mm in Sources */,
 			);
