@@ -16,18 +16,22 @@
 #include <cstdio>
 using namespace h2p_tonegen;
 
+#define MIN_SCORE 0
+#define MAX_SCORE 100
+
 static AudioUnit outputUnit;
 static bool isOutputUnitReady = false;
 static Genome *currentlyPlayingGenome = NULL;
 
 static unsigned char randombyte() {
     static bool srandcalled = false;
+    static unsigned char cliffs[] = { 0x01, 0x03, 0x07, 0x0f, 0x1f, 0x3f, 0x7f, 0xff };
     if (!srandcalled) {
         std::cerr << "calling srandom" << std::endl;
         srandcalled = true;
         srandom(time(NULL));
     }
-    unsigned char byte = random() & 0xff;
+    unsigned char byte = cliffs[random() & 0x07];
     return byte;
 }
 
@@ -50,6 +54,7 @@ void Genome::Initializer(GAGenome& genome) {
 }
 
 int Genome::Mutator(GAGenome& genome, float p) {
+    std::cerr << "mutate!" << std::endl;
     unsigned char count;
     Genome & target = (Genome&)(genome);
     for (std::vector<unsigned char>::iterator it = target.wave_.begin(); it < target.wave_.end(); ++it) {
@@ -127,9 +132,9 @@ float Genome::Evaluator(GAGenome& target) {
         err = AudioUnitReset(outputUnit, kAudioUnitScope_Input, 0);
         if (err) { std::cerr << "AudioUnitReset returned " << err << std::endl; return 0.0; }
 
-        std::cout << "Rate what you just heard from 0 to 10, or -1 to listen again:" << std::flush;
+        std::cout << "Rate what you just heard from " << MIN_SCORE << " to " << MAX_SCORE << ", or something outside this range to listen again: " << std::flush;
         std::cin >> score;
-    } while (score <= 0.0 or score >= 10.0);
+    } while (score <= MIN_SCORE or score >= MAX_SCORE);
     
     genome._evaluated = gaTrue;
     return score;
@@ -273,6 +278,7 @@ Genome::~Genome() {
 }
 
 int Genome::Crossover(const GAGenome& a, const GAGenome& b, GAGenome* c, GAGenome* d) {
+    std::cerr << "cross!" << std::endl;
     const Genome & mom = (const Genome &)(a);
     const Genome & dad = (const Genome &) (b);
     int n = 0;

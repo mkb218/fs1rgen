@@ -18,6 +18,7 @@ using namespace h2p_tonegen;
     pop.initialize();
     GASimpleGA ga(pop);
     ga.elitist(gaTrue);
+    ga.pMutation(0.75);
     while (!ga.done()) {
         ga.step();
         std::cout << "Generation: " << ga.nGenerations();

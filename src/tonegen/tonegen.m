@@ -7,7 +7,7 @@ int main (int argc, const char *argv[]) {
     
     int sampleRate = 44100;
     int sampleSize = 2;
-    int freq = 440;
+    int freq = 110;
 
     struct option options[] = { { "samplerate", required_argument, NULL, 'r' },
         { "samplesize", required_argument, NULL, 's'},
