@@ -19,7 +19,7 @@ namespace fs1rgen {
   typedef auto_ptr<FGenome> FGenomePtr;
   typedef auto_ptr<Value> ValuePtr;
   typedef std::vector<char> ValueType;
-  typedef TableKey char;
+  typedef char TableKey;
 
   class Random {
   private:
@@ -33,7 +33,7 @@ namespace fs1rgen {
     int getRand() {
       return rand();
     }
-    int getRandInRange(int min, int max) throws (exception){
+    int getRandInRange(int min, int max) throw exception {
       if (min >= max) { throw exception("Range bad"); }
       return rand() % (max - min) + min;
     }

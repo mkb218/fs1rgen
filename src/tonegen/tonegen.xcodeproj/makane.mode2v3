@@ -235,7 +235,7 @@
 						<key>_historyCapacity</key>
 						<integer>0</integer>
 						<key>bookmark</key>
-						<string>FC7B9D4D10D6FBD30022BA4F</string>
+						<string>FC7B9D8A10D7CB630022BA4F</string>
 						<key>history</key>
 						<array>
 							<string>FCA1431B10D6881600F8A254</string>
@@ -255,86 +255,6 @@
 				<false/>
 				<key>RubberWindowFrame</key>
 				<string>535 218 861 660 0 0 1440 878 </string>
-			</dict>
-		</dict>
-		<dict>
-			<key>Content</key>
-			<dict>
-				<key>PBXProjectModuleGUID</key>
-				<string>FC55206110D3088300841204</string>
-				<key>PBXProjectModuleLabel</key>
-				<string>genome.cpp</string>
-				<key>PBXSplitModuleInNavigatorKey</key>
-				<dict>
-					<key>Split0</key>
-					<dict>
-						<key>PBXProjectModuleGUID</key>
-						<string>FC55206210D3088300841204</string>
-						<key>PBXProjectModuleLabel</key>
-						<string>genome.cpp</string>
-						<key>_historyCapacity</key>
-						<integer>0</integer>
-						<key>bookmark</key>
-						<string>FC7B9D4E10D6FBD30022BA4F</string>
-						<key>history</key>
-						<array>
-							<string>FCA1431C10D6881600F8A254</string>
-						</array>
-					</dict>
-					<key>SplitCount</key>
-					<string>1</string>
-				</dict>
-				<key>StatusBarVisibility</key>
-				<true/>
-			</dict>
-			<key>Geometry</key>
-			<dict>
-				<key>Frame</key>
-				<string>{{0, 20}, {861, 619}}</string>
-				<key>PBXModuleWindowStatusBarHidden2</key>
-				<false/>
-				<key>RubberWindowFrame</key>
-				<string>452 184 861 660 0 0 1440 878 </string>
-			</dict>
-		</dict>
-		<dict>
-			<key>Content</key>
-			<dict>
-				<key>PBXProjectModuleGUID</key>
-				<string>FCA1430810D677E800F8A254</string>
-				<key>PBXProjectModuleLabel</key>
-				<string>tonegen.m</string>
-				<key>PBXSplitModuleInNavigatorKey</key>
-				<dict>
-					<key>Split0</key>
-					<dict>
-						<key>PBXProjectModuleGUID</key>
-						<string>FCA1430910D677E800F8A254</string>
-						<key>PBXProjectModuleLabel</key>
-						<string>tonegen.m</string>
-						<key>_historyCapacity</key>
-						<integer>0</integer>
-						<key>bookmark</key>
-						<string>FC7B9D4F10D6FBD30022BA4F</string>
-						<key>history</key>
-						<array>
-							<string>FC7B9D3E10D6FBAE0022BA4F</string>
-						</array>
-					</dict>
-					<key>SplitCount</key>
-					<string>1</string>
-				</dict>
-				<key>StatusBarVisibility</key>
-				<true/>
-			</dict>
-			<key>Geometry</key>
-			<dict>
-				<key>Frame</key>
-				<string>{{0, 20}, {861, 619}}</string>
-				<key>PBXModuleWindowStatusBarHidden2</key>
-				<false/>
-				<key>RubberWindowFrame</key>
-				<string>468 217 861 660 0 0 1440 878 </string>
 			</dict>
 		</dict>
 	</array>
@@ -595,7 +515,7 @@
 	<key>StatusbarIsVisible</key>
 	<true/>
 	<key>TimeStamp</key>
-	<real>282524627.020109</real>
+	<real>282577763.259404</real>
 	<key>ToolbarDisplayMode</key>
 	<integer>1</integer>
 	<key>ToolbarIsVisible</key>
@@ -613,11 +533,11 @@
 		<string>1C530D5B069F1CE1000CFCEE</string>
 		<string>1C530D54069F1CE1000CFCEE</string>
 		<string>1C530D52069F1CE1000CFCEE</string>
-		<string>/Users/makane/code/fs1rgen/src/tonegen/tonegen.xcodeproj</string>
 		<string>1C530D57069F1CE1000CFCEE</string>
-		<string>FCA1430810D677E800F8A254</string>
 		<string>FC55206110D3088300841204</string>
+		<string>FCA1430810D677E800F8A254</string>
 		<string>FCA1430510D677E800F8A254</string>
+		<string>/Users/makane/code/fs1rgen/src/tonegen/tonegen.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
 	<string>25 458 350 420 0 0 1440 878 </string>
@@ -994,7 +914,7 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CDD528C0622207200134675</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>tonegen.m</string>
+										<string>&lt;No Editor&gt;</string>
 										<key>StatusBarVisibility</key>
 										<true/>
 									</dict>
@@ -1062,7 +982,7 @@
 			<key>WindowToolGUID</key>
 			<string>1C530D57069F1CE1000CFCEE</string>
 			<key>WindowToolIsVisible</key>
-			<true/>
+			<false/>
 		</dict>
 		<dict>
 			<key>Identifier</key>
@@ -1081,6 +1001,8 @@
 					<key>Dock</key>
 					<array>
 						<dict>
+							<key>BecomeActive</key>
+							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
