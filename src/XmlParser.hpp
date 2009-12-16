@@ -4,7 +4,7 @@
 #include <string>
 #include <memory>
 
-#include "model.hpp"
+#include "model.h"
 
 using namespace std;
 

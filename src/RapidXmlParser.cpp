@@ -2,6 +2,7 @@
 
 #include <string>
 #include <memory>
+
 using namespace fs1rgen;
 using namespace rapidxml;
 

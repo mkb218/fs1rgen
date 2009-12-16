@@ -4,6 +4,7 @@
 #include "XmlParser.hpp"
 #include "rapidxml.hpp"
 
+using namespace rapidxml;
 using namespace std;
 
 namespace fs1rgen {
