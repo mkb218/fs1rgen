@@ -1,0 +1,107 @@
+// !$*UTF8*$!
+{
+	29B97313FDCFA39411CA2CEA /* Project object */ = {
+		activeBuildConfigurationName = Debug;
+		activeExecutable = FC7B9D8E10D7CB960022BA4F /* fs1rgen */;
+		activeTarget = 8D1107260486CEB800E47090 /* fs1rgen */;
+		addToTargets = (
+			8D1107260486CEB800E47090 /* fs1rgen */,
+		);
+		codeSenseManager = FC7B9D9710D7CB9A0022BA4F /* Code sense */;
+		executables = (
+			FC7B9D8E10D7CB960022BA4F /* fs1rgen */,
+		);
+		perUserDictionary = {
+			PBXPerProjectTemplateStateSaveDate = 282610438;
+			PBXWorkspaceStateSaveDate = 282610438;
+		};
+		perUserProjectItems = {
+			FCA2B43B10D7CDAE003F8142 = FCA2B43B10D7CDAE003F8142 /* PBXTextBookmark */;
+			FCA2B43D10D7CDC2003F8142 = FCA2B43D10D7CDC2003F8142 /* PBXTextBookmark */;
+		};
+		sourceControlManager = FC7B9D9610D7CB9A0022BA4F /* Source Control */;
+		userBuildSettings = {
+		};
+	};
+	29B97316FDCFA39411CA2CEA /* main.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {802, 603}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 258}";
+			sepNavWindowFrame = "{{15, 157}, {861, 716}}";
+		};
+	};
+	8D1107260486CEB800E47090 /* fs1rgen */ = {
+		activeExec = 0;
+		executables = (
+			FC7B9D8E10D7CB960022BA4F /* fs1rgen */,
+		);
+	};
+	FC7B9D8E10D7CB960022BA4F /* fs1rgen */ = {
+		isa = PBXExecutable;
+		activeArgIndices = (
+		);
+		argumentStrings = (
+		);
+		autoAttachOnCrash = 1;
+		breakpointsEnabled = 1;
+		configStateDict = {
+		};
+		customDataFormattersEnabled = 1;
+		debuggerPlugin = GDBDebugging;
+		disassemblyDisplayState = 0;
+		dylibVariantSuffix = "";
+		enableDebugStr = 1;
+		environmentEntries = (
+		);
+		executableSystemSymbolLevel = 0;
+		executableUserSymbolLevel = 0;
+		libgmallocEnabled = 0;
+		name = fs1rgen;
+		sourceDirectories = (
+		);
+	};
+	FC7B9D9610D7CB9A0022BA4F /* Source Control */ = {
+		isa = PBXSourceControlManager;
+		fallbackIsa = XCSourceControlManager;
+		isSCMEnabled = 0;
+		scmConfiguration = {
+		};
+	};
+	FC7B9D9710D7CB9A0022BA4F /* Code sense */ = {
+		isa = PBXCodeSenseManager;
+		indexTemplatePath = "";
+	};
+	FCA2B41510D7CBE2003F8142 /* model.hpp */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.cpp.h;
+		name = model.hpp;
+		path = /Users/makane/code/fs1rgen/src/model.hpp;
+		sourceTree = "<absolute>";
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {802, 3472}}";
+			sepNavSelRange = "{329, 0}";
+			sepNavVisRange = "{0, 1007}";
+			sepNavWindowFrame = "{{176, 119}, {861, 716}}";
+		};
+	};
+	FCA2B43B10D7CDAE003F8142 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		comments = "error: expected type-specifier before ‘exception’";
+		fRef = FCA2B41510D7CBE2003F8142 /* model.hpp */;
+		rLen = 1;
+		rLoc = 35;
+		rType = 1;
+	};
+	FCA2B43D10D7CDC2003F8142 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = FCA2B41510D7CBE2003F8142 /* model.hpp */;
+		name = "model.hpp: 36";
+		rLen = 0;
+		rLoc = 773;
+		rType = 0;
+		vrLen = 1051;
+		vrLoc = 0;
+	};
+}
