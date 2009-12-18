@@ -235,10 +235,10 @@
 						<key>_historyCapacity</key>
 						<integer>0</integer>
 						<key>bookmark</key>
-						<string>FCDD129C10D92AD6007FA0FA</string>
+						<string>FC977BDE10DBC2B5004E9A7D</string>
 						<key>history</key>
 						<array>
-							<string>FCDD127D10D91F91007FA0FA</string>
+							<string>FCDD129C10D92AD6007FA0FA</string>
 						</array>
 					</dict>
 					<key>SplitCount</key>
@@ -254,7 +254,7 @@
 				<key>PBXModuleWindowStatusBarHidden2</key>
 				<false/>
 				<key>RubberWindowFrame</key>
-				<string>491 218 861 660 0 0 1440 878 </string>
+				<string>159 166 861 660 0 0 1440 878 </string>
 			</dict>
 		</dict>
 		<dict>
@@ -275,10 +275,10 @@
 						<key>_historyCapacity</key>
 						<integer>0</integer>
 						<key>bookmark</key>
-						<string>FCDD129D10D92AD6007FA0FA</string>
+						<string>FC977BDF10DBC2B5004E9A7D</string>
 						<key>history</key>
 						<array>
-							<string>FCDD127F10D91F9C007FA0FA</string>
+							<string>FCDD129D10D92AD6007FA0FA</string>
 						</array>
 					</dict>
 					<key>SplitCount</key>
@@ -315,10 +315,10 @@
 						<key>_historyCapacity</key>
 						<integer>0</integer>
 						<key>bookmark</key>
-						<string>FCDD129E10D92AD6007FA0FA</string>
+						<string>FC977BE010DBC2B5004E9A7D</string>
 						<key>history</key>
 						<array>
-							<string>FCDD126810D91E84007FA0FA</string>
+							<string>FCDD129E10D92AD6007FA0FA</string>
 						</array>
 					</dict>
 					<key>SplitCount</key>
@@ -355,10 +355,10 @@
 						<key>_historyCapacity</key>
 						<integer>0</integer>
 						<key>bookmark</key>
-						<string>FCDD129F10D92AD6007FA0FA</string>
+						<string>FC977BE110DBC2B5004E9A7D</string>
 						<key>history</key>
 						<array>
-							<string>FCDD126410D91E45007FA0FA</string>
+							<string>FCDD129F10D92AD6007FA0FA</string>
 						</array>
 					</dict>
 					<key>SplitCount</key>
@@ -408,8 +408,6 @@
 					<key>Tabs</key>
 					<array>
 						<dict>
-							<key>BecomeActive</key>
-							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXBottomSmartGroupGIDs</key>
@@ -615,8 +613,8 @@
 			</array>
 			<key>TableOfContents</key>
 			<array>
-				<string>FCDD125310D91DFA007FA0FA</string>
-				<string>FCDD125410D91DFA007FA0FA</string>
+				<string>FC977B9310DAEF67004E9A7D</string>
+				<string>FC977B9410DAEF67004E9A7D</string>
 				<string>1C9437FD063B20B00039CFAC</string>
 				<string>1C9437FE063B20B00039CFAC</string>
 				<string>1C9437FF063B20B00039CFAC</string>
@@ -634,7 +632,7 @@
 	<key>StatusbarIsVisible</key>
 	<true/>
 	<key>TimeStamp</key>
-	<real>282667734.20076102</real>
+	<real>282783588.10344601</real>
 	<key>ToolbarDisplayMode</key>
 	<integer>1</integer>
 	<key>ToolbarIsVisible</key>
@@ -650,7 +648,6 @@
 	<key>WindowOrderList</key>
 	<array>
 		<string>1C530D54069F1CE1000CFCEE</string>
-		<string>1C530D52069F1CE1000CFCEE</string>
 		<string>/Users/makane/code/fs1rgen/src/fs1rgen.xcodeproj</string>
 		<string>FCDD127810D91F65007FA0FA</string>
 		<string>FCDD127510D91F65007FA0FA</string>
@@ -916,8 +913,8 @@
 										<string>yes</string>
 										<key>sizes</key>
 										<array>
-											<string>{{0, 0}, {333, 201}}</string>
-											<string>{{333, 0}, {384, 201}}</string>
+											<string>{{0, 0}, {333, 206}}</string>
+											<string>{{333, 0}, {384, 206}}</string>
 										</array>
 									</dict>
 									<key>VerticalSplitView</key>
@@ -932,8 +929,8 @@
 										<string>yes</string>
 										<key>sizes</key>
 										<array>
-											<string>{{0, 0}, {717, 201}}</string>
-											<string>{{0, 201}, {717, 195}}</string>
+											<string>{{0, 0}, {717, 206}}</string>
+											<string>{{0, 206}, {717, 190}}</string>
 										</array>
 									</dict>
 								</dict>
@@ -966,7 +963,7 @@
 										<real>154</real>
 									</array>
 									<key>Frame</key>
-									<string>{{333, 0}, {384, 201}}</string>
+									<string>{{333, 0}, {384, 206}}</string>
 									<key>RubberWindowFrame</key>
 									<string>59 392 717 437 0 0 1440 878 </string>
 								</dict>
@@ -994,13 +991,13 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>1C530D54069F1CE1000CFCEE</string>
-				<string>FCDD128910D91FDD007FA0FA</string>
+				<string>FC977BB010DB15E0004E9A7D</string>
 				<string>1C162984064C10D400B95A72</string>
-				<string>FCDD128A10D91FDD007FA0FA</string>
-				<string>FCDD128B10D91FDD007FA0FA</string>
-				<string>FCDD128C10D91FDD007FA0FA</string>
-				<string>FCDD128D10D91FDD007FA0FA</string>
-				<string>FCDD128E10D91FDD007FA0FA</string>
+				<string>FC977BB110DB15E0004E9A7D</string>
+				<string>FC977BB210DB15E0004E9A7D</string>
+				<string>FC977BB310DB15E0004E9A7D</string>
+				<string>FC977BB410DB15E0004E9A7D</string>
+				<string>FC977BB510DB15E0004E9A7D</string>
 			</array>
 			<key>ToolbarConfiguration</key>
 			<string>xcode.toolbar.config.debugV3</string>

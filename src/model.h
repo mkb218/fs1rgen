@@ -11,26 +11,36 @@
 
 #include <exception>
 #include "ga/ga.h"
+#include <list>
+#include <boost/any.hpp>
+#include <boost/foreach.hpp>
+
+#define foreach BOOST_FOREACH
+
+typedef boost::any ValueType;
 
 namespace fs1rgen {
-    class Model {
+    class Value {
     public:
-        void initialize(GAGenome&) const;
-        int mutate(GAGenome&,float) const;
-        float evaluate(GAGenome&) const;
-        float compare(const GAGenome&, const GAGenome&) const;
-        int spawn(const GAGenome&, const GAGenome&, GAGenome*, GAGenome*) const;
-        void copy(const Model * model);
+        Value(const Param & p, boost::any & v) : param_(p), value_(v){}
+        Value(const Value & other) : param_(other.param_), value_(other.value_){};
+        int mutate(float p) { param_.mutate(*this, p); }
+        float compare(const Value & other) { return param_.compare(*this, other); }
+        int crossover(const Value & other, Value & bro, Value & sis) { return param_.crossover(*this, other, bro, sis); }
+        Value * clone() { return new (*this); }
     private:
-        void *data;
+        const Param & param_;
+        boost::any value_;
     };
 
+    typedef std::list<Value> ValueList;
+    
     /* A Genome object fulfills a given model. The static methods given to 
      GALib will use the model to perform the genetic operators. */
     class Genome: public GAGenome {
     public:
         GADefineIdentity("fs1rgen_genome", 218);
-        static void Initializer(GAGenome & g) { dynamic_cast<Genome&>(g).model_->initialize(g); }
+        static void Initializer(GAGenome & g) { }
         static float Evaluator(GAGenome & g) { return dynamic_cast<Genome&>(g).model_->evaluate(g); }
         static int Mutator(GAGenome & g, float p)  { return dynamic_cast<Genome&>(g).model_->mutate(g, p); }
         static float Comparator(const GAGenome & g, const GAGenome & h)  { dynamic_cast<const Genome&>(g).model_->compare(g,h); }
@@ -45,7 +55,8 @@ namespace fs1rgen {
         }
     private:
         // what should model be?
-        Model *model_;
+        ValueList values_;
+        const Model & model_;
     };
     
     
