@@ -43,9 +43,12 @@ TODO:
 - performance effect code is going to need a different data model than the rest
 - maybe use googlemock or google test for cpp tests.
 - mmap xml file for parsing
-- orparam parser must make implicit max values for intparams
+- or param parser must make implicit max values for intparams
 
 workflow:
 	- startup, read xml file
 	- install data model in perf/voice genome class
 	- 
+
+genome class itself holds a collection of values. each value contains a reference to its param. genome also contains a reference to the model, which is the object needed to initialize a new genome. each genetic operator will iterate through all values and call the individual param's operator
+
