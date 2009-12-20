@@ -11,6 +11,7 @@
 		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
 		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+		FC9D3B8810DC810F007316E8 /* params.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FC9D3B8710DC810F007316E8 /* params.cpp */; };
 		FCA2B41810D7CBE2003F8142 /* XmlParser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FCA2B41110D7CBE2003F8142 /* XmlParser.cpp */; };
 		FCA2B41910D7CBE2003F8142 /* RapidXmlParser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FCA2B41410D7CBE2003F8142 /* RapidXmlParser.cpp */; };
 		FCDD124210D84B6F007FA0FA /* model.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FCDD124110D84B6F007FA0FA /* model.cpp */; };
@@ -27,6 +28,8 @@
 		32CA4F630368D1EE00C91783 /* fs1rgen_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fs1rgen_Prefix.pch; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8D1107320486CEB800E47090 /* fs1rgen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = fs1rgen.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC9D3B8610DC810F007316E8 /* params.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = params.h; sourceTree = "<group>"; };
+		FC9D3B8710DC810F007316E8 /* params.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = params.cpp; sourceTree = "<group>"; };
 		FCA2B41110D7CBE2003F8142 /* XmlParser.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = XmlParser.cpp; sourceTree = "<group>"; };
 		FCA2B41210D7CBE2003F8142 /* XmlParser.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = XmlParser.hpp; sourceTree = "<group>"; };
 		FCA2B41310D7CBE2003F8142 /* RapidXmlParser.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = RapidXmlParser.hpp; sourceTree = "<group>"; };
@@ -60,6 +63,8 @@
 				FCA2B41410D7CBE2003F8142 /* RapidXmlParser.cpp */,
 				FCDD124010D84B6F007FA0FA /* model.h */,
 				FCDD124110D84B6F007FA0FA /* model.cpp */,
+				FC9D3B8610DC810F007316E8 /* params.h */,
+				FC9D3B8710DC810F007316E8 /* params.cpp */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -201,6 +206,7 @@
 				FCA2B41810D7CBE2003F8142 /* XmlParser.cpp in Sources */,
 				FCA2B41910D7CBE2003F8142 /* RapidXmlParser.cpp in Sources */,
 				FCDD124210D84B6F007FA0FA /* model.cpp in Sources */,
+				FC9D3B8810DC810F007316E8 /* params.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -74,8 +74,10 @@
 			PBXWorkspaceStateSaveDate = 282783606;
 		};
 		perUserProjectItems = {
-			FC7B9D8A10D7CB630022BA4F = FC7B9D8A10D7CB630022BA4F /* PBXTextBookmark */;
-			FCA1431B10D6881600F8A254 = FCA1431B10D6881600F8A254 /* PBXTextBookmark */;
+			FC7B9D8A10D7CB630022BA4F /* PBXTextBookmark */ = FC7B9D8A10D7CB630022BA4F /* PBXTextBookmark */;
+			FC977BA910DAEF7E004E9A7D /* PBXBookmark */ = FC977BA910DAEF7E004E9A7D /* PBXBookmark */;
+			FC977BEC10DBC92A004E9A7D /* PBXTextBookmark */ = FC977BEC10DBC92A004E9A7D /* PBXTextBookmark */;
+			FC977BED10DBC92A004E9A7D /* PBXTextBookmark */ = FC977BED10DBC92A004E9A7D /* PBXTextBookmark */;
 		};
 		sourceControlManager = FCD5B22A10CDDCA600D120EF /* Source Control */;
 		userBuildSettings = {
@@ -221,13 +223,37 @@
 	};
 	FC7A845010CF144000E4B036 /* genome.cpp */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {802, 4704}}";
-			sepNavSelRange = "{808, 0}";
-			sepNavVisRange = "{301, 1330}";
+			sepNavIntBoundsRect = "{{0, 0}, {802, 4788}}";
+			sepNavSelRange = "{1197, 0}";
+			sepNavVisRange = "{460, 1523}";
 			sepNavWindowFrame = "{{452, 128}, {861, 716}}";
 		};
 	};
 	FC7B9D8A10D7CB630022BA4F /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = FC55205C10D307D500841204 /* ToneGenApp.mm */;
+		name = "ToneGenApp.mm: 21";
+		rLen = 0;
+		rLoc = 493;
+		rType = 0;
+		vrLen = 997;
+		vrLoc = 0;
+	};
+	FC977BA910DAEF7E004E9A7D /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = FC7A845010CF144000E4B036 /* genome.cpp */;
+	};
+	FC977BEC10DBC92A004E9A7D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = FC7A845010CF144000E4B036 /* genome.cpp */;
+		name = "genome.cpp: 47";
+		rLen = 0;
+		rLoc = 1197;
+		rType = 0;
+		vrLen = 1523;
+		vrLoc = 460;
+	};
+	FC977BED10DBC92A004E9A7D /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
 		fRef = FC55205C10D307D500841204 /* ToneGenApp.mm */;
 		name = "ToneGenApp.mm: 21";
@@ -268,16 +294,6 @@
 		lineNumber = 173;
 		modificationTime = 282490815.374894;
 		state = 0;
-	};
-	FCA1431B10D6881600F8A254 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = FC55205C10D307D500841204 /* ToneGenApp.mm */;
-		name = "ToneGenApp.mm: 26";
-		rLen = 0;
-		rLoc = 800;
-		rType = 0;
-		vrLen = 973;
-		vrLoc = 0;
 	};
 	FCB5647B10D1321A00573E33 /* genome.cpp:41 */ = {
 		isa = PBXFileBreakpoint;

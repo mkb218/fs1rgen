@@ -1,605 +1,611 @@
 <?xml version="1.0"?>
 <midiTable deviceName="Yamaha FS1r"> <!-- max value of each byte is 0x7f, 0x007f = 127, 0x0100 = 128 -->
-  <performanceComponents totalByteWidth="400">
-    <performanceCommon totalByteWidth="80">
-<!--      <staticHex>F043</staticHex>
-      <intParam name="unknownHeaderField" minValue="00" maxValue="00"/>
-      <staticHex>5E100011</staticHex>
-      <intParam name="unknownHeaderField2" minValue="0" maxValue="0" byteWidth="2"/>-->
-      <stringParam name="performanceName" byteWidth="12"/><!-- implicit range on each byte is 0x20 to 0x7f -->
-      <constParam name="reserved" byteWidth="2" value="0"/>
-      <enumParam name="category" minValue="0" maxValue="0x16">
-	<!-- enumValues go here -->
-      </enumParam>
-      <constParam name="reserved" value="0" /><!-- default byteWidth is 1 -->
-      <intParam name="Volume" minValue="0" maxValue="0x7f"/>
-      <intParam name="Pan" minValue="01" maxValue="0x7f" shift="-64"/>
-      <intParam name="noteShift" minValue="0" maxValue="30" shift="-24"/>
-      <constParam name="reserved" value="0" />
-      <enumParam name="individual out"> <!-- minValue and maxValue are unnecessary if all valid values are provided -->
-	<enumValue name="off" value="0" />
-	<enumValue name="pre-insert" value="1" />
-	<enumValue name="post-insert" value="2" />
-      </enumParam>
-      <link table="fseq" name="FSEQ part" param="part" />
-      <link table="fseq" name="FSEQ bank" param="bank" />
-      <link table="fseq" name="FSEQ number" param="number" />
-      <multiParam name="FSEQ Speed Ratio" byteWidth="2">
-	<enumParam name="midi" minValue="0" maxValue="4">
-	  <enumValue value="0" name="midi/4" />
-	  <enumValue value="1" name="midi/2" />
-	  <enumValue value="2" name="midi" />
-	  <enumValue value="3" name="midi*2" />
-	  <enumValue value="4" name="midi*4" />
-	</enumParam>
-	<intParam minValue="100" maxValue="5000" factor="0.1" name="percent"/>
-      </multiParam>
-      <intParam name="FSEQ start step offset" minValue="0" maxValue="0x3fff"/>
-      <intParam name="FSEQ start step of loop point" minValue="0" maxValue="0x3fff"/>
-      <intParam name="FSEQ end step of loop point" minValue="0" maxValue="0x3fff"/>
-      <checkOffset expectedOffset="0x20" />
-      <enumParam name="FSEQ loop mode" minValue="0" maxValue="1" >
-	<enumValue value="0" name="one-way" />
-	<enumValue value="1" name="round" />
-      </enumParam>
-      <enumParam name="FSEQ play mode" minValue="1" maxValue="2" >
-	<enumValue value="1" name="scratch" />
-	<enumValue value="2" name="fseq" />
-      </enumParam>
-      <intParam name="FSEQ velocity sensitivity for tempo" minValue="0" maxValue="7" />
-      <boolParam name="FSEQ formant pitch mode" />
-      <enumParam name="FSEQ key on trigger" >
-	<enumValue value="0" name="first" />
-	<enumValue value="1" name="all" />
-      </enumParam>
-      <constParam name="reserved" value="0" />
-      <intParam name="FSEQ formant sequence delay" minValue="0" maxValue="0x63" />
-      <intParam name="FSEQ level velocity sensitivity" minValue="0" maxValue="0x7f" shift="-64" />
-      <typeParam name="controller 1 part switch" type="partSwitch" />
-      <typeParam name="controller 2 part switch" type="partSwitch" />
-      <typeParam name="controller 3 part switch" type="partSwitch" />
-      <typeParam name="controller 4 part switch" type="partSwitch" />
-      <typeParam name="controller 5 part switch" type="partSwitch" />
-      <typeParam name="controller 6 part switch" type="partSwitch" />
-      <typeParam name="controller 7 part switch" type="partSwitch" />
-      <typeParam name="controller 8 part switch" type="partSwitch" />
-      <typeParam name="controller 1 source switch" byteWidth="2" type="srcSwitch" />
-      <typeParam name="controller 2 source switch" byteWidth="2" type="srcSwitch" />
-      <typeParam name="controller 3 source switch" byteWidth="2" type="srcSwitch" />
-      <typeParam name="controller 4 source switch" byteWidth="2" type="srcSwitch" />
-      <typeParam name="controller 5 source switch" byteWidth="2" type="srcSwitch" />
-      <typeParam name="controller 6 source switch" byteWidth="2" type="srcSwitch" />
-      <typeParam name="controller 7 source switch" byteWidth="2" type="srcSwitch" />
-      <typeParam name="controller 8 source switch" byteWidth="2" type="srcSwitch" />
-      <typeParam name="controller 1 destination" type="dest" />
-      <typeParam name="controller 2 destination" type="dest" />
-      <typeParam name="controller 3 destination" type="dest" />
-      <typeParam name="controller 4 destination" type="dest" />
-      <typeParam name="controller 5 destination" type="dest" />
-      <typeParam name="controller 6 destination" type="dest" />
-      <typeParam name="controller 7 destination" type="dest" />
-      <typeParam name="controller 8 destination" type="dest" />
-      <intParam name="controller 1 depth" minValue="0" maxValue="0x7f" shift="-64" />
-      <intParam name="controller 2 depth" minValue="0" maxValue="0x7f" shift="-64" />
-      <intParam name="controller 3 depth" minValue="0" maxValue="0x7f" shift="-64" />
-      <intParam name="controller 4 depth" minValue="0" maxValue="0x7f" shift="-64" />
-      <intParam name="controller 5 depth" minValue="0" maxValue="0x7f" shift="-64" />
-      <intParam name="controller 6 depth" minValue="0" maxValue="0x7f" shift="-64" />
-      <intParam name="controller 7 depth" minValue="0" maxValue="0x7f" shift="-64" />
-      <intParam name="controller 8 depth" minValue="0" maxValue="0x7f" shift="-64" />
-      <checkOffset expectedOffset="0x50" />
-    </performanceCommon>
-    <performanceEffect offset="0x50">
-      <!-- the semantics of these parameters depend on the values of other parameters. How to resolve this
-	   within different patches? -->
-      <intParam name="Reverb parameter" minValue="0" maxValue="0x7f" />
-      <intParam name="Reverb parameter" minValue="0" maxValue="0x7f" />
-      <intParam name="Reverb parameter" minValue="0" maxValue="0x7f" />
-      <intParam name="Reverb parameter" minValue="0" maxValue="0x7f" />
-      <intParam name="Reverb parameter" minValue="0" maxValue="0x7f" />
-      <intParam name="Reverb parameter" minValue="0" maxValue="0x7f" />
-      <intParam name="Reverb parameter" minValue="0" maxValue="0x7f" />
-      <intParam name="Reverb parameter" minValue="0" maxValue="0x7f" />
-      <intParam name="Reverb parameter" minValue="0" maxValue="0x7f" />
-      <intParam name="Reverb parameter" minValue="0" maxValue="0x7f" />
-      <intParam name="Reverb parameter" minValue="0" maxValue="0x7f" />
-      <intParam name="Reverb parameter" minValue="0" maxValue="0x7f" />
-      <intParam name="Reverb parameter" minValue="0" maxValue="0x7f" />
-      <intParam name="Reverb parameter" minValue="0" maxValue="0x7f" />
-      <intParam name="Reverb parameter" minValue="0" maxValue="0x7f" />
-      <intParam name="Reverb parameter" minValue="0" maxValue="0x7f" />
-      <intParam name="Reverb parameter" minValue="0" maxValue="0x7f" />
-      <intParam name="Reverb parameter" minValue="0" maxValue="0x7f" />
-      <intParam name="Reverb parameter" minValue="0" maxValue="0x7f" />
-      <intParam name="Reverb parameter" minValue="0" maxValue="0x7f" />
-      <intParam name="Reverb parameter" minValue="0" maxValue="0x7f" />
-      <intParam name="Reverb parameter" minValue="0" maxValue="0x7f" />
-      <intParam name="Reverb parameter" minValue="0" maxValue="0x7f" />
-      <intParam name="Reverb parameter" minValue="0" maxValue="0x7f" />
-      <intParam name="Variation parameter" minValue="0" maxValue="0x7f" />
-      <intParam name="Variation parameter" minValue="0" maxValue="0x7f" />
-      <intParam name="Variation parameter" minValue="0" maxValue="0x7f" />
-      <intParam name="Variation parameter" minValue="0" maxValue="0x7f" />
-      <intParam name="Variation parameter" minValue="0" maxValue="0x7f" />
-      <intParam name="Variation parameter" minValue="0" maxValue="0x7f" />
-      <intParam name="Variation parameter" minValue="0" maxValue="0x7f" />
-      <intParam name="Variation parameter" minValue="0" maxValue="0x7f" />
-      <intParam name="Variation parameter" minValue="0" maxValue="0x7f" />
-      <intParam name="Variation parameter" minValue="0" maxValue="0x7f" />
-      <intParam name="Variation parameter" minValue="0" maxValue="0x7f" />
-      <intParam name="Variation parameter" minValue="0" maxValue="0x7f" />
-      <intParam name="Variation parameter" minValue="0" maxValue="0x7f" />
-      <intParam name="Variation parameter" minValue="0" maxValue="0x7f" />
-      <intParam name="Variation parameter" minValue="0" maxValue="0x7f" />
-      <intParam name="Variation parameter" minValue="0" maxValue="0x7f" />
-      <intParam name="Variation parameter" minValue="0" maxValue="0x7f" />
-      <intParam name="Variation parameter" minValue="0" maxValue="0x7f" />
-      <intParam name="Variation parameter" minValue="0" maxValue="0x7f" />
-      <intParam name="Variation parameter" minValue="0" maxValue="0x7f" />
-      <intParam name="Variation parameter" minValue="0" maxValue="0x7f" />
-      <intParam name="Variation parameter" minValue="0" maxValue="0x7f" />
-      <intParam name="Variation parameter" minValue="0" maxValue="0x7f" />
-      <intParam name="Variation parameter" minValue="0" maxValue="0x7f" />
-      <intParam name="Variation parameter" minValue="0" maxValue="0x7f" />
-      <intParam name="Variation parameter" minValue="0" maxValue="0x7f" />
-      <intParam name="Variation parameter" minValue="0" maxValue="0x7f" />
-      <intParam name="Variation parameter" minValue="0" maxValue="0x7f" />
-      <intParam name="Variation parameter" minValue="0" maxValue="0x7f" />
-      <intParam name="Variation parameter" minValue="0" maxValue="0x7f" />
-      <intParam name="Variation parameter" minValue="0" maxValue="0x7f" />
-      <intParam name="Variation parameter" minValue="0" maxValue="0x7f" />
-      <intParam name="Insertion parameter" minValue="0" maxValue="0x7f" />
-      <intParam name="Insertion parameter" minValue="0" maxValue="0x7f" />
-      <intParam name="Insertion parameter" minValue="0" maxValue="0x7f" />
-      <intParam name="Insertion parameter" minValue="0" maxValue="0x7f" />
-      <intParam name="Insertion parameter" minValue="0" maxValue="0x7f" />
-      <intParam name="Insertion parameter" minValue="0" maxValue="0x7f" />
-      <intParam name="Insertion parameter" minValue="0" maxValue="0x7f" />
-      <intParam name="Insertion parameter" minValue="0" maxValue="0x7f" />
-      <intParam name="Insertion parameter" minValue="0" maxValue="0x7f" />
-      <intParam name="Insertion parameter" minValue="0" maxValue="0x7f" />
-      <intParam name="Insertion parameter" minValue="0" maxValue="0x7f" />
-      <intParam name="Insertion parameter" minValue="0" maxValue="0x7f" />
-      <intParam name="Insertion parameter" minValue="0" maxValue="0x7f" />
-      <intParam name="Insertion parameter" minValue="0" maxValue="0x7f" />
-      <intParam name="Insertion parameter" minValue="0" maxValue="0x7f" />
-      <intParam name="Insertion parameter" minValue="0" maxValue="0x7f" />
-      <intParam name="Insertion parameter" minValue="0" maxValue="0x7f" />
-      <intParam name="Insertion parameter" minValue="0" maxValue="0x7f" />
-      <intParam name="Insertion parameter" minValue="0" maxValue="0x7f" />
-      <intParam name="Insertion parameter" minValue="0" maxValue="0x7f" />
-      <intParam name="Insertion parameter" minValue="0" maxValue="0x7f" />
-      <intParam name="Insertion parameter" minValue="0" maxValue="0x7f" />
-      <intParam name="Insertion parameter" minValue="0" maxValue="0x7f" />
-      <intParam name="Insertion parameter" minValue="0" maxValue="0x7f" />
-      <intParam name="Insertion parameter" minValue="0" maxValue="0x7f" />
-      <intParam name="Insertion parameter" minValue="0" maxValue="0x7f" />
-      <intParam name="Insertion parameter" minValue="0" maxValue="0x7f" />
-      <intParam name="Insertion parameter" minValue="0" maxValue="0x7f" />
-      <intParam name="Insertion parameter" minValue="0" maxValue="0x7f" />
-      <intParam name="Insertion parameter" minValue="0" maxValue="0x7f" />
-      <intParam name="Insertion parameter" minValue="0" maxValue="0x7f" />
-      <intParam name="Insertion parameter" minValue="0" maxValue="0x7f" />
-      <checkOffset expectedOffset="0x128" />
-      <enumParam name="Reverb Type" minValue="0" maxValue="0x10" />
-      <intParam name="Reverb pan" minValue="1" maxValue="0x7f" shift="-63" />
-      <intParam name="Reverb return" minValue="0" maxValue="0x7f" />
-      <enumParam name="Variation Type" minValue="0" maxValue="0x1c" />
-      <intParam name="Variation pan" minValue="1" maxValue="0x7f" shift="-63" />
-      <intParam name="Variation return" minValue="0" maxValue="0x7f" />
-      <intParam name="Variation to Reverb" minValue="0" maxValue="0x7f" />
-      <enumParam name="Insertion Type" minValue="0" maxValue="0x28" />
-      <intParam name="Insertion pan" minValue="1" maxValue="0x7f" shift="-63" />
-      <intParam name="Insertion return" minValue="0" maxValue="0x7f" />
-      <intParam name="Insertion to Reverb" minValue="0" maxValue="0x7f" />
-      <intParam name="Insertion to Variation" minValue="0" maxValue="0x7f" />
-      <intParam name="Insertion Level" minValue="0" maxValue="0x7f" />
-      <intParam name="EQ low gain" minValue="0x34" maxValue="0x4c" shift="-64" />
-      <enumParam name="EQ low frequency" minValue="0x4" maxValue="0x28" />
-      <intParam name="EQ low Q" minValue="1" maxValue="0x78" factor="0.1" />
-      <enumParam name="EQ low shape" enum="eqShape" />
-      <intParam name="EQ mid gain" minValue="0x34" maxValue="0x4c" shift="-64" />
-      <enumParam name="EQ mid frequency" minValue="0xe" maxValue="0x36" />
-      <intParam name="EQ mid Q" minValue="1" maxValue="0x78" factor="0.1" />
-      <intParam name="EQ hi gain" minValue="0x34" maxValue="0x4c" shift="-64" />
-      <enumParam name="EQ hi frequency" minValue="0x1c" maxValue="0x3a" />
-      <intParam name="EQ hi Q" minValue="1" maxValue="0x78" factor="0.1" />
-      <enumParam name="EQ hi shape" enum="eqShape" />
-      <constParam name="reserved" value="0" />
-      <checkOffset expectedOffset="0x0140" />
-    </performanceEffect>
-    <performancePart>
-      <intParam name="note reserve" minValue="0" maxValue="0x20" />
-      <linkParam name="bank number" minValue="0" maxValue="0x0c" table="voices" param="bank"/> <!-- dependent on where things are ocated in fs1r mem -->
-      <linkParam name="program number" minValue="0" maxValue="0x7f" table="voices" param="program"/>
-      <multiParam name="Rcv Channel Max">
-	<intParam minValue="0" maxValue="0x0f" shift="1" name="channel"/>
-	<constParam value="0x7f" name="off" />
-      </multiParam>
-      <multiParam name="Rcv Channel">
-	<intParam minValue="0" maxValue="0x0f" shift="1" name="channel"/>
-	<constParam value="0x10" name="perf" />
-	<constParam value="0x7f" name="off" />
-      </multiParam>
-      <boolParam name="Polyphonic" />
-      <enumParam name="mono priority" >
-	<enumValue value="0" name="last" />
-	<enumValue value="1" name="top" />
-	<enumValue value="2" name="bottom" />
-	<enumValue value="3" name="first" />
-      </enumParam>
-      <boolParam name="FilterSw" />
-      <intParam name="note shift" minValue="0" maxValue="0x30" shift="-24" />
-      <intParam name="detune" shift="-64" />
-      <intParam name="voiced/unvoiced balance" shift="-64" />
-      <intParam name="volume" />
-      <intParam name="velocity sense depth" />
-      <intParam name="velocity sense offset" />
-      <multiParam name="pan">
-	<constParam name="random" value="0" />
-	<intParam name="L/R" minValue="1" shift="-64" />
-      </multiParam>
-      <intParam name="note limit low" />
-      <intParam name="note limit high" />
-      <intParam name="dry level" />
-      <intParam name="variation send" />
-      <intParam name="reverb send" />
-      <boolParam name="insertion switch" />
-      <intParam name="lfo1 rate" shift = "-64"/>
-      <intParam name="lfo1 pitch mod depth" shift = "-64"/>
-      <intParam name="lfo1 delay" shift = "-64"/>
-      <intParam name="filter cutoff freq" shift = "-64"/>
-      <intParam name="filter rez" shift = "-64"/>
-      <intParam name="eg attack" shift = "-64"/>
-      <intParam name="eg decay" shift = "-64"/>
-      <intParam name="eg release" shift = "-64"/>
-      <intParam name="formant" shift = "-64"/>
-      <intParam name="fm" shift = "-64"/>
-      <intParam name="filter eg depth" shift = "-64"/>
-      <intParam name="pitch eg initial level" shift = "-64"/>
-      <intParam name="pitch eg attack time" shift = "-64"/>
-      <intParam name="pitch eg release level" shift = "-64"/>
-      <intParam name="pitch eg release time" shift = "-64"/>
-      <enumParam name="portamento" >
-	<enumValue value="0" name="off" />
-	<enumValue value="1" name="fingered" />
-	<enumValue value="3" name="full-time" />
-      </enumParam>
-      <intParam name="portmento Time" />
-      <intParam name="pitch bend range high" minValue="0x10" maxValue="0x58" shift="-64" />
-      <intParam name="pitch bend range low" minValue="0x10" maxValue="0x58" shift="-64" />
-      <intParam name="pan scaling" maxValue="0x64" />
-      <intParam name="pan lfo depth" maxValue="0x63" />
-      <intParam name="velocity limit low" minValue="1" />
-      <intParam name="velocity limit high" minValue="1" />
-      <intParam name="expression limit low" />
-      <boolParam name="Sustain Rcv Switch" />
-      <intParam name="lfo1 rate" shift = "-64"/>
-      <intParam name="lfo1 mod depth" shift = "-64"/>
-      <constParam name="reserved" value="0" byteWidth="4" />
-    </performancePart>
-  </performanceComponents>
-  <voiceComponents>
-    <voiceCommon>
-      <stringParam name="voice name" byteWidth="10" />
-      <constParam name="reserved" value="0" byteWidth="4" />
-      <enumParam name="category" minValue="0" maxValue="0x16" />
-      <constParam name="reserved" value="0" />
-      <enumParam name="common lfo1 - waveform" minValue="0" maxValue="5" enum="waveforms" />
-      <intParam name="common lfo1 - speed" maxValue="0x63" />
-      <intParam name="common lfo1 - delay" maxValue="0x63" />
-      <boolParam name="common lfo1 - keysync" />
-      <constParam name="reserved" value="0" />
-      <intParam name="common lfo1 - pitch mod depth" maxValue="0x63" />
-      <intParam name="common lfo1 - amp mod depth" maxValue="0x63" />
-      <intParam name="common lfo1 - frequency mod depth" maxValue="0x63" />
-      <enumParam name="common lfo2 - waveform" minValue="0" maxValue="5" enum="waveforms" />
-      <intParam name="common lfo2 - speed" maxValue="0x63" />
-      <constParam name="reserved" value="0" />
-      <constParam name="reserved" value="0" />
-      <intParam name="common lfo2 - phase" maxValue="3" factor="90" />
-      <boolParam name="common lfo2 - keysync" />
-      <intParam name="noteshift" maxValue="0x30" shift="-24" />
-      <intParam name="Pitch EG level 0" maxValue="0x64" />
-      <intParam name="Pitch EG level 1" maxValue="0x64" />
-      <intParam name="Pitch EG level 2" maxValue="0x64" />
-      <intParam name="Pitch EG level 4" maxValue="0x63" />
-      <intParam name="Pitch EG time 1" maxValue="0x63" />
-      <intParam name="Pitch EG time 2" maxValue="0x63" />
-      <intParam name="Pitch EG time 3" maxValue="0x63" />
-      <intParam name="Pitch EG time 4" maxValue="0x63" />
-      <intParam name="Pitch EG velocity sensitivity" maxValue="7" />
-      <bitfieldParam name="FSEQ voiced op switch hi" >
-	<bit index="0" name="8" />
-      </bitfieldParam>
-      <bitfieldParam name="FSEQ voiced op switch lo" >
-	<bit index="6" name="7" />
-	<bit index="5" name="6" />
-	<bit index="4" name="5" />
-	<bit index="3" name="4" />
-	<bit index="2" name="3" />
-	<bit index="1" name="2" />
-	<bit index="0" name="1" />
-      </bitfieldParam>
-      <bitfieldParam name="FSEQ unvoiced op switch hi" >
-	<bit index="0" name="8" />
-      </bitfieldParam>
-      <bitfieldParam name="FSEQ unvoiced op switch lo" >
-	<bit index="6" name="7" />
-	<bit index="5" name="6" />
-	<bit index="4" name="5" />
-	<bit index="3" name="4" />
-	<bit index="2" name="3" />
-	<bit index="1" name="2" />
-	<bit index="0" name="1" />
-      </bitfieldParam>
-      <enumParam name="algorithm preset number" maxValue="0x57" />
-      <intParam name="voiced op 1 carrier level correction" maxValue="0x0f" />
-      <intParam name="voiced op 2 carrier level correction" maxValue="0x0f" />
-      <intParam name="voiced op 3 carrier level correction" maxValue="0x0f" />
-      <intParam name="voiced op 4 carrier level correction" maxValue="0x0f" />
-      <intParam name="voiced op 5 carrier level correction" maxValue="0x0f" />
-      <intParam name="voiced op 6 carrier level correction" maxValue="0x0f" />
-      <intParam name="voiced op 7 carrier level correction" maxValue="0x0f" />
-      <intParam name="voiced op 8 carrier level correction" maxValue="0x0f" />
-      <constParam name="reserved" value="0" byteWidth="6" />
-      <enumParam name="pitch eg range">
-	<enumValue value="0" name="8va" />
-	<enumValue value="1" name="2va" />
-	<enumValue value="2" name="1va" />
-	<enumValue value="3" name="1/2va" />
-      </enumParam>
-      <intParam name="time scaling depth" maxValue="0x07" />
-      <intParam name="voiced feedback level" maxValue="0x07" />
-      <intParam name="pitch eg level 3" maxValue="0x64" />
-      <constParam name="reserved" value="0" />
-      <typeParam name="Formant Control Destination 1" type="formantCtrlDst" />
-      <typeParam name="Formant Control Destination 2" type="formantCtrlDst" />
-      <typeParam name="Formant Control Destination 3" type="formantCtrlDst" />
-      <typeParam name="Formant Control Destination 4" type="formantCtrlDst" />
-      <typeParam name="Formant Control Destination 5" type="formantCtrlDst" />
-      <intParam name="Formant Control Depth 1" shift="-64" />
-      <intParam name="Formant Control Depth 2" shift="-64" />
-      <intParam name="Formant Control Depth 3" shift="-64" />
-      <intParam name="Formant Control Depth 4" shift="-64" />
-      <intParam name="Formant Control Depth 5" shift="-64" />
-      <typeParam name="FM Control Destination 1" type="formantCtrlDst" />
-      <typeParam name="FM Control Destination 2" type="formantCtrlDst" />
-      <typeParam name="FM Control Destination 3" type="formantCtrlDst" />
-      <typeParam name="FM Control Destination 4" type="formantCtrlDst" />
-      <typeParam name="FM Control Destination 5" type="formantCtrlDst" />
-      <intParam name="FM Control Depth 1" shift="-64" />
-      <intParam name="FM Control Depth 2" shift="-64" />
-      <intParam name="FM Control Depth 3" shift="-64" />
-      <intParam name="FM Control Depth 4" shift="-64" />
-      <intParam name="FM Control Depth 5" shift="-64" />
-      <enumParam name="Filter Type" >
-	<enumValue name="LPF24" value="0" />
-	<enumValue name="LPF18" value="1" />
-	<enumValue name="LPF12" value="2" />
-	<enumValue name="HPF" value="3" />
-	<enumValue name="BPF" value="4" />
-	<enumValue name="BEF" value="5" />
-      </enumParam>
-      <intParam maxValue="0x74" name="filter resonance" shift="-16"/>
-      <intParam maxValue="0x0e" name="filter resonance velo sense" shift="-7"/>
-      <intParam name="filter cutoff freq" />
-      <intParam name="filter eg depth velo sense" shift="-7" />
-      <intParam name="cutoff freq lfo1 depth" maxValue="0x63" />
-      <intParam name="cutoff freq lfo2 depth" maxValue="0x63" />
-      <intParam name="cutoff freq key scale depth" shift="-64" />
-      <intParam name="cutoff freq key scale point" />
-      <intParam name="filter input gain" maxValue="0x18" shift="-12" />
-      <constParam name="reserved" byteWidth="0" />
-      <intParam name="filter eg depth" shift="-64" />
-      <intParam name="filter eg level 4"  maxValue="0x64" />
-      <intParam name="filter eg level 1"  maxValue="0x64" />
-      <intParam name="filter eg level 2"  maxValue="0x64" />
-      <intParam name="filter eg level 3"  maxValue="0x64" />
-      <intParam name="filter eg time 1"  maxValue="0x63" />
-      <intParam name="filter eg time 2"  maxValue="0x63" />
-      <intParam name="filter eg time 3"  maxValue="0x63" />
-      <intParam name="filter eg time 4"  maxValue="0x63" />
-      <staticHex>00</staticHex>
-      <orParam>
-	<bitShift shift="3">
-	  <intParam name="filter eg attack time vel" maxValue="7" />
-	</bitShift>
-	<intParam maxValue="7" name="time scale" />
-      </orParam>
-    </voiceCommon>
-    <voicedOperator>
-      <orParam>
-	<bitShift shift="6">
-	  <boolParam name="oscillator key sync" />
-	</bitShift>
-	<intParam name="transpose" maxValue="0x30" />
-      </orParam>
-      <intParam maxValue="0x1f" name="oscillator freq coarse" />
-      <intParam maxValue="0x7f" name="oscillator freq fine" />
-      <intParam maxValue="0x63" name="oscillator freq note scaling" />
-      <orParam>
-	<bitShift shift="3" >
-	  <intParam name="bw bias sense" shift="-7" maxValue="0x0e" />
-	</bitShift>
-	<enumParam name="spectral form" maxValue="0x07" />
-      </orParam>
-      <orParam>
-	<bitShift shift="6" >
-	  <boolParam name="oscillator mode" />
-	</bitShift>
-	<bitShift shift="3" >
-	  <intParam name="spectral skirt" />
-	</bitShift>
-	<enumParam name="fseq track number" maxValue="7" />
-      </orParam>
-      <intParam name="freq ratio of band spectrum" maxValue="0x63" />
-      <intParam name="detune" maxValue="0x1e" />
-      <intParam name="freq eg initial value" maxValue="0x64" />
-      <intParam name="freq eg attack value" maxValue="0x64" />
-      <intParam name="freq eg attack time" maxValue="0x63" />
-      <intParam name="freq eg decay time" maxValue="0x63" />
-      <intParam name="eg level 1" maxValue="0x63" />
-      <intParam name="eg level 2" maxValue="0x63" />
-      <intParam name="eg level 3" maxValue="0x63" />
-      <intParam name="eg level 4" maxValue="0x63" />
-      <intParam name="eg time 1" maxValue="0x63" />
-      <intParam name="eg time 2" maxValue="0x63" />
-      <intParam name="eg time 3" maxValue="0x63" />
-      <intParam name="eg time 4" maxValue="0x63" />
-      <intParam name="eg hold time" maxValue="0x63" />
-      <intParam name="eg time scaling" maxValue="0x07" />
-      <intParam name="level scaling total level" maxValue="0x63" />
-      <intParam name="level scaling break point" maxValue="0x63" />
-      <intParam name="level scaling left depth" maxValue="0x63" />
-      <intParam name="level scaling right depth" maxValue="0x63" />
-      <typeParam name="level scaling left curve" type="levelScalingCurve" />
-      <typeParam name="level scaling right curve" type="levelScalingCurve" />
-      <staticHex name="reserved">000000</staticHex>
-      <orParam>
-	<bitShift shift="3">
-	  <intParam name="freq bias sense" maxValue="0x0e" shift="-7" />
-	</bitShift>
-	<intParam name="pitch mod sense" maxValue="7" />
-      </orParam>
-      <orParam>
-	<bitShift shift="4">
-	  <intParam name="freq mod sense" maxValue="0x07" />
-	</bitShift>
-	<intParam name="freq velo sense" maxValue="0x0e" shift="-7" />
-      </orParam>
-      <orParam>
-	<bitShift shift="4">
-	  <intParam name="amp mod sense" maxValue="0x07"  />
-	</bitShift>
-	<intParam name="pitch mod sense" maxValue="0x0e" shift="-7" />
-      </orParam>
-      <intParam name="eg bias sense" maxValue="0x0e" />
-    </voicedOperator>
-    <unvoicedOperator>
-      <intParam name="formant pitch transpose" maxValue="0x30" />
-      <orParam>
-	<bitShift shift="6">
-	  <boolParam name="formant pitch mode"/>
-	</bitShift>
-	<intParam name="formant pitch coarse" maxValue="0x1e"/>
-      </orParam>
-      <intParam name="formant pitch fine" />
-      <intParam name="formant pitch note scaling" maxValue="0x63" />
-      <intParam name="formant shape band width" maxValue="0x63" />
-      <intParam name="formant shape bw bias sense" maxValue="0x0e" shift="-7" />
-      <orParam>
-	<bitShift shift="3">
-	  <intParam name="formant resonance" maxValue="7" />
-	</bitShift>
-	<intParam name="formant skirt" maxValue="7" />
-      </orParam>
-      <intParam name="freq eg initial value" maxValue="0x64" />
-      <intParam name="freq eg attack value" maxValue="0x64" />
-      <intParam name="freq eg attack time" maxValue="0x63" />
-      <intParam name="freq eg decay time" maxValue="0x63" />
-      <intParam name="level" maxValue="0x63" />
-      <intParam name="level key scaling" maxValue="0x63" />
-      <intParam name="eg level 1" maxValue="0x63" />
-      <intParam name="eg level 2" maxValue="0x63" />
-      <intParam name="eg level 3" maxValue="0x63" />
-      <intParam name="eg level 4" maxValue="0x63" />
-      <intParam name="eg time 1" maxValue="0x63" />
-      <intParam name="eg time 2" maxValue="0x63" />
-      <intParam name="eg time 3" maxValue="0x63" />
-      <intParam name="eg time 4" maxValue="0x63" />
-      <intParam name="eg hold time" maxValue="0x63" />
-      <intParam name="eg time scaling" maxValue="7" />
-      <intParam name="freq bias sense" maxValue="0x0e" shift="-7" />
-      <orParam>
-	<bitShift shift="4" >
-	  <intParam name="freq mod sense" maxValue="7" />
-	</bitShift>
-	<intParam name="freq velo sense" maxvalue="0x0e" shift="-7" />
-      </orParam>
-      <orParam>
-	<bitShift shift="4" >
-	  <intParam name="amp mod sense" maxValue="7" />
-	</bitShift>
-	<intParam name="amp velo sense" maxvalue="0x0e" shift="-7" />
-      </orParam>
-      <intParam name="eg bias sense" maxValue="0x0e" shift="-7" />
-    </unvoicedOperator>
-  </voiceComponents>
-  <fseqComponents>
-    <fseqHeader>
-      <stringParam byteWidth="8" name="name" />
-      <staticHex name="Reserved">0000000000000000</staticHex>
-      <intParam name="start step of loop point" byteWidth="2" />
-      <intParam name="end step of loop point" byteWidth="2" />
-      <boolParam name="loop mode round not one way" />
-      <intParam name="speed adjust" />
-      <intParam name="tempo velo sens" maxValue="7" />
-      <boolParam name="non pitch mode" />
-      <intParam name="formant note assign" />
-      <intParam name="pitch tuning" shift="-63" maxValue="0x7e"/>
-      <intParam name="formant sequence delay" maxValue="0x63" />
-      <enumParam name="frame data format" >
-	<enumValue name="total of frames 128" value="0" />
-	<enumValue name="total of frames 256" value="1" />
-	<enumValue name="total of frames 384" value="2" />
-	<enumValue name="total of frames 512" value="3" />
-      </enumParam>
-      <staticHex name="reserved" >0000</staticHex>
-      <intParam name="rmtc end step of valid data" byteWidth="2" />
-    </fseqHeader>
-    <fseqFrame>
-      <intParam name="fundamental pitch" byteWidth="2" />
-      <intParam lobyteOffset="8" name="voiced formant frequency hi 1" />
-      <intParam lobyteOffset="8" name="voiced formant frequency hi 2" />
-      <intParam lobyteOffset="8" name="voiced formant frequency hi 3" />
-      <intParam lobyteOffset="8" name="voiced formant frequency hi 4" />
-      <intParam lobyteOffset="8" name="voiced formant frequency hi 5" />
-      <intParam lobyteOffset="8" name="voiced formant frequency hi 6" />
-      <intParam lobyteOffset="8" name="voiced formant frequency hi 7" />
-      <intParam lobyteOffset="8" name="voiced formant frequency hi 8" />
-      <intParam name="voiced formant frequency lo 1" />
-      <intParam name="voiced formant frequency lo 2" />
-      <intParam name="voiced formant frequency lo 3" />
-      <intParam name="voiced formant frequency lo 4" />
-      <intParam name="voiced formant frequency lo 5" />
-      <intParam name="voiced formant frequency lo 6" />
-      <intParam name="voiced formant frequency lo 7" />
-      <intParam name="voiced formant frequency lo 8" />
-      <intParam name="voiced formant level 1" />
-      <intParam name="voiced formant level 2" />
-      <intParam name="voiced formant level 3" />
-      <intParam name="voiced formant level 4" />
-      <intParam name="voiced formant level 5" />
-      <intParam name="voiced formant level 6" />
-      <intParam name="voiced formant level 7" />
-      <intParam name="voiced formant level 8" />
-    </fseqFrame>
-  </fseqComponents>
-  <types>
-    <type name="formantCtrlDst">
-      <orParam>
-	<bitShift shift="4">
-	  <enumParam name="dest">
-	    <enumValue name="off" value="0" />
-	    <enumValue name="out" value="1" />
-	    <enumValue name="freq" value="2" />
-	    <enumValue name="width" value="3" />
-	  </enumParam>
-	</bitShift>
-	<bitShift shift="3">
-	  <boolParam name="voicedNotUnvoiced" />
-	</bitShift>
-	<enumParam name="operator" maxValue="7" shift="1" />
-      </orParam>
-    </type>
-    <type name="levelScalingCurve">
-      <enumParam>
-	<enumValue name="-lin" value="0" />
-	<enumValue name="-exp" value="1" />
-	<enumValue name="+exp" value="2" />
-	<enumValue name="+lin" value="3" />
-      </enumParam>
-    </type>
-  </types>
-</midiTable>
+    <performanceComponents totalByteWidth="400">
+        <performanceCommon totalByteWidth="80">
+            <!--      <staticHex>F043</staticHex>
+             <intParam name="unknownHeaderField" minValue="00" maxValue="00"/>
+             <staticHex>5E100011</staticHex>
+             <intParam name="unknownHeaderField2" minValue="0" maxValue="0" byteWidth="2"/>-->
+            <stringParam name="performanceName" byteWidth="12"/><!-- implicit range on each byte is 0x20 to 0x7f -->
+            <constParam name="reserved" byteWidth="2" value="0"/>
+            <enumParam name="category" minValue="0" maxValue="0x16">
+                <!-- enumValues go here -->
+                </enumParam>
+            <constParam name="reserved" value="0" /><!-- default byteWidth is 1 -->
+            <intParam name="Volume" minValue="0" maxValue="0x7f"/>
+            <intParam name="Pan" minValue="01" maxValue="0x7f" shift="-64"/>
+            <intParam name="noteShift" minValue="0" maxValue="30" shift="-24"/>
+            <constParam name="reserved" value="0" />
+            <enumParam name="individual out"> <!-- minValue and maxValue are unnecessary if all valid values are provided -->
+                <enumValue name="off" value="0" />
+                <enumValue name="pre-insert" value="1" />
+                <enumValue name="post-insert" value="2" />
+                </enumParam>
+            <link table="fseq" name="FSEQ part" param="part" />
+            <link table="fseq" name="FSEQ bank" param="bank" />
+            <link table="fseq" name="FSEQ number" param="number" />
+            <multiParam name="FSEQ Speed Ratio" byteWidth="2">
+                <enumParam name="midi" minValue="0" maxValue="4">
+                    <enumValue value="0" name="midi/4" />
+                    <enumValue value="1" name="midi/2" />
+                    <enumValue value="2" name="midi" />
+                    <enumValue value="3" name="midi*2" />
+                    <enumValue value="4" name="midi*4" />
+                    </enumParam>
+                <intParam minValue="100" maxValue="5000" factor="0.1" name="percent"/>
+                </multiParam>
+            <intParam name="FSEQ start step offset" minValue="0" maxValue="0x3fff"/>
+            <intParam name="FSEQ start step of loop point" minValue="0" maxValue="0x3fff"/>
+            <intParam name="FSEQ end step of loop point" minValue="0" maxValue="0x3fff"/>
+            <checkOffset expectedOffset="0x20" />
+            <enumParam name="FSEQ loop mode" minValue="0" maxValue="1" >
+                <enumValue value="0" name="one-way" />
+                <enumValue value="1" name="round" />
+                </enumParam>
+            <enumParam name="FSEQ play mode" minValue="1" maxValue="2" >
+                <enumValue value="1" name="scratch" />
+                <enumValue value="2" name="fseq" />
+                </enumParam>
+            <intParam name="FSEQ velocity sensitivity for tempo" minValue="0" maxValue="7" />
+            <boolParam name="FSEQ formant pitch mode" />
+            <enumParam name="FSEQ key on trigger" >
+                <enumValue value="0" name="first" />
+                <enumValue value="1" name="all" />
+                </enumParam>
+            <constParam name="reserved" value="0" />
+            <intParam name="FSEQ formant sequence delay" minValue="0" maxValue="0x63" />
+            <intParam name="FSEQ level velocity sensitivity" minValue="0" maxValue="0x7f" shift="-64" />
+            <typeParam name="controller 1 part switch" type="partSwitch" />
+            <typeParam name="controller 2 part switch" type="partSwitch" />
+            <typeParam name="controller 3 part switch" type="partSwitch" />
+            <typeParam name="controller 4 part switch" type="partSwitch" />
+            <typeParam name="controller 5 part switch" type="partSwitch" />
+            <typeParam name="controller 6 part switch" type="partSwitch" />
+            <typeParam name="controller 7 part switch" type="partSwitch" />
+            <typeParam name="controller 8 part switch" type="partSwitch" />
+            <typeParam name="controller 1 source switch" byteWidth="2" type="srcSwitch" />
+            <typeParam name="controller 2 source switch" byteWidth="2" type="srcSwitch" />
+            <typeParam name="controller 3 source switch" byteWidth="2" type="srcSwitch" />
+            <typeParam name="controller 4 source switch" byteWidth="2" type="srcSwitch" />
+            <typeParam name="controller 5 source switch" byteWidth="2" type="srcSwitch" />
+            <typeParam name="controller 6 source switch" byteWidth="2" type="srcSwitch" />
+            <typeParam name="controller 7 source switch" byteWidth="2" type="srcSwitch" />
+            <typeParam name="controller 8 source switch" byteWidth="2" type="srcSwitch" />
+            <typeParam name="controller 1 destination" type="dest" />
+            <typeParam name="controller 2 destination" type="dest" />
+            <typeParam name="controller 3 destination" type="dest" />
+            <typeParam name="controller 4 destination" type="dest" />
+            <typeParam name="controller 5 destination" type="dest" />
+            <typeParam name="controller 6 destination" type="dest" />
+            <typeParam name="controller 7 destination" type="dest" />
+            <typeParam name="controller 8 destination" type="dest" />
+            <intParam name="controller 1 depth" minValue="0" maxValue="0x7f" shift="-64" />
+            <intParam name="controller 2 depth" minValue="0" maxValue="0x7f" shift="-64" />
+            <intParam name="controller 3 depth" minValue="0" maxValue="0x7f" shift="-64" />
+            <intParam name="controller 4 depth" minValue="0" maxValue="0x7f" shift="-64" />
+            <intParam name="controller 5 depth" minValue="0" maxValue="0x7f" shift="-64" />
+            <intParam name="controller 6 depth" minValue="0" maxValue="0x7f" shift="-64" />
+            <intParam name="controller 7 depth" minValue="0" maxValue="0x7f" shift="-64" />
+            <intParam name="controller 8 depth" minValue="0" maxValue="0x7f" shift="-64" />
+            <checkOffset expectedOffset="0x50" />
+            </performanceCommon>
+        <performanceEffect offset="0x50">
+            <!-- the semantics of these parameters depend on the values of other parameters. How to resolve this
+             within different patches? -->
+            <intParam name="Reverb parameter" minValue="0" maxValue="0x7f" />
+            <intParam name="Reverb parameter" minValue="0" maxValue="0x7f" />
+            <intParam name="Reverb parameter" minValue="0" maxValue="0x7f" />
+            <intParam name="Reverb parameter" minValue="0" maxValue="0x7f" />
+            <intParam name="Reverb parameter" minValue="0" maxValue="0x7f" />
+            <intParam name="Reverb parameter" minValue="0" maxValue="0x7f" />
+            <intParam name="Reverb parameter" minValue="0" maxValue="0x7f" />
+            <intParam name="Reverb parameter" minValue="0" maxValue="0x7f" />
+            <intParam name="Reverb parameter" minValue="0" maxValue="0x7f" />
+            <intParam name="Reverb parameter" minValue="0" maxValue="0x7f" />
+            <intParam name="Reverb parameter" minValue="0" maxValue="0x7f" />
+            <intParam name="Reverb parameter" minValue="0" maxValue="0x7f" />
+            <intParam name="Reverb parameter" minValue="0" maxValue="0x7f" />
+            <intParam name="Reverb parameter" minValue="0" maxValue="0x7f" />
+            <intParam name="Reverb parameter" minValue="0" maxValue="0x7f" />
+            <intParam name="Reverb parameter" minValue="0" maxValue="0x7f" />
+            <intParam name="Reverb parameter" minValue="0" maxValue="0x7f" />
+            <intParam name="Reverb parameter" minValue="0" maxValue="0x7f" />
+            <intParam name="Reverb parameter" minValue="0" maxValue="0x7f" />
+            <intParam name="Reverb parameter" minValue="0" maxValue="0x7f" />
+            <intParam name="Reverb parameter" minValue="0" maxValue="0x7f" />
+            <intParam name="Reverb parameter" minValue="0" maxValue="0x7f" />
+            <intParam name="Reverb parameter" minValue="0" maxValue="0x7f" />
+            <intParam name="Reverb parameter" minValue="0" maxValue="0x7f" />
+            <intParam name="Variation parameter" minValue="0" maxValue="0x7f" />
+            <intParam name="Variation parameter" minValue="0" maxValue="0x7f" />
+            <intParam name="Variation parameter" minValue="0" maxValue="0x7f" />
+            <intParam name="Variation parameter" minValue="0" maxValue="0x7f" />
+            <intParam name="Variation parameter" minValue="0" maxValue="0x7f" />
+            <intParam name="Variation parameter" minValue="0" maxValue="0x7f" />
+            <intParam name="Variation parameter" minValue="0" maxValue="0x7f" />
+            <intParam name="Variation parameter" minValue="0" maxValue="0x7f" />
+            <intParam name="Variation parameter" minValue="0" maxValue="0x7f" />
+            <intParam name="Variation parameter" minValue="0" maxValue="0x7f" />
+            <intParam name="Variation parameter" minValue="0" maxValue="0x7f" />
+            <intParam name="Variation parameter" minValue="0" maxValue="0x7f" />
+            <intParam name="Variation parameter" minValue="0" maxValue="0x7f" />
+            <intParam name="Variation parameter" minValue="0" maxValue="0x7f" />
+            <intParam name="Variation parameter" minValue="0" maxValue="0x7f" />
+            <intParam name="Variation parameter" minValue="0" maxValue="0x7f" />
+            <intParam name="Variation parameter" minValue="0" maxValue="0x7f" />
+            <intParam name="Variation parameter" minValue="0" maxValue="0x7f" />
+            <intParam name="Variation parameter" minValue="0" maxValue="0x7f" />
+            <intParam name="Variation parameter" minValue="0" maxValue="0x7f" />
+            <intParam name="Variation parameter" minValue="0" maxValue="0x7f" />
+            <intParam name="Variation parameter" minValue="0" maxValue="0x7f" />
+            <intParam name="Variation parameter" minValue="0" maxValue="0x7f" />
+            <intParam name="Variation parameter" minValue="0" maxValue="0x7f" />
+            <intParam name="Variation parameter" minValue="0" maxValue="0x7f" />
+            <intParam name="Variation parameter" minValue="0" maxValue="0x7f" />
+            <intParam name="Variation parameter" minValue="0" maxValue="0x7f" />
+            <intParam name="Variation parameter" minValue="0" maxValue="0x7f" />
+            <intParam name="Variation parameter" minValue="0" maxValue="0x7f" />
+            <intParam name="Variation parameter" minValue="0" maxValue="0x7f" />
+            <intParam name="Variation parameter" minValue="0" maxValue="0x7f" />
+            <intParam name="Variation parameter" minValue="0" maxValue="0x7f" />
+            <intParam name="Insertion parameter" minValue="0" maxValue="0x7f" />
+            <intParam name="Insertion parameter" minValue="0" maxValue="0x7f" />
+            <intParam name="Insertion parameter" minValue="0" maxValue="0x7f" />
+            <intParam name="Insertion parameter" minValue="0" maxValue="0x7f" />
+            <intParam name="Insertion parameter" minValue="0" maxValue="0x7f" />
+            <intParam name="Insertion parameter" minValue="0" maxValue="0x7f" />
+            <intParam name="Insertion parameter" minValue="0" maxValue="0x7f" />
+            <intParam name="Insertion parameter" minValue="0" maxValue="0x7f" />
+            <intParam name="Insertion parameter" minValue="0" maxValue="0x7f" />
+            <intParam name="Insertion parameter" minValue="0" maxValue="0x7f" />
+            <intParam name="Insertion parameter" minValue="0" maxValue="0x7f" />
+            <intParam name="Insertion parameter" minValue="0" maxValue="0x7f" />
+            <intParam name="Insertion parameter" minValue="0" maxValue="0x7f" />
+            <intParam name="Insertion parameter" minValue="0" maxValue="0x7f" />
+            <intParam name="Insertion parameter" minValue="0" maxValue="0x7f" />
+            <intParam name="Insertion parameter" minValue="0" maxValue="0x7f" />
+            <intParam name="Insertion parameter" minValue="0" maxValue="0x7f" />
+            <intParam name="Insertion parameter" minValue="0" maxValue="0x7f" />
+            <intParam name="Insertion parameter" minValue="0" maxValue="0x7f" />
+            <intParam name="Insertion parameter" minValue="0" maxValue="0x7f" />
+            <intParam name="Insertion parameter" minValue="0" maxValue="0x7f" />
+            <intParam name="Insertion parameter" minValue="0" maxValue="0x7f" />
+            <intParam name="Insertion parameter" minValue="0" maxValue="0x7f" />
+            <intParam name="Insertion parameter" minValue="0" maxValue="0x7f" />
+            <intParam name="Insertion parameter" minValue="0" maxValue="0x7f" />
+            <intParam name="Insertion parameter" minValue="0" maxValue="0x7f" />
+            <intParam name="Insertion parameter" minValue="0" maxValue="0x7f" />
+            <intParam name="Insertion parameter" minValue="0" maxValue="0x7f" />
+            <intParam name="Insertion parameter" minValue="0" maxValue="0x7f" />
+            <intParam name="Insertion parameter" minValue="0" maxValue="0x7f" />
+            <intParam name="Insertion parameter" minValue="0" maxValue="0x7f" />
+            <intParam name="Insertion parameter" minValue="0" maxValue="0x7f" />
+            <checkOffset expectedOffset="0x128" />
+            <enumParam name="Reverb Type" minValue="0" maxValue="0x10" />
+            <intParam name="Reverb pan" minValue="1" maxValue="0x7f" shift="-63" />
+            <intParam name="Reverb return" minValue="0" maxValue="0x7f" />
+            <enumParam name="Variation Type" minValue="0" maxValue="0x1c" />
+            <intParam name="Variation pan" minValue="1" maxValue="0x7f" shift="-63" />
+            <intParam name="Variation return" minValue="0" maxValue="0x7f" />
+            <intParam name="Variation to Reverb" minValue="0" maxValue="0x7f" />
+            <enumParam name="Insertion Type" minValue="0" maxValue="0x28" />
+            <intParam name="Insertion pan" minValue="1" maxValue="0x7f" shift="-63" />
+            <intParam name="Insertion return" minValue="0" maxValue="0x7f" />
+            <intParam name="Insertion to Reverb" minValue="0" maxValue="0x7f" />
+            <intParam name="Insertion to Variation" minValue="0" maxValue="0x7f" />
+            <intParam name="Insertion Level" minValue="0" maxValue="0x7f" />
+            <intParam name="EQ low gain" minValue="0x34" maxValue="0x4c" shift="-64" />
+            <enumParam name="EQ low frequency" minValue="0x4" maxValue="0x28" />
+            <intParam name="EQ low Q" minValue="1" maxValue="0x78" factor="0.1" />
+            <enumParam name="EQ low shape" enum="eqShape" />
+            <intParam name="EQ mid gain" minValue="0x34" maxValue="0x4c" shift="-64" />
+            <enumParam name="EQ mid frequency" minValue="0xe" maxValue="0x36" />
+            <intParam name="EQ mid Q" minValue="1" maxValue="0x78" factor="0.1" />
+            <intParam name="EQ hi gain" minValue="0x34" maxValue="0x4c" shift="-64" />
+            <enumParam name="EQ hi frequency" minValue="0x1c" maxValue="0x3a" />
+            <intParam name="EQ hi Q" minValue="1" maxValue="0x78" factor="0.1" />
+            <enumParam name="EQ hi shape" enum="eqShape" />
+            <constParam name="reserved" value="0" />
+            <checkOffset expectedOffset="0x0140" />
+            </performanceEffect>
+        <performancePart>
+            <intParam name="note reserve" minValue="0" maxValue="0x20" />
+            <linkParam name="bank number" minValue="0" maxValue="0x0c" table="voices" param="bank"/> <!-- dependent on where things are ocated in fs1r mem -->
+            <linkParam name="program number" minValue="0" maxValue="0x7f" table="voices" param="program"/>
+            <multiParam name="Rcv Channel Max">
+                <intParam minValue="0" maxValue="0x0f" shift="1" name="channel"/>
+                <enumParam>
+                    <enumValue value="0x7f" name="off" />
+                    </enumParam>
+                </multiParam>
+            <multiParam name="Rcv Channel">
+                <intParam minValue="0" maxValue="0x0f" shift="1" name="channel"/>
+                <enumParam>
+                    <enumValue value="0x10" name="perf" />
+                    </enumParam>
+                <enumParam>
+                    <enumValue value="0x7f" name="off" />
+                    </enumParam>
+                </multiParam>
+            <boolParam name="Polyphonic" />
+            <enumParam name="mono priority" >
+                <enumValue value="0" name="last" />
+                <enumValue value="1" name="top" />
+                <enumValue value="2" name="bottom" />
+                <enumValue value="3" name="first" />
+                </enumParam>
+            <boolParam name="FilterSw" />
+            <intParam name="note shift" minValue="0" maxValue="0x30" shift="-24" />
+            <intParam name="detune" shift="-64" />
+            <intParam name="voiced/unvoiced balance" shift="-64" />
+            <intParam name="volume" />
+            <intParam name="velocity sense depth" />
+            <intParam name="velocity sense offset" />
+            <multiParam name="pan">
+                <enumParam><enumValue name="random" value="0" /></enumParam>
+                <intParam name="L/R" minValue="1" shift="-64" />
+                </multiParam>
+            <intParam name="note limit low" />
+            <intParam name="note limit high" />
+            <intParam name="dry level" />
+            <intParam name="variation send" />
+            <intParam name="reverb send" />
+            <boolParam name="insertion switch" />
+            <intParam name="lfo1 rate" shift = "-64"/>
+            <intParam name="lfo1 pitch mod depth" shift = "-64"/>
+            <intParam name="lfo1 delay" shift = "-64"/>
+            <intParam name="filter cutoff freq" shift = "-64"/>
+            <intParam name="filter rez" shift = "-64"/>
+            <intParam name="eg attack" shift = "-64"/>
+            <intParam name="eg decay" shift = "-64"/>
+            <intParam name="eg release" shift = "-64"/>
+            <intParam name="formant" shift = "-64"/>
+            <intParam name="fm" shift = "-64"/>
+            <intParam name="filter eg depth" shift = "-64"/>
+            <intParam name="pitch eg initial level" shift = "-64"/>
+            <intParam name="pitch eg attack time" shift = "-64"/>
+            <intParam name="pitch eg release level" shift = "-64"/>
+            <intParam name="pitch eg release time" shift = "-64"/>
+            <enumParam name="portamento" >
+                <enumValue value="0" name="off" />
+                <enumValue value="1" name="fingered" />
+                <enumValue value="3" name="full-time" />
+                </enumParam>
+            <intParam name="portmento Time" />
+            <intParam name="pitch bend range high" minValue="0x10" maxValue="0x58" shift="-64" />
+            <intParam name="pitch bend range low" minValue="0x10" maxValue="0x58" shift="-64" />
+            <intParam name="pan scaling" maxValue="0x64" />
+            <intParam name="pan lfo depth" maxValue="0x63" />
+            <intParam name="velocity limit low" minValue="1" />
+            <intParam name="velocity limit high" minValue="1" />
+            <intParam name="expression limit low" />
+            <boolParam name="Sustain Rcv Switch" />
+            <intParam name="lfo1 rate" shift = "-64"/>
+            <intParam name="lfo1 mod depth" shift = "-64"/>
+            <constParam name="reserved" value="0" byteWidth="4" />
+            </performancePart>
+        </performanceComponents>
+    <voiceComponents>
+        <voiceCommon>
+            <stringParam name="voice name" byteWidth="10" />
+            <constParam name="reserved" value="0" byteWidth="4" />
+            <enumParam name="category" minValue="0" maxValue="0x16" />
+            <constParam name="reserved" value="0" />
+            <enumParam name="common lfo1 - waveform" minValue="0" maxValue="5" enum="waveforms" />
+            <intParam name="common lfo1 - speed" maxValue="0x63" />
+            <intParam name="common lfo1 - delay" maxValue="0x63" />
+            <boolParam name="common lfo1 - keysync" />
+            <constParam name="reserved" value="0" />
+            <intParam name="common lfo1 - pitch mod depth" maxValue="0x63" />
+            <intParam name="common lfo1 - amp mod depth" maxValue="0x63" />
+            <intParam name="common lfo1 - frequency mod depth" maxValue="0x63" />
+            <enumParam name="common lfo2 - waveform" minValue="0" maxValue="5" enum="waveforms" />
+            <intParam name="common lfo2 - speed" maxValue="0x63" />
+            <constParam name="reserved" value="0" />
+            <constParam name="reserved" value="0" />
+            <intParam name="common lfo2 - phase" maxValue="3" factor="90" />
+            <boolParam name="common lfo2 - keysync" />
+            <intParam name="noteshift" maxValue="0x30" shift="-24" />
+            <intParam name="Pitch EG level 0" maxValue="0x64" />
+            <intParam name="Pitch EG level 1" maxValue="0x64" />
+            <intParam name="Pitch EG level 2" maxValue="0x64" />
+            <intParam name="Pitch EG level 4" maxValue="0x63" />
+            <intParam name="Pitch EG time 1" maxValue="0x63" />
+            <intParam name="Pitch EG time 2" maxValue="0x63" />
+            <intParam name="Pitch EG time 3" maxValue="0x63" />
+            <intParam name="Pitch EG time 4" maxValue="0x63" />
+            <intParam name="Pitch EG velocity sensitivity" maxValue="7" />
+            <bitfieldParam name="FSEQ voiced op switch hi" >
+                <bit index="0" name="8" />
+                </bitfieldParam>
+            <bitfieldParam name="FSEQ voiced op switch lo" >
+                <bit index="6" name="7" />
+                <bit index="5" name="6" />
+                <bit index="4" name="5" />
+                <bit index="3" name="4" />
+                <bit index="2" name="3" />
+                <bit index="1" name="2" />
+                <bit index="0" name="1" />
+                </bitfieldParam>
+            <bitfieldParam name="FSEQ unvoiced op switch hi" >
+                <bit index="0" name="8" />
+                </bitfieldParam>
+            <bitfieldParam name="FSEQ unvoiced op switch lo" >
+                <bit index="6" name="7" />
+                <bit index="5" name="6" />
+                <bit index="4" name="5" />
+                <bit index="3" name="4" />
+                <bit index="2" name="3" />
+                <bit index="1" name="2" />
+                <bit index="0" name="1" />
+                </bitfieldParam>
+            <enumParam name="algorithm preset number" maxValue="0x57" />
+            <intParam name="voiced op 1 carrier level correction" maxValue="0x0f" />
+            <intParam name="voiced op 2 carrier level correction" maxValue="0x0f" />
+            <intParam name="voiced op 3 carrier level correction" maxValue="0x0f" />
+            <intParam name="voiced op 4 carrier level correction" maxValue="0x0f" />
+            <intParam name="voiced op 5 carrier level correction" maxValue="0x0f" />
+            <intParam name="voiced op 6 carrier level correction" maxValue="0x0f" />
+            <intParam name="voiced op 7 carrier level correction" maxValue="0x0f" />
+            <intParam name="voiced op 8 carrier level correction" maxValue="0x0f" />
+            <constParam name="reserved" value="0" byteWidth="6" />
+            <enumParam name="pitch eg range">
+                <enumValue value="0" name="8va" />
+                <enumValue value="1" name="2va" />
+                <enumValue value="2" name="1va" />
+                <enumValue value="3" name="1/2va" />
+                </enumParam>
+            <intParam name="time scaling depth" maxValue="0x07" />
+            <intParam name="voiced feedback level" maxValue="0x07" />
+            <intParam name="pitch eg level 3" maxValue="0x64" />
+            <constParam name="reserved" value="0" />
+            <typeParam name="Formant Control Destination 1" type="formantCtrlDst" />
+            <typeParam name="Formant Control Destination 2" type="formantCtrlDst" />
+            <typeParam name="Formant Control Destination 3" type="formantCtrlDst" />
+            <typeParam name="Formant Control Destination 4" type="formantCtrlDst" />
+            <typeParam name="Formant Control Destination 5" type="formantCtrlDst" />
+            <intParam name="Formant Control Depth 1" shift="-64" />
+            <intParam name="Formant Control Depth 2" shift="-64" />
+            <intParam name="Formant Control Depth 3" shift="-64" />
+            <intParam name="Formant Control Depth 4" shift="-64" />
+            <intParam name="Formant Control Depth 5" shift="-64" />
+            <typeParam name="FM Control Destination 1" type="formantCtrlDst" />
+            <typeParam name="FM Control Destination 2" type="formantCtrlDst" />
+            <typeParam name="FM Control Destination 3" type="formantCtrlDst" />
+            <typeParam name="FM Control Destination 4" type="formantCtrlDst" />
+            <typeParam name="FM Control Destination 5" type="formantCtrlDst" />
+            <intParam name="FM Control Depth 1" shift="-64" />
+            <intParam name="FM Control Depth 2" shift="-64" />
+            <intParam name="FM Control Depth 3" shift="-64" />
+            <intParam name="FM Control Depth 4" shift="-64" />
+            <intParam name="FM Control Depth 5" shift="-64" />
+            <enumParam name="Filter Type" >
+                <enumValue name="LPF24" value="0" />
+                <enumValue name="LPF18" value="1" />
+                <enumValue name="LPF12" value="2" />
+                <enumValue name="HPF" value="3" />
+                <enumValue name="BPF" value="4" />
+                <enumValue name="BEF" value="5" />
+                </enumParam>
+            <intParam maxValue="0x74" name="filter resonance" shift="-16"/>
+            <intParam maxValue="0x0e" name="filter resonance velo sense" shift="-7"/>
+            <intParam name="filter cutoff freq" />
+            <intParam name="filter eg depth velo sense" shift="-7" />
+            <intParam name="cutoff freq lfo1 depth" maxValue="0x63" />
+            <intParam name="cutoff freq lfo2 depth" maxValue="0x63" />
+            <intParam name="cutoff freq key scale depth" shift="-64" />
+            <intParam name="cutoff freq key scale point" />
+            <intParam name="filter input gain" maxValue="0x18" shift="-12" />
+            <constParam name="reserved" byteWidth="0" />
+            <intParam name="filter eg depth" shift="-64" />
+            <intParam name="filter eg level 4"  maxValue="0x64" />
+            <intParam name="filter eg level 1"  maxValue="0x64" />
+            <intParam name="filter eg level 2"  maxValue="0x64" />
+            <intParam name="filter eg level 3"  maxValue="0x64" />
+            <intParam name="filter eg time 1"  maxValue="0x63" />
+            <intParam name="filter eg time 2"  maxValue="0x63" />
+            <intParam name="filter eg time 3"  maxValue="0x63" />
+            <intParam name="filter eg time 4"  maxValue="0x63" />
+            <staticHex>00</staticHex>
+            <orParam>
+                <bitShift shift="3">
+                    <intParam name="filter eg attack time vel" maxValue="7" />
+                    </bitShift>
+                <intParam maxValue="7" name="time scale" />
+                </orParam>
+            </voiceCommon>
+        <voicedOperator>
+            <orParam>
+                <bitShift shift="6">
+                    <boolParam name="oscillator key sync" />
+                    </bitShift>
+                <intParam name="transpose" maxValue="0x30" />
+                </orParam>
+            <intParam maxValue="0x1f" name="oscillator freq coarse" />
+            <intParam maxValue="0x7f" name="oscillator freq fine" />
+            <intParam maxValue="0x63" name="oscillator freq note scaling" />
+            <orParam>
+                <bitShift shift="3" >
+                    <intParam name="bw bias sense" shift="-7" maxValue="0x0e" />
+                    </bitShift>
+                <enumParam name="spectral form" maxValue="0x07" />
+                </orParam>
+            <orParam>
+                <bitShift shift="6" >
+                    <boolParam name="oscillator mode" />
+                    </bitShift>
+                <bitShift shift="3" >
+                    <intParam name="spectral skirt" />
+                    </bitShift>
+                <enumParam name="fseq track number" maxValue="7" />
+                </orParam>
+            <intParam name="freq ratio of band spectrum" maxValue="0x63" />
+            <intParam name="detune" maxValue="0x1e" />
+            <intParam name="freq eg initial value" maxValue="0x64" />
+            <intParam name="freq eg attack value" maxValue="0x64" />
+            <intParam name="freq eg attack time" maxValue="0x63" />
+            <intParam name="freq eg decay time" maxValue="0x63" />
+            <intParam name="eg level 1" maxValue="0x63" />
+            <intParam name="eg level 2" maxValue="0x63" />
+            <intParam name="eg level 3" maxValue="0x63" />
+            <intParam name="eg level 4" maxValue="0x63" />
+            <intParam name="eg time 1" maxValue="0x63" />
+            <intParam name="eg time 2" maxValue="0x63" />
+            <intParam name="eg time 3" maxValue="0x63" />
+            <intParam name="eg time 4" maxValue="0x63" />
+            <intParam name="eg hold time" maxValue="0x63" />
+            <intParam name="eg time scaling" maxValue="0x07" />
+            <intParam name="level scaling total level" maxValue="0x63" />
+            <intParam name="level scaling break point" maxValue="0x63" />
+            <intParam name="level scaling left depth" maxValue="0x63" />
+            <intParam name="level scaling right depth" maxValue="0x63" />
+            <typeParam name="level scaling left curve" type="levelScalingCurve" />
+            <typeParam name="level scaling right curve" type="levelScalingCurve" />
+            <staticHex name="reserved">000000</staticHex>
+            <orParam>
+                <bitShift shift="3">
+                    <intParam name="freq bias sense" maxValue="0x0e" shift="-7" />
+                    </bitShift>
+                <intParam name="pitch mod sense" maxValue="7" />
+                </orParam>
+            <orParam>
+                <bitShift shift="4">
+                    <intParam name="freq mod sense" maxValue="0x07" />
+                    </bitShift>
+                <intParam name="freq velo sense" maxValue="0x0e" shift="-7" />
+                </orParam>
+            <orParam>
+                <bitShift shift="4">
+                    <intParam name="amp mod sense" maxValue="0x07"  />
+                    </bitShift>
+                <intParam name="pitch mod sense" maxValue="0x0e" shift="-7" />
+                </orParam>
+            <intParam name="eg bias sense" maxValue="0x0e" />
+            </voicedOperator>
+        <unvoicedOperator>
+            <intParam name="formant pitch transpose" maxValue="0x30" />
+            <orParam>
+                <bitShift shift="6">
+                    <boolParam name="formant pitch mode"/>
+                    </bitShift>
+                <intParam name="formant pitch coarse" maxValue="0x1e"/>
+                </orParam>
+            <intParam name="formant pitch fine" />
+            <intParam name="formant pitch note scaling" maxValue="0x63" />
+            <intParam name="formant shape band width" maxValue="0x63" />
+            <intParam name="formant shape bw bias sense" maxValue="0x0e" shift="-7" />
+            <orParam>
+                <bitShift shift="3">
+                    <intParam name="formant resonance" maxValue="7" />
+                    </bitShift>
+                <intParam name="formant skirt" maxValue="7" />
+                </orParam>
+            <intParam name="freq eg initial value" maxValue="0x64" />
+            <intParam name="freq eg attack value" maxValue="0x64" />
+            <intParam name="freq eg attack time" maxValue="0x63" />
+            <intParam name="freq eg decay time" maxValue="0x63" />
+            <intParam name="level" maxValue="0x63" />
+            <intParam name="level key scaling" maxValue="0x63" />
+            <intParam name="eg level 1" maxValue="0x63" />
+            <intParam name="eg level 2" maxValue="0x63" />
+            <intParam name="eg level 3" maxValue="0x63" />
+            <intParam name="eg level 4" maxValue="0x63" />
+            <intParam name="eg time 1" maxValue="0x63" />
+            <intParam name="eg time 2" maxValue="0x63" />
+            <intParam name="eg time 3" maxValue="0x63" />
+            <intParam name="eg time 4" maxValue="0x63" />
+            <intParam name="eg hold time" maxValue="0x63" />
+            <intParam name="eg time scaling" maxValue="7" />
+            <intParam name="freq bias sense" maxValue="0x0e" shift="-7" />
+            <orParam>
+                <bitShift shift="4" >
+                    <intParam name="freq mod sense" maxValue="7" />
+                    </bitShift>
+                <intParam name="freq velo sense" maxvalue="0x0e" shift="-7" />
+                </orParam>
+            <orParam>
+                <bitShift shift="4" >
+                    <intParam name="amp mod sense" maxValue="7" />
+                    </bitShift>
+                <intParam name="amp velo sense" maxvalue="0x0e" shift="-7" />
+                </orParam>
+            <intParam name="eg bias sense" maxValue="0x0e" shift="-7" />
+            </unvoicedOperator>
+        </voiceComponents>
+    <fseqComponents>
+        <fseqHeader>
+            <stringParam byteWidth="8" name="name" />
+            <staticHex name="Reserved">0000000000000000</staticHex>
+            <intParam name="start step of loop point" byteWidth="2" />
+            <intParam name="end step of loop point" byteWidth="2" />
+            <boolParam name="loop mode round not one way" />
+            <intParam name="speed adjust" />
+            <intParam name="tempo velo sens" maxValue="7" />
+            <boolParam name="non pitch mode" />
+            <intParam name="formant note assign" />
+            <intParam name="pitch tuning" shift="-63" maxValue="0x7e"/>
+            <intParam name="formant sequence delay" maxValue="0x63" />
+            <enumParam name="frame data format" >
+                <enumValue name="total of frames 128" value="0" />
+                <enumValue name="total of frames 256" value="1" />
+                <enumValue name="total of frames 384" value="2" />
+                <enumValue name="total of frames 512" value="3" />
+                </enumParam>
+            <staticHex name="reserved" >0000</staticHex>
+            <intParam name="rmtc end step of valid data" byteWidth="2" />
+            </fseqHeader>
+        <fseqFrame>
+            <intParam name="fundamental pitch" byteWidth="2" />
+            <intParam lobyteOffset="8" name="voiced formant frequency hi 1" />
+            <intParam lobyteOffset="8" name="voiced formant frequency hi 2" />
+            <intParam lobyteOffset="8" name="voiced formant frequency hi 3" />
+            <intParam lobyteOffset="8" name="voiced formant frequency hi 4" />
+            <intParam lobyteOffset="8" name="voiced formant frequency hi 5" />
+            <intParam lobyteOffset="8" name="voiced formant frequency hi 6" />
+            <intParam lobyteOffset="8" name="voiced formant frequency hi 7" />
+            <intParam lobyteOffset="8" name="voiced formant frequency hi 8" />
+            <intParam name="voiced formant frequency lo 1" />
+            <intParam name="voiced formant frequency lo 2" />
+            <intParam name="voiced formant frequency lo 3" />
+            <intParam name="voiced formant frequency lo 4" />
+            <intParam name="voiced formant frequency lo 5" />
+            <intParam name="voiced formant frequency lo 6" />
+            <intParam name="voiced formant frequency lo 7" />
+            <intParam name="voiced formant frequency lo 8" />
+            <intParam name="voiced formant level 1" />
+            <intParam name="voiced formant level 2" />
+            <intParam name="voiced formant level 3" />
+            <intParam name="voiced formant level 4" />
+            <intParam name="voiced formant level 5" />
+            <intParam name="voiced formant level 6" />
+            <intParam name="voiced formant level 7" />
+            <intParam name="voiced formant level 8" />
+            </fseqFrame>
+        </fseqComponents>
+    <types>
+        <type name="formantCtrlDst">
+            <orParam>
+                <bitShift shift="4">
+                    <enumParam name="dest">
+                        <enumValue name="off" value="0" />
+                        <enumValue name="out" value="1" />
+                        <enumValue name="freq" value="2" />
+                        <enumValue name="width" value="3" />
+                        </enumParam>
+                    </bitShift>
+                <bitShift shift="3">
+                    <boolParam name="voicedNotUnvoiced" />
+                    </bitShift>
+                <enumParam name="operator" maxValue="7" shift="1" />
+                </orParam>
+            </type>
+        <type name="levelScalingCurve">
+            <enumParam>
+                <enumValue name="-lin" value="0" />
+                <enumValue name="-exp" value="1" />
+                <enumValue name="+exp" value="2" />
+                <enumValue name="+lin" value="3" />
+                </enumParam>
+            </type>
+        </types>
+    </midiTable>
