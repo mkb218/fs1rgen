@@ -67,7 +67,7 @@ namespace fs1rgen {
         }
     }
 
-    void fs1rgen::Evaluator::sendToSynth() throw (Exception) {
+    void fs1rgen::Evaluator::sendToSynth() throw (std::runtime_error) {
         // no body yet!
     }
     
@@ -79,24 +79,34 @@ namespace fs1rgen {
         try {
             score = eval->evaluate(values_);
             _evaluated = gaTrue;
-        } catch (Exception & e) {
+        } catch (std::exception & e) {
             // TODO: something notification-like with this exception
             score = -1;
         }
         return score;
     }
  
-    int lockedCrossover(Value * bro, Value * sis) const {
+    int Value::lockedCrossover(Value * bro, Value * sis) const {
         int copies = 0;
         if (bro != NULL) {
-            bro = *this;
+            *bro = (*this);
             ++copies;
         }
         if (sis != NULL) {
-            sis = *this;
+            *sis = (*this);
             ++copies;
         }
         return copies;
+    }
+    
+    Value & Value::operator=(const Value & other) throw (std::logic_error) {
+        if (&param_ != &(other.param_)) {
+            throw std::logic_error("can't assign two values with different params");
+        }
+        
+        value_ = other.value_;
+        locked_ = other.locked_;
+        return *this;
     }
     
 }

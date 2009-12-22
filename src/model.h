@@ -10,6 +10,7 @@
 #define H2P_FS1RGEN_MODEL
 
 #include <exception>
+#include <stdexcept>
 #include "ga/ga.h"
 #include <list>
 #include <vector>
@@ -20,14 +21,16 @@
 
 #define foreach BOOST_FOREACH
 
-typedef boost::any ValueType;
-typedef std::auto_ptr<std::vector<char> > SynthData;
 
 namespace fs1rgen {
     class Value;
+    class Genome;
+    class Param;
     
-    class Exception : public std::exception {
-    };
+    typedef boost::any ValueType;
+    typedef std::auto_ptr<std::vector<char> > SynthData;
+    typedef std::list<Value> ValueList;
+    typedef std::list<boost::reference_wrapper<Param> > ParamList;
     
     class Param {
     public:
@@ -49,26 +52,21 @@ namespace fs1rgen {
     public:
         Value(const Param & p, boost::any & v) : param_(p), value_(v), locked_(false) {}
         Value(const Value & other) : param_(other.param_), value_(other.value_), locked_(other.locked_) {};
-        Value & operator=(const Value & other);
+        Value & operator=(const Value & other) throw (std::logic_error);
         int mutate(float p) { if (!locked_) { return param_.mutate(*this, p); } else { return 0; } }
         float compare(const Value & other) const { return param_.compare(*this, other); }
         int crossover(const Value & other, Value * bro, Value * sis) const { if (!locked_) return param_.crossover(*this, other, bro, sis); else return lockedCrossover(bro, sis); }
         Value * clone() const { return new Value(*this); }
         const Param & param() { return param_; }
-        const boost::any & value() { return value_; }
+        const ValueType & value() { return value_; }
         void lock() { locked_ = true; }
         void unlock() { locked_ = false; }
         int lockedCrossover(Value * bro, Value * sis) const;
     private:
         const Param & param_;
-        boost::any value_;
+        ValueType value_;
         bool locked_;
     };
-
-    typedef std::list<Value> ValueList;
-    typedef std::list<boost::reference_wrapper<Param> > ParamList;
-    
-    class Genome;
     
     class Model {
     public:
@@ -85,9 +83,9 @@ namespace fs1rgen {
     public:
         static const Evaluator * getInstance() { return instance_; }
         static void setInstance(Evaluator * i) { instance_ = i; }
-        virtual float evaluate(ValueList &) const throw (Exception) = 0;
+        virtual float evaluate(ValueList &) const throw (std::runtime_error) = 0;
     private:
-        void sendToSynth() throw (Exception);
+        void sendToSynth() throw (std::runtime_error);
         Evaluator() {}; // prevent instantiation
         //        static lock_t singletonLock_;
         static Evaluator * instance_;
