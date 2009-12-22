@@ -10,23 +10,23 @@
 #include "model.h"
 
 namespace fs1rgen {
-    int Genome::spawn(const Genome & dad, GAGenome *bro, GAGenome *sis) {
+    int Genome::spawn(const Genome & dad, GAGenome *bro, GAGenome *sis) const {
         int nc = 0;
-        ValueList::iterator momit = values_.begin();
-        ValueList:const_iterator dadit = dad.values().begin();
+        ValueList::const_iterator momit = values_.begin();
+        ValueList::const_iterator dadit = dad.values().begin();
         ValueList::iterator sisit, broit;
         Genome *realbro = NULL;
         Genome *realsis = NULL;
         if (bro != NULL) {
             realbro = dynamic_cast<Genome *>(bro);
             realbro->copy(dad);
-            broit = realbro->begin();
+            broit = realbro->values_.begin();
             ++nc;
         }
         if (sis != NULL) {
             realsis = dynamic_cast<Genome *>(sis);
             realsis->copy(*this);
-            sisit = realsis->begin();
+            sisit = realsis->values_.begin();
             ++nc;
         }
         
@@ -34,17 +34,20 @@ namespace fs1rgen {
             return nc; // done!
         }
         
-        while (momit < values_.end() && dadit < dad.values().end() && 
-               (realbro == NULL or broit < realbro->values().end()) &&
-               (realsis == NULL or sisit < realsis->values().end())) {
+        while (momit != values().end() && dadit != dad.values().end() && 
+               (realbro == NULL or broit != realbro->values_.end()) &&
+               (realsis == NULL or sisit != realsis->values_.end())) {
+            Value *broval = NULL;
+            Value *sisval = NULL;
             if (realbro != NULL) {
-                *broit = dadit->cross(*momit);
+                broval = &(*broit);
                 ++broit;
             }
             if (realbro != NULL) {
-                *sisit = momit->cross(*dadit);
+                sisval = &(*sisit);
                 ++sisit;
             }
+            momit->crossover(*dadit, broval, sisval);
             ++momit;
             ++dadit;
         }
@@ -55,8 +58,24 @@ namespace fs1rgen {
     void Model::initialize(Genome & genome) const {
         genome.values_.clear();
         foreach ( const Param & p, params_) {
-            genome.values_.push_back(p.newValue());
+            Value *newValue = p.newValue();
+            genome.values_.push_back(*newValue);
+            delete newValue;
         }
     }
 
+    float Genome::evaluate() {
+        fs1rgen::Evaluator *eval = fs1rgen::Evaluator::getInstance();
+        _evaluated = gaFalse;
+        assert (eval != NULL); // this means programmer error
+        float score = 0.0;
+        try {
+            score = eval->evaluate(values_);
+            _evaluated = gaTrue;
+        } catch (Exception & e) {
+            // TODO: something notification-like with this exception
+            score = -1;
+        }
+        return score;
+    }
 }
