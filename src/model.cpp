@@ -9,7 +9,10 @@
 
 #include "model.h"
 
+fs1rgen::Evaluator *fs1rgen::Evaluator::instance_ = NULL;
+
 namespace fs1rgen {
+    
     int Genome::spawn(const Genome & dad, GAGenome *bro, GAGenome *sis) const {
         int nc = 0;
         ValueList::const_iterator momit = values_.begin();
@@ -64,8 +67,12 @@ namespace fs1rgen {
         }
     }
 
+    void fs1rgen::Evaluator::sendToSynth() throw (Exception) {
+        // no body yet!
+    }
+    
     float Genome::evaluate() {
-        fs1rgen::Evaluator *eval = fs1rgen::Evaluator::getInstance();
+        const fs1rgen::Evaluator *eval = fs1rgen::Evaluator::getInstance();
         _evaluated = gaFalse;
         assert (eval != NULL); // this means programmer error
         float score = 0.0;
@@ -78,4 +85,18 @@ namespace fs1rgen {
         }
         return score;
     }
+ 
+    int lockedCrossover(Value * bro, Value * sis) const {
+        int copies = 0;
+        if (bro != NULL) {
+            bro = *this;
+            ++copies;
+        }
+        if (sis != NULL) {
+            sis = *this;
+            ++copies;
+        }
+        return copies;
+    }
+    
 }

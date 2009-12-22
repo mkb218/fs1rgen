@@ -57,6 +57,7 @@ namespace fs1rgen {
         const Param & param() { return param_; }
         const boost::any & value() { return value_; }
         void lock() { locked_ = true; }
+        void unlock() { locked_ = false; }
         int lockedCrossover(Value * bro, Value * sis) const;
     private:
         const Param & param_;
@@ -82,9 +83,9 @@ namespace fs1rgen {
         // this is an abstract base class because we may be running in either a command-line environment
         // or a graphical one
     public:
-        static Evaluator * getInstance();
-        static void setInstance(Evaluator *);
-        virtual float evaluate(ValueList &) throw (Exception) = 0;
+        static const Evaluator * getInstance() { return instance_; }
+        static void setInstance(Evaluator * i) { instance_ = i; }
+        virtual float evaluate(ValueList &) const throw (Exception) = 0;
     private:
         void sendToSynth() throw (Exception);
         Evaluator() {}; // prevent instantiation
@@ -102,7 +103,7 @@ namespace fs1rgen {
         void initialize() {
             model_.initialize(*this);
         }
-        static float Evaluator(GAGenome & g) { return dynamic_cast<Genome &>(g).evaluate(); }
+        static float Objective(GAGenome & g) { return dynamic_cast<Genome &>(g).evaluate(); }
         float evaluate();
         static int Mutator(GAGenome & g, float p)  { return dynamic_cast<Genome&>(g).mutate(p); }
         int mutate(float p) {
@@ -129,7 +130,7 @@ namespace fs1rgen {
         const ValueList & values() const { return values_; }
         virtual void copy(const GAGenome & g) { values_ = dynamic_cast<const Genome &>(g).values_; }
         virtual GAGenome * clone(GAGenome::CloneMethod) { return new Genome(*this); };
-        Genome(const Model & model) : GAGenome(Initializer, Mutator, Comparator), model_(model) { crossover(Crossover); evaluator(Evaluator); }
+        Genome(const Model & model) : GAGenome(Initializer, Mutator, Comparator), model_(model) { crossover(Crossover); evaluator(Objective); }
         Genome(GAGenome & other) :model_(dynamic_cast<Genome&>(other).model_){ copy(other); }
         Genome & operator=(const GAGenome& orig) {
             if(&orig != this) copy(orig);
