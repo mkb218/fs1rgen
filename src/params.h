@@ -21,9 +21,10 @@ namespace fs1rgen {
         Value * newValue() const;
         int mutate(Value &, float) { return 0; }
         float compare(const Value &, const Value &) const;
-        int crossover(const Value & mom, const Value & dad,  Value & bro, Value & sis) const;
+        int crossover(const Value & mom, const Value & dad, Value * bro, Value * sis) const;
         bool IsForInterface() const { return true; }
-        const SynthData toBinary(const Value &) const;
+        const SynthDataPtr toBinary(const Value &) const;
+        // TODO this has nothing to do with GA. how does this interact with UI?
     private:
         size_t length_;
     };
@@ -34,8 +35,8 @@ namespace fs1rgen {
         Value * newValue() const { return value_.clone(); }
         int mutate(Value &, float) { return 0; }
         float compare(const Value &, const Value &) const { return 0.0; }
-        int crossover(const Value & mom, const Value & dad, Value & bro, Value & sis) const;
-        const SynthData toBinary(const Value &) const;
+        int crossover(const Value & mom, const Value & dad, Value * bro, Value * sis) const;
+        const SynthDataPtr toBinary(const Value &) const;
     private:
         size_t length_;
         Value value_;
@@ -49,8 +50,8 @@ namespace fs1rgen {
         Value * newValue() const;
         int mutate(Value &, float);
         float compare(const Value &, const Value &) const;
-        int crossover(const Value & mom, const Value & dad, Value & bro, Value & sis) const;
-        const SynthData toBinary(const Value &) const;
+        int crossover(const Value & mom, const Value & dad, Value * bro, Value * sis) const;
+        const SynthDataPtr toBinary(const Value &) const;
         void setValue(int, const Value &);
         void deleteValue(int);
         const EnumValue & getValue(int) const;
@@ -65,8 +66,8 @@ namespace fs1rgen {
         Value * newValue() const;
         int mutate(Value &, float);
         float compare(const Value &, const Value &) const;
-        int crossover(const Value & mom, const Value & dad, Value & bro, Value & sis) const;
-        const SynthData toBinary(const Value &) const;
+        int crossover(const Value & mom, const Value & dad, Value * bro, Value * sis) const;
+        const SynthDataPtr toBinary(const Value &) const;
     private:
         const Param & param_;
         int shift_;
@@ -87,8 +88,8 @@ namespace fs1rgen {
         Value * newValue() const;
         int mutate(Value &, float);
         float compare(const Value &, const Value &) const;
-        int crossover(const Value & mom, const Value & dad, Value & bro, Value & sis) const;
-        const SynthData toBinary(const Value &) const;
+        int crossover(const Value & mom, const Value & dad, Value * bro, Value * sis) const;
+        const SynthDataPtr toBinary(const Value &) const;
         void setParamWithRange(const Param &, int min, int max);
         const Param & currentValue() const;
         const Param & valueForIndex() const;
@@ -102,8 +103,8 @@ namespace fs1rgen {
         Value * newValue() const;
         int mutate(Value &, float);
         float compare(const Value &, const Value &) const;
-        int crossover(const Value & mom, const Value & dad, Value & bro, Value & sis) const;
-        const SynthData toBinary(const Value &) const;
+        int crossover(const Value & mom, const Value & dad, Value * bro, Value * sis) const;
+        const SynthDataPtr toBinary(const Value &) const;
         void setBitName(size_t, const std::string &);
         const std::string & getBitName(size_t) const;
         void enableBit(size_t, bool enable = true);
@@ -121,8 +122,8 @@ namespace fs1rgen {
         Value * newValue() const;
         int mutate(Value &, float);
         float compare(const Value &, const Value &) const;
-        int crossover(const Value & mom, const Value & dad, Value & bro, Value & sis) const;
-        const SynthData toBinary(const Value &) const;
+        int crossover(const Value & mom, const Value & dad, Value * bro, Value * sis) const;
+        const SynthDataPtr toBinary(const Value &) const;
         void addParam(const Param &);
         const std::vector<boost::reference_wrapper<Param> > & params() const;
     private:
@@ -135,8 +136,8 @@ namespace fs1rgen {
         Value * newValue() const;
         int mutate(Value &, float);
         float compare(const Value &, const Value &) const;
-        int crossover(const Value & mom, const Value & dad, Value & bro, Value & sis) const;
-        const SynthData toBinary(const Value &) const;
+        int crossover(const Value & mom, const Value & dad, Value * bro, Value * sis) const;
+        const SynthDataPtr toBinary(const Value &) const;
         void setRange(int min, int max) { min_ = min; max_ = max; }
         void setShift(int shift) { shift_ = shift; }
         int getMin() const { return min_; }

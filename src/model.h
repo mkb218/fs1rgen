@@ -18,17 +18,18 @@
 #include <boost/foreach.hpp>
 #include <boost/ref.hpp>
 #include <memory>
+#include <iostream>
 
 #define foreach BOOST_FOREACH
-
 
 namespace fs1rgen {
     class Value;
     class Genome;
     class Param;
     
-    typedef boost::any ValueType;
-    typedef std::auto_ptr<std::vector<char> > SynthData;
+    typedef boost::any ValueData;
+    typedef std::vector<char> SynthData;
+    typedef std::auto_ptr<SynthData> SynthDataPtr;
     typedef std::list<Value> ValueList;
     typedef std::list<boost::reference_wrapper<Param> > ParamList;
     
@@ -40,7 +41,7 @@ namespace fs1rgen {
         virtual int mutate(Value &, float) const = 0;
         virtual float compare(const Value &, const Value&) const = 0;
         virtual int crossover(const Value & mom, const Value & dad, Value * bro, Value * sis) const = 0;
-        virtual const SynthData toBinary(const Value &) const = 0;
+        virtual const SynthDataPtr toBinary(const Value &) const = 0;
         virtual bool IsForInterface() const { return forInterface_; }
         void forInterface(bool valid) { forInterface_ = valid; }
     protected:
@@ -58,13 +59,13 @@ namespace fs1rgen {
         int crossover(const Value & other, Value * bro, Value * sis) const { if (!locked_) return param_.crossover(*this, other, bro, sis); else return lockedCrossover(bro, sis); }
         Value * clone() const { return new Value(*this); }
         const Param & param() { return param_; }
-        const ValueType & value() { return value_; }
+        const ValueData & value() { return value_; }
         void lock() { locked_ = true; }
         void unlock() { locked_ = false; }
         int lockedCrossover(Value * bro, Value * sis) const;
     private:
         const Param & param_;
-        ValueType value_;
+        ValueData value_;
         bool locked_;
     };
     
