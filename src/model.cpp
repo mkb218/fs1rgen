@@ -12,6 +12,7 @@
 fs1rgen::Evaluator *fs1rgen::Evaluator::instance_ = NULL;
 
 namespace fs1rgen {
+    time_t gSeed = time(NULL);
     
     int Genome::spawn(const Genome & dad, GAGenome *bro, GAGenome *sis) const {
         int nc = 0;

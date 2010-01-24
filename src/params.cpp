@@ -8,10 +8,11 @@
  */
 
 #include "params.h"
+#include "ga/ga.h"
 #include <algorithm>
 
 namespace fs1rgen {
-    Value * StringParam::newValue() const {
+    ValuePtr StringParam::newValue() const {
         // TODO sensible default
         boost::any a(std::string(""));
         Value * v = new Value(*this, a);
@@ -22,10 +23,10 @@ namespace fs1rgen {
     float StringParam::compare(const Value & left, const Value & right) const {
         float result = 0.0;
         try {
-            std::string & l = boost::any_cast<std::string &>(left.value());
-            std::string & r = boost::any_cast<std::string &>(right.value());
-            size_t minsize = min(l.size(), r.size());
-            size_t maxsize = max(max(l.size(), r.size()), length_);
+            const std::string & l = boost::any_cast<const std::string &>(left.value());
+            const std::string & r = boost::any_cast<const std::string &>(right.value());
+            size_t minsize = std::min(l.size(), r.size());
+            size_t maxsize = std::max(std::max(l.size(), r.size()), length_);
             for (size_t i = 0; i < minsize; ++i) {
                 if (l[i] != r[i]) {
                     result += 1.0;
@@ -33,8 +34,8 @@ namespace fs1rgen {
             }
             result += (maxsize - minsize);
             result /= maxsize;
-        } catch (bad_any_cast &) {
-            throw logic_error(__FILE__ ":" __LINE__ " StringParam compared a non-string value.");
+        } catch (boost::bad_any_cast &) {
+            throw std::logic_error(__FILE__ ": StringParam compared a non-string value.");
         }
         return result;
     }
@@ -83,8 +84,9 @@ namespace fs1rgen {
         return out;
     }
     
-    Value * EnumParam::newValue() const {
-        int random = random();
-        return new Value(;
+    ValuePtr EnumParam::newValue() const {
+        GARandomSeed(0);
+        int random = GARandomInt();
+        return NULL;
     }
 }

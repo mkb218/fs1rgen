@@ -12,14 +12,14 @@
 			FC7B9D8E10D7CB960022BA4F /* fs1rgen */,
 		);
 		perUserDictionary = {
-			PBXPerProjectTemplateStateSaveDate = 283268338;
-			PBXWorkspaceStateSaveDate = 283268338;
+			PBXPerProjectTemplateStateSaveDate = 283298691;
+			PBXWorkspaceStateSaveDate = 283298691;
 		};
 		perUserProjectItems = {
-			FC55BA2D10E18E4700BFC2AA = FC55BA2D10E18E4700BFC2AA /* PBXTextBookmark */;
-			FC55BA5E10E254EE00BFC2AA = FC55BA5E10E254EE00BFC2AA /* PBXTextBookmark */;
-			FC55BA5F10E254EE00BFC2AA = FC55BA5F10E254EE00BFC2AA /* PBXTextBookmark */;
-			FC9733E910E10ECC00CABE47 = FC9733E910E10ECC00CABE47 /* PBXTextBookmark */;
+			FCCFED4310E3BB3400DB70AC /* PBXTextBookmark */ = FCCFED4310E3BB3400DB70AC /* PBXTextBookmark */;
+			FCCFED6210E3BBF200DB70AC /* PBXTextBookmark */ = FCCFED6210E3BBF200DB70AC /* PBXTextBookmark */;
+			FCCFED6310E3BC0000DB70AC /* PBXTextBookmark */ = FCCFED6310E3BC0000DB70AC /* PBXTextBookmark */;
+			FCCFED6410E3BC0000DB70AC /* PBXTextBookmark */ = FCCFED6410E3BC0000DB70AC /* PBXTextBookmark */;
 		};
 		sourceControlManager = FC7B9D9610D7CB9A0022BA4F /* Source Control */;
 		userBuildSettings = {
@@ -38,36 +38,6 @@
 		executables = (
 			FC7B9D8E10D7CB960022BA4F /* fs1rgen */,
 		);
-	};
-	FC55BA2D10E18E4700BFC2AA /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = FC9D3B8710DC810F007316E8 /* params.cpp */;
-		name = "params.cpp: 12";
-		rLen = 0;
-		rLoc = 1096;
-		rType = 0;
-		vrLen = 166;
-		vrLoc = 0;
-	};
-	FC55BA5E10E254EE00BFC2AA /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = FC9D3B8610DC810F007316E8 /* params.h */;
-		name = "params.h: 21";
-		rLen = 0;
-		rLoc = 398;
-		rType = 0;
-		vrLen = 1421;
-		vrLoc = 0;
-	};
-	FC55BA5F10E254EE00BFC2AA /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = FC9D3B8710DC810F007316E8 /* params.cpp */;
-		name = "params.cpp: 38";
-		rLen = 0;
-		rLoc = 1094;
-		rType = 0;
-		vrLen = 1096;
-		vrLoc = 0;
 	};
 	FC7B9D8E10D7CB960022BA4F /* fs1rgen */ = {
 		isa = PBXExecutable;
@@ -104,29 +74,19 @@
 		isa = PBXCodeSenseManager;
 		indexTemplatePath = "";
 	};
-	FC9733E910E10ECC00CABE47 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = FC9D3B8610DC810F007316E8 /* params.h */;
-		name = "params.h: 1";
-		rLen = 0;
-		rLoc = 0;
-		rType = 0;
-		vrLen = 1500;
-		vrLoc = 1329;
-	};
 	FC9D3B8610DC810F007316E8 /* params.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {802, 2100}}";
-			sepNavSelRange = "{398, 0}";
-			sepNavVisRange = "{0, 1421}";
+			sepNavIntBoundsRect = "{{0, 0}, {720, 2184}}";
+			sepNavSelRange = "{4909, 0}";
+			sepNavVisRange = "{1404, 587}";
 			sepNavWindowFrame = "{{595, 162}, {861, 716}}";
 		};
 	};
 	FC9D3B8710DC810F007316E8 /* params.cpp */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {559, 620}}";
-			sepNavSelRange = "{1094, 0}";
-			sepNavVisRange = "{0, 1096}";
+			sepNavIntBoundsRect = "{{0, 0}, {559, 1330}}";
+			sepNavSelRange = "{204, 0}";
+			sepNavVisRange = "{0, 1399}";
 			sepNavWindowFrame = "{{64, 145}, {618, 733}}";
 		};
 	};
@@ -162,19 +122,54 @@
 			sepNavWindowFrame = "{{62, 116}, {861, 716}}";
 		};
 	};
+	FCCFED4310E3BB3400DB70AC /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = FC9D3B8710DC810F007316E8 /* params.cpp */;
+		rLen = 8;
+		rLoc = 230;
+		rType = 0;
+	};
+	FCCFED6210E3BBF200DB70AC /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		comments = "error: no matching function for call to ‘std::auto_ptr<fs1rgen::Value>::auto_ptr(fs1rgen::Value)’";
+		fRef = FCDD124010D84B6F007FA0FA /* model.h */;
+		rLen = 1;
+		rLoc = 62;
+		rType = 1;
+	};
+	FCCFED6310E3BC0000DB70AC /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = FCDD124010D84B6F007FA0FA /* model.h */;
+		name = "model.h: 63";
+		rLen = 0;
+		rLoc = 2275;
+		rType = 0;
+		vrLen = 1305;
+		vrLoc = 1593;
+	};
+	FCCFED6410E3BC0000DB70AC /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = FC9D3B8710DC810F007316E8 /* params.cpp */;
+		name = "params.cpp: 12";
+		rLen = 0;
+		rLoc = 204;
+		rType = 0;
+		vrLen = 1399;
+		vrLoc = 0;
+	};
 	FCDD124010D84B6F007FA0FA /* model.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {820, 2282}}";
-			sepNavSelRange = "{436, 0}";
-			sepNavVisRange = "{30, 576}";
-			sepNavWindowFrame = "{{248, 118}, {879, 484}}";
+			sepNavIntBoundsRect = "{{0, 0}, {820, 2226}}";
+			sepNavSelRange = "{2275, 0}";
+			sepNavVisRange = "{1593, 1305}";
+			sepNavWindowFrame = "{{248, 117}, {879, 484}}";
 		};
 	};
 	FCDD124110D84B6F007FA0FA /* model.cpp */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {439, 1610}}";
-			sepNavSelRange = "{3162, 1}";
-			sepNavVisRange = "{2808, 288}";
+			sepNavIntBoundsRect = "{{0, 0}, {802, 1582}}";
+			sepNavSelRange = "{247, 0}";
+			sepNavVisRange = "{1978, 1216}";
 			sepNavWindowFrame = "{{16, 157}, {861, 716}}";
 		};
 	};
